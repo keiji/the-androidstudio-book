@@ -1,9 +1,12 @@
 PREDEF:
+  - abstract.re
+  - history.re
 
 CHAPS:
-  - AndroidStudio.re
+  - install_jdk.re
+  - install_android_studio.re
 
 APPENDIX:
+  - about_book.re
 
 POSTDEF:
-

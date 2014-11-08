@@ -5,17 +5,17 @@
 # このファイルはUTF-8エンコーディングで記述してください。
 
 # ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
-bookname: book
+bookname: the-androidstudio-book
 # 書名
-booktitle: Android Studioではじめる 簡単Androidアプリ開発 変更点
+booktitle: Android Studioではじめる 簡単Androidアプリ開発
 # 著者
 aut: 有山 圭二
 #prt: keiji.io
-prt_url:  http://github.com/keiji/
+prt_url:  https://github.com/keiji/the-androidstudio-book
 #edt: 有山圭二
-date: 2014-11-21
+date: 0.8.14 Beta
 rights: |
-  (C) 2014 Keiji ARIYAMA
+  本文書は、有山圭二の著作物であり、クリエイティブコモンズ2.1の表示—非営利—改変禁止ライセンスの元で提供しています。
 description: 
 # 以下はオプション
 # prt: 出版社
@@ -51,5 +51,5 @@ mytoc: true
 colophon: true
 texstyle: reviewmacro
 pubhistory: |
-  2014年11月21日 v0.8.14 Beta 対応版
-debug: true
+  0.8.14 Beta 対応版
+debug: false
