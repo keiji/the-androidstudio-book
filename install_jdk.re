@@ -1,4 +1,4 @@
-= JDKのインストール
+= JDKのセットアップ
 
 Android Studioをインストールする前に、@<kw>{JDK, Java Development Kit}をインストールする必要があります。
 
@@ -93,7 +93,7 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 引き続き、環境変数JAVA_HOMEを設定します。
 これはAndroid Studioに、どこにJDKをインストールしたのかを伝える作業です。
 
-//image[JDK_add_env1][][scale=0.5]{
+//image[JDK_add_env1][][scale=0.35]{
 //}
 
 デスクトップ左下のスタートメニューで右クリックをして表示されるメニューから「コントロールパネル」を選択します。
@@ -128,7 +128,7 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 
 入力を終えたら「OK」をクリックし、これまでのウィンドウを全て閉じていきます。
 
-以上で、JDKのインストールは完了です。
+以上で、JDKのセットアップは完了です。
 
 == Mac OS Xの場合
 
@@ -139,7 +139,7 @@ Java for OS Xのインストール用パッケージをダウンロードしま�
 
 @<href>{http://support.apple.com/kb/DL1572}
 
-//image[download_java_mac][]{
+//image[download_java_mac][][scale=0.2]{
 //}
 
 ダウンロードのボタンをクリックすると、インストールパッケージがダウンロードされます。
@@ -186,4 +186,4 @@ Java for OS Xをインストールするには、ソフトウェア使用許諾�
 //image[install_java_mac7][][scale=0.5]{
 //}
 
-以上で、Java for OS Xのインストールは完了です。
+以上で、Java for OS Xのセットアップは完了です。

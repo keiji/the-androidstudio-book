@@ -1,4 +1,4 @@
-= Android Studioのインストール手順
+= Android Studioのセットアップ
 
 == Android SDKのインストール
 
@@ -86,7 +86,7 @@ Android SDKをインストールする場所を指定します。
 
 ダウンロードしたパッケージは、ZIP形式で圧縮されています。
 
-//indepimage[install_sdk_mac1][ZIP形式の圧縮ファイル]
+//indepimage[install_sdk_mac1][ZIP形式の圧縮ファイル][scale=0.25]
 
 ダブルクリックで開くなどして、圧縮ファイルを展開します。
 
@@ -140,7 +140,7 @@ Android Studioを実行します。
 
 === Windowsの場合
 
-//indepimage[AndroidStudio-win-launch1][android-studio/bin/studio64.exeを実行]
+//indepimage[AndroidStudio-win-launch1][android-studio/bin/studio64.exeを実行][scale=0.25]
 
 Android Studioを展開したフォルダーの「android-studio/bin/studio64.exe」を、ダブルクリックするなどして実行します。
 
@@ -159,20 +159,20 @@ Android Studioには、32bit対応と64bit対応のバージョンが用意さ�
 
 アプリケーションにインストールした「Android Studio」をクリックして実行します。
 
-//image[AndroidStudio-mac-launch][アプリケーション]{
+//image[AndroidStudio-mac-launch][アプリケーション][scale=0.35]{
 //}
 
-//image[AndroidStudio-mac-security0][セキュリティ警告][scale=0.75]{
+//image[AndroidStudio-mac-security0][セキュリティ警告][scale=0.5]{
 //}
 
 @<img>{AndroidStudio-mac-security0}のダイアログが表示されて実行できない場合は、セキュリティの設定が必要です。
 
-//image[AndroidStudio-mac-security1][アプリケーション]{
+//image[AndroidStudio-mac-security1][アプリケーション][scale=0.35]{
 //}
 
 アプリケーション一覧から「システム設定（@<img>{AndroidStudio-mac-security1}右上）」をクリックします。
 
-//image[AndroidStudio-mac-security2][Security & Privacy]{
+//image[AndroidStudio-mac-security2][Security & Privacy][scale=0.5]{
 //}
 
 左下の錠前のマーク@<icon>{AndroidStudio-mac-security_lock}をクリックします。
@@ -182,7 +182,7 @@ Android Studioには、32bit対応と64bit対応のバージョンが用意さ�
 
 ユーザーのパスワードを入力して「OK」をクリックします。
 
-//image[AndroidStudio-mac-security4][Security & Privacy]{
+//image[AndroidStudio-mac-security4][Security & Privacy][scale=0.5]{
 //}
 
 「ダウンロードしたアプリケーションの実行許可」から「Mac App Storeと確認済みの開発元からのアプリケーションを許可」をクリックしてチェックを入れます。
@@ -190,7 +190,7 @@ Android Studioには、32bit対応と64bit対応のバージョンが用意さ�
 
 下に表示されている「"Android Studio"は開発元を確認できないため...」の右側の「このまま開く」をクリックします。
 
-//image[AndroidStudio-mac-security5][セキュリティ確認]{
+//image[AndroidStudio-mac-security5][セキュリティ確認][scale=0.5]{
 //}
 
 起動の確認が表示されるので「開く」をクリックします。
@@ -199,7 +199,7 @@ Android Studioには、32bit対応と64bit対応のバージョンが用意さ�
 
 Android Studioを最初に起動するとき、既にあるAndroid Studioの設定を引き継ぐかの確認が表示されます。
 
-//indepimage[AndroidStudio_launch0][Complete Installation][scale=0.8]
+//indepimage[AndroidStudio_launch0][Complete Installation][scale=0.5]
 
 ここでは「I do not have...」が選択されていることを確認して「OK」をクリックします。
 
