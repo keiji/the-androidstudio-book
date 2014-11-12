@@ -25,6 +25,8 @@
 本文書に関する最新情報は引き続き、
 
  * 技術評論社サイト @<href>{http://gihyo.jp/book/2014/978-4-7741-6998-9}
+ * HTML版 @<href>{http://keiji.github.io/the-androidstudio-book/}
+ * PDF版 @<href>{http://keiji.github.io/the-androidstudio-book/archives/book.pdf}
  * GitHub @<href>{https://github.com/keiji/the-androidstudio-book}
 
 で、提供します。

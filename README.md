@@ -22,6 +22,8 @@
 
 
 * 技術評論社サイト [http://gihyo.jp/book/2014/978-4-7741-6998-9](http://gihyo.jp/book/2014/978-4-7741-6998-9)
+* HTML版 [http://keiji.github.io/the-androidstudio-book/](http://keiji.github.io/the-androidstudio-book/)
+* PDF版 [http://keiji.github.io/the-androidstudio-book/archives/book.pdf](http://keiji.github.io/the-androidstudio-book/archives/book.pdf)
 * GitHub [https://github.com/keiji/the-androidstudio-book](https://github.com/keiji/the-androidstudio-book)
 
 で、提供します。
