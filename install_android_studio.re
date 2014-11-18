@@ -140,9 +140,9 @@ Android Studioを実行します。
 
 === Windowsの場合
 
-//indepimage[AndroidStudio-win-launch1][android-studio/bin/studio64.exeを実行][scale=0.25]
+//indepimage[AndroidStudio-win-launch1][android-studio\bin\studio64.exeを実行][scale=0.25]
 
-Android Studioを展開したフォルダーの「android-studio/bin/studio64.exe」を、ダブルクリックするなどして実行します。
+Android Studioを展開したフォルダーの「android-studio\bin\studio64.exe」を、ダブルクリックするなどして実行します。
 
 =====[column]32bitと64bit
 
