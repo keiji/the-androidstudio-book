@@ -20,3 +20,24 @@ Android Tools ProjectのXavier Ducrohet氏は、Android Tools Projectのグル�
 このことから、Windows版は将来的に、再びインストーラー形式での提供に戻ると思われます。
 
 //footnote[adt-dev][Error: The Android SDK folder can no longer be inside the application folder： @<href>{https://groups.google.com/d/topic/adt-dev/LQyik6JIU_Q/discussion}]
+
+==== プロジェクト作成時に表示されるビューの変更
+
+これまでのAndroid Studioでは、新規プロジェクトを作成した場合、標準でProject Viewが表示されていましたが、
+0.8.14より、Android Viewが表示されるように変更されました。
+
+Android Viewでは、プロジェクトを単純な階層表示ではなく、Androidに則したツリー構成で表示するほか、
+リソース修飾子が異なる同じ種類のリソースをまとめて表示します。
+
+//image[project-android-view][Android View（左）、Project View（右）][scale=0.5]{
+//}
+
+==== AVD Managerデザイン変更
+
+Android Studio 0.8.14では、@<kw>{AVD, Android Virtual Device} Managerのデザインが一新されました。
+
+//image[new-avd-manager][新しいAVD Managerのデザイン][scale=0.25]{
+//}
+
+//image[old-avd-manager][旧AVD Managerのデザイン][scale=0.35]{
+//}
