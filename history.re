@@ -1,5 +1,27 @@
 = 更新履歴
 
+== 0.9.x リリース
+
+=== 変更の概要
+
+==== スタートメニューのテキスト変更
+
+Android Studio 0.9.xでは、起動時に表示されるメニューの各種テキストと、一部メニューの順番が変更されました。
+
+//image[android-studio-start-menu][0.9.xのスタートメニュー（左）。旧スタートメニュー（右）][scale=0.5]{
+//}
+
+
+==== プロジェクト作成時の標準値の変更
+
+これまでのAndroid Studioは、プロジェクト作成時に標準で、Activity名が@<tt>{MyActivity}、Layout名が@<tt>{activity_my}など、
+@<tt>{My}を付加して命名になっていましたが、0.9.xではこれらが@<tt>{Main}に変更されました。
+
+また、新しくMenu Resource Nameを指定できるようになっています。
+
+//image[new-project-0_9_x][標準値が変更されたProject作成画面][scale=0.25]{
+//}
+
 == 0.8.14 Betaリリース - Oct 29, 2014
 
 @<href>{http://tools.android.com/recent/androidstudio0814inbetachannel}
