@@ -22,6 +22,14 @@ Android Studio 0.9.xでは、起動時に表示されるメニューの各種テ
 //image[new-project-0_9_x][標準値が変更されたProject作成画面][scale=0.25]{
 //}
 
+==== Gradle Plugin for Androidのサポートバージョン変更
+
+Android Studio 0.9.xでは、Gradle Plugin for Androidのサポートバージョンが0.14以上となり、
+それより前のバージョンのプロジェクトはビルドできなくなりました。
+
+また、Gradle plugin for Androidの0.14では、runProguardがminifyEnabledになるなど、
+build.gradleのプロパティ名が変更されています。
+
 == 0.8.14 Betaリリース - Oct 29, 2014
 
 @<href>{http://tools.android.com/recent/androidstudio0814inbetachannel}
