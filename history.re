@@ -15,7 +15,7 @@ Android Studio 0.9.xでは、起動時に表示されるメニューの各種テ
 ==== プロジェクト作成時の標準値の変更
 
 これまでのAndroid Studioは、プロジェクト作成時に標準で、Activity名が@<tt>{MyActivity}、Layout名が@<tt>{activity_my}など、
-@<tt>{My}を付加して命名になっていましたが、0.9.xではこれらが@<tt>{Main}に変更されました。
+@<tt>{My}を付加した命名になっていましたが、0.9.xではこれらが@<tt>{Main}に変更されました。
 
 また、新しくMenu Resource Nameを指定できるようになっています。
 
