@@ -1,5 +1,6 @@
 PREDEF:
   - abstract.re
+  - errata.re
   - history.re
 
 CHAPS:
