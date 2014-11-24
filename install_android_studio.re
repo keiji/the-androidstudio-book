@@ -236,3 +236,6 @@ Mac OS Xの場合、本文書では/Users/keiji_ariyama/android-sdk-macosxにイ
 =====[/column]
 
 以上で、Android Studioのセットアップは完了です。
+
+引き続き「Android Studioではじめる 簡単Androidアプリ開発」のChapter 3 『Android Studioをセッティングしよう』を参照して、
+アプリの開発環境を整えてください。
