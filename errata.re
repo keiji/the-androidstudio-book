@@ -13,9 +13,8 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
 『取得した天気情報を表示する』で、リスト6-3として表記されているファイル名に誤りがあります。
 
 //table[list_6_3][]{
-誤	正
------------
-@<tt>{my_activity.xml}	@<tt>{activity_my.xml}
+誤	@<tt>{my_activity.xml}
+正	@<tt>{activity_my.xml}
 //}
 
 ==== P.99
@@ -68,9 +67,8 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
 『6-9 読み込み中を表示する』で、リスト6-20として表記されているファイル名に誤りがあります。
 
 //table[list_6_20][]{
-誤	正
------------
-@<tt>{my_activity.java}	@<tt>{activity_my.xml}
+誤	@<tt>{my_activity.java}
+正	@<tt>{activity_my.xml}
 //}
 
 ==== P.110
@@ -147,6 +145,17 @@ import java.io.IOException;
 //}
 
 
+==== P.150
+
+リスト7-12で@<tt>{jumpDroid}メソッドがfloat型の引数@<tt>{power}の記載がありますが、これは誤りです。
+@<tt>{jumpDroid}メソッドに引数は記述しません。
+
+//table[list_7_12][]{
+誤	@<tt>{private void jumpDroid(float power) { }
+正	@<tt>{private void jumpDroid() { }
+//}
+
+
 ==== P.186
 
 リスト8-7の7行目、定数@<tt>{MISSILE_LAUNCH_WEIGHT}の記述が追加行に指定されていますが、ここで追加の必要はありません。
@@ -158,9 +167,8 @@ import java.io.IOException;
 21行目、@<tt>{DrawThread}内で@<tt>{drawGame}メソッドを実行している記述がありますが、これは@<tt>{drawObject}メソッドの誤りです。
 
 //table[list_8_8][]{
-誤	正
------------
-@<tt>{drawGame(canvas);}	@<tt>{drawObject(canvas);}
+誤	@<tt>{drawGame(canvas);}
+正	@<tt>{drawObject(canvas);}
 //}
 
 P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}の行に変更（削除と追加）が指定されていますが、変更の必要はありません。
@@ -212,7 +220,6 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
 これは@<tt>{Android Wear 4.4W}の誤りです。
 
 //table[api_version][]{
-誤	正
------------
-@<tt>{Android Wear 4.4.1W}	@<tt>{Android Wear 4.4W}
+誤	@<tt>{Android Wear 4.4.1W}
+正	@<tt>{Android Wear 4.4W}
 //}
