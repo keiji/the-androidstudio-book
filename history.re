@@ -1,30 +1,47 @@
 = 更新履歴
 
-== 0.9.x リリース
+== 1.0-RC リリース
 
 === 変更の概要
 
-==== スタートメニューのテキスト変更
+==== インストーラー(Windows)の追加
 
-Android Studio 0.9.xでは、起動時に表示されるメニューの各種テキストと、一部メニューの順番が変更されました。
+Android Studio 1.0-RCでは、Windows用のインストーラーが追加されました。
+これは、0.8.14 BETAで廃止された旧インストーラーに代わるものです。
 
-//image[android-studio-start-menu][0.9.xのスタートメニュー（左）。旧スタートメニュー（右）][scale=0.5]{
+//image[android-studio-installer-win][Android Studioのインストーラー][scale=0.5]{
 //}
 
+==== Android SDK Setup Wizardの追加
+
+Android Studio 1.0-RCでは、Android SDK Setup Wizardが追加され、Android Studioの初回起動時に
+Android SDKのダウンロードとセットアップが実行できるようになりました。
+
+これは、0.8.14 BETAから、それまでAndroid Studioに含まれていたAndroid SDKがバンドルされなくなった変更を補填するものです。
+
+//image[setup-androidstudio][Android StudioのSDK Setup][scale=0.45]{
+//}
+
+==== スタートメニューのテキスト変更
+
+Android Studio 1.0-RCでは、起動時に表示されるメニューの各種テキストと、一部メニューの順番が変更されました。
+
+//image[android-studio-start-menu][1.0-RCのスタートメニュー（左）。旧スタートメニュー（右）][scale=0.5]{
+//}
 
 ==== プロジェクト作成時の標準値の変更
 
 これまでのAndroid Studioは、プロジェクト作成時に標準で、Activity名が@<tt>{MyActivity}、Layout名が@<tt>{activity_my}など、
-@<tt>{My}を付加した命名になっていましたが、0.9.xではこれらが@<tt>{Main}に変更されました。
+@<tt>{My}を付加した命名になっていましたが、1.0-RCではこれらが@<tt>{Main}に変更されました。
 
 また、新しくMenu Resource Nameを指定できるようになっています。
 
-//image[new-project-0_9_x][標準値が変更されたProject作成画面][scale=0.25]{
+//image[new-project-1_0-RC][標準値が変更されたProject作成画面][scale=0.25]{
 //}
 
 ==== Gradle Plugin for Androidのサポートバージョン変更
 
-Android Studio 0.9.xでは、Gradle Plugin for Androidのサポートバージョンが0.14以上となり、
+Android Studio 1.0-RCでは、Gradle Plugin for Androidのサポートバージョンが0.14以上となり、
 それより前のバージョンのプロジェクトはビルドできなくなりました。
 
 また、Gradle plugin for Androidの0.14では、runProguardがminifyEnabledになるなど、

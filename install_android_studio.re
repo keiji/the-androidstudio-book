@@ -1,98 +1,5 @@
 = Android Studioのセットアップ
 
-== Android SDKのインストール
-
-=== ダウンロード
-
-Android SDKのインストール用パッケージをダウンロードします。
-
-次のURLをブラウザで開きます。
-
-@<href>{https://developer.android.com/sdk/index.html?hl=i}
-
-//image[download_sdk1][Get the Android SDK][scale=0.3]{
-//}
-
-画面下部の「GET THE SDK FOR AN EXISTING IDE」をクリックすると、SDKだけのパッケージをダウンロードするボタンが表示されるので、
-「Download the stand-alone Android SDK Tools...」のボタン（@<img>{download_sdk1}）をクリックします。
-
-//image[download_sdk2][Get the Android SDK][scale=0.3]{
-//}
-
-Android SDKをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_sdk2}）。
-
-表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio Beta...」のボタンをクリックします。
-
-画面が切り替わり、Android Studioのパッケージがダウンロードされます。
-
-=====[column]ダウンロード後の表示は？
-
-//image[download_sdk3][Installing the Stand-slone SDK Tools][scale=0.3]{
-//}
-
-ダウンロードの手続きは、使用しているブラウザによって異なります。
-
-例えば、Internet Explorerの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{download_sdk3}下部）。
-
-なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、Android SDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。
-
-=====[/column]
-
-=== インストール
-
-Android SDK Toolsをインストールします。
-
-==== Windowsの場合
-
-ダウンロードしたパッケージをダブルクリックするなどして開くと、インストーラーが起動します。
-
-//indepimage[install_sdk1][Android SDK Tools Setup][scale=0.5]
-
-「Next >」をクリックします。
-
-//indepimage[install_sdk2][Android SDK Tools Setup][scale=0.5]
-
-使用するJDKを確認する画面です。
-表示されたJDKのパスが正しければ「Next >」をクリックします。
-
-//indepimage[install_sdk3][Android SDK Tools Setup][scale=0.5]
-
-Android SDKを利用するユーザーを選択します。
-「Install just for me」にチェックが入っていることを確認して、「Next >」をクリックします。
-
-//indepimage[install_sdk4][Android SDK Tools Setup][scale=0.5]
-
-Android SDKをインストールする場所を指定します。
-
-標準では、 C:\Users\[ユーザー名]\AppData\Local\Android\android-sdk にインストールされます。
-
-ここで指定するインストール場所は、あとで必要になるので、必ずコピーするなどしてください。
-
-「Next >」をクリックすると、インストール処理が始まります。
-
-//indepimage[install_sdk6][Android SDK Tools Setup][scale=0.5]
-
-インストールが終了したら「Next >」をクリックします。
-
-//indepimage[install_sdk7][Android SDK Tools Setup][scale=0.5]
-
-「Finish」を押してインストーラーを終了します。
-
-インストールが終了すると、SDK Managerが起動しますが、SDK Managerの設定は後ほどAndroid Studioから行う@<fn>{sdk_manager}ため、ここではそのまま終了します。
-
-//footnote[sdk_manager][SDK Managerを使ったパッケージのダウンロードについては本文書では解説しません]
-
-==== Mac OS Xの場合
-
-ダウンロードしたパッケージは、ZIP形式で圧縮されています。
-
-//indepimage[install_sdk_mac1][ZIP形式の圧縮ファイル][scale=0.25]
-
-ダブルクリックで開くなどして、圧縮ファイルを展開します。
-
-ここからは、Android SDKをユーザーのホームディレクトリ「/Users/[ユーザー名]/」に展開したものとして説明します。
-
-
 == Android Studioのインストール
 
 === ダウンロード
@@ -102,35 +9,102 @@ Android Studioをダウンロードします。
 
 @<href>{https://developer.android.com/sdk/installing/studio.html}
 
-//image[download_android_studio1][Android Studio BETA][scale=0.3]{
+//image[download_android_studio1][Android Studio 1.0RCx][scale=0.3]{
 //}
 
-画面右側の「Download Android Studio Beta ...」をクリックします。
+画面右側の「Download Android Studio...」をクリックします。
 
-//image[download_android_studio2][Android Studio BETA][scale=0.3]{
+//image[download_android_studio2][Android Studio 1.0RCx][scale=0.3]{
 //}
 
 Android Studioをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_android_studio2}）。
 
-表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio Beta...」のボタンをクリックします。
+表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio...」のボタンをクリックします。
 
 画面が切り替わり、Android Studioのパッケージがダウンロードされます。
 
-=== 展開（インストール）
+
+=====[column]ダウンロード後の表示は？
+//image[download_android_studio3][Install Android Studio][scale=0.3]{
+//}
+
+ダウンロードの手続きは、使用しているブラウザによって異なります。
+
+例えば、Internet Explorerの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{download_android_studio3}下部）。
+
+なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、Android SDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。
+
+=====[/column]
+
+
+=== インストール
 
 ==== Windowsの場合
 
-//indepimage[extract_android_studio][右クリックから「すべて展開」][scale=0.3]
+ダウンロードしたパッケージは、実行可能な形式です。ダブルクリックで開くなどして実行すると、インストーラーが起動します。
 
-ダウンロードしたパッケージは、ZIP形式で圧縮されています。
-右クリックで表示されるメニューから「全て展開」を選択して、圧縮ファイルを展開します。
+//image[install-androidstudio0][インストーラーのアイコン][scale=0.5]{
+//}
+
+この際「ユーザーアカウント制御」が警告を出す場合がありますが、発行元がGoogleになっていることを確認した後
+「はい」をクリックしてインストールを続行します。
+
+//image[install-androidstudio1][ユーザーアカウント制御。発行元がGoogleであることを確認する][scale=0.5]{
+//}
+
+//image[install-androidstudio2][インストーラー][scale=0.5]{
+//}
+
+「Next」をクリックします。
+なお、@<kw>{JDK, Java Development Kit}がインストールされていない場合、@<img>{install-androidstudio3}の画面が表示されます。
+
+//image[install-androidstudio3][System Check][scale=0.5]{
+//}
+
+JDKをインストール済みで@<img>{install-androidstudio3}が表示された場合、JDKをインストールした場所を指定して「Next」をクリックします。
+
+//image[install-androidstudio4][Choose Components][scale=0.5]{
+//}
+
+インストールするコンポーネントを選択する画面です。本稿執筆時点ではAndroid Studioしか選択肢がありません。
+
+「Next」をクリックします。
+
+//image[install-androidstudio5][Configuration Settings][scale=0.5]{
+//}
+
+インストールする場所を設定します。
+
+ここではなにも変更せず「Next」をクリックします。
+
+//image[install-androidstudio6][Choose Start Menu Folder][scale=0.5]{
+//}
+
+スタートメニューの名前を設定します。
+
+ここではなにも変更せず「Install」をクリックすると、Android Studioのインストール処理を開始します。
+
+//image[install-androidstudio7][Installing][scale=0.5]{
+//}
+
+コンピュータの性能にも依りますが、インストールには5分から10分程度かかります。
+
+//image[install-androidstudio8][Installation Complete][scale=0.5]{
+//}
+
+完了したら「Next」をクリックします。
+
+//image[install-androidstudio9][Completing the Android Studio Setup][scale=0.5]{
+//}
+
+インストールが完了した画面です。「Finish」をクリックするとAndroid Studioが起動します。
 
 ==== Mac OS Xの場合
 
 ダウンロードしたパッケージは、ZIP形式で圧縮されています。
 ダブルクリックで開くなどして、圧縮ファイルを展開します。
 
-//indepimage[move_android_studio][Android Studioをドラッグ＆ドロップで移動][scale=0.4]
+//indepimage[move-androidstudio][Android Studioをドラッグ＆ドロップで移動][scale=0.4]
 
 展開後のAndroid Studioを、ドラッグ＆ドロップで「アプリケーション」に移動します。
 
@@ -140,26 +114,16 @@ Android Studioを実行します。
 
 === Windowsの場合
 
-//indepimage[AndroidStudio-win-launch1][android-studio\bin\studio64.exeを実行][scale=0.25]
+//indepimage[launch-androidstudio1-win][スタートメニューからAndroid Studioのアイコンをクリック][scale=0.45]
 
-Android Studioを展開したフォルダーの「android-studio\bin\studio64.exe」を、ダブルクリックするなどして実行します。
-
-=====[column]32bitと64bit
-
-Android Studioには、32bit対応と64bit対応のバージョンが用意されています。
-
-32bit版はstudio.exe、64bit版はstudio64.exeで実行します。
-
-本文書では64bit版を使用しますが、お使いのPCによって32bit版が必要になる場合があります。
-もし、64bit版のAndroid Studioが実行できない場合は、32bit版を使用してください。
-
-=====[/column]
+スタートメニューを表示して、左下の下矢印をクリックすると表示される「インストール済みの全てのアプリケーション」から
+「Android Studio」のアイコンをクリックして実行します。
 
 === Mac OS Xの場合
 
 アプリケーションにインストールした「Android Studio」をクリックして実行します。
 
-//image[AndroidStudio-mac-launch][アプリケーション][scale=0.35]{
+//image[AndroidStudio-mac-launch][アプリケーション][scale=0.45]{
 //}
 
 //image[AndroidStudio-mac-security0][セキュリティ警告][scale=0.5]{
@@ -167,7 +131,7 @@ Android Studioには、32bit対応と64bit対応のバージョンが用意さ�
 
 @<img>{AndroidStudio-mac-security0}のダイアログが表示されて実行できない場合は、セキュリティの設定が必要です。
 
-//image[AndroidStudio-mac-security1][アプリケーション][scale=0.35]{
+//image[AndroidStudio-mac-security1][アプリケーション][scale=0.45]{
 //}
 
 アプリケーション一覧から「システム設定（@<img>{AndroidStudio-mac-security1}右上）」をクリックします。
@@ -199,25 +163,62 @@ Android Studioには、32bit対応と64bit対応のバージョンが用意さ�
 
 Android Studioを最初に起動するとき、既にあるAndroid Studioの設定を引き継ぐかの確認が表示されます。
 
-//indepimage[AndroidStudio_launch0][Complete Installation][scale=0.5]
+//indepimage[launch-androidstudio2][Complete Installation][scale=0.5]
 
 ここでは「I do not have...」が選択されていることを確認して「OK」をクリックします。
 
-== Android Studioのセットアップ
+== Android SDKのセットアップ
 
-Android Studioを使用する前に、セットアップを行います。
+Android Studioが起動すると、Android @<kw>{SDK, Software Development Kit}のセットアップウィザードが起動します。
+
+//image[setup-androidstudio1][Setup Wizard - SDK Settings][scale=0.40]{
+//}
+
+「Finish」ボタンを押すと、Android SDKのパッケージのダウンロードとインストールを開始します。
+
+=====[column] セットアップウィザードのキャンセル
+
+@<img>{setup-androidstudio1}の通り、セットアップウィザードでは、3GB以上と非常に大きなパッケージをダウンロードします。
+必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
+
+今はセットアップしたくない人、既にAndroid SDKのセットアップを完了している人は、セットアップウィザードをキャンセルできます。
+
+セットアップウィザードは、右上（Mac OS Xの場合は左上）の「閉じる」ボタンを押してキャンセルできます。
+
+//image[setup-androidstudio0][次回もセットアップウィザードを起動するか確認するダイアログ][scale=0.45]{
+//}
+
+セットアップウィザードをキャンセルすると、@<img>{setup-androidstudio0}のダイアログが表示されます。
+ここで"Re-run the setup wizard"を選択してOKを押すと、次回起動時にセットアップウィザードが起動します。
+
+なお、既にAndroid SDKのセットアップを完了している人は、次の「Android SDKの場所を設定する」を参考に、
+Android StudioにAndroid SDKの場所を設定してください。
+
+=====[/column]
+
+//image[setup-androidstudio3][Setup Wizard - Download Components][scale=0.40]{
+//}
+
+Android SDKのパッケージのダウンロードとインストールが完了し「Finish」のボタンを押すと、
+Android Studioのセットアップは完了です。
+
+引き続き「Android Studioではじめる 簡単Androidアプリ開発」のChapter 3 『Android Studioをセッティングしよう』を参照して、
+アプリの開発環境を整えてください。
 
 === Android SDKの場所を設定する
 
-Android Studioを起動したスタートメニューから「Configure」をクリックします。
+「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後にAndroid Studioの
+スタートメニューが表示されます。
 
-//indepimage[setup_sdk_path1][Configure][scale=0.5]
+//indepimage[setup_sdk_path1][Configure][scale=0.4]
 
-//indepimage[setup_sdk_path2][Project Default][scale=0.5]
+「Configure」をクリックします。
+
+//indepimage[setup_sdk_path2][Project Default][scale=0.4]
 
 「Project Default」をクリックします。
 
-//indepimage[setup_sdk_path3][Project Structure][scale=0.5]
+//indepimage[setup_sdk_path3][Project Structure][scale=0.4]
 
 「Project Structure」をクリックします。
 
@@ -229,13 +230,8 @@ Android Studioを起動したスタートメニューから「Configure」をク
 
 =====[column] Android SDKの場所
 
-Windowsの場合、C:\Users\[ユーザー名]\AppData\Local\Android\android-sdkにインストールされています。
+Windowsの場合、Android SDKはC:\Users\[ユーザー名]\AppData\Local\Android\android-sdkにインストールされます。
 
-Mac OS Xの場合、本文書では/Users/keiji_ariyama/android-sdk-macosxにインストールしています。
+Mac OS Xの場合、/Users/[ユーザー名]/android-sdk-macosxにインストールされます。
 
 =====[/column]
-
-以上で、Android Studioのセットアップは完了です。
-
-引き続き「Android Studioではじめる 簡単Androidアプリ開発」のChapter 3 『Android Studioをセッティングしよう』を参照して、
-アプリの開発環境を整えてください。
