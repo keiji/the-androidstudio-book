@@ -1,6 +1,5 @@
 PREDEF:
   - abstract.re
-  - errata.re
   - history.re
 
 CHAPS:
@@ -9,5 +8,6 @@ CHAPS:
 
 APPENDIX:
   - about_book.re
+  - errata.re
 
 POSTDEF:
