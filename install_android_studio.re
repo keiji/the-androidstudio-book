@@ -217,15 +217,15 @@ Android Studioのセットアップは完了です。
 「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後にAndroid Studioの
 スタートメニューが表示されます。
 
-//indepimage[setup_sdk_path1][Configure][scale=0.4]
+//indepimage[setup_sdk_path1][Configure][scale=0.35]
 
 「Configure」をクリックします。
 
-//indepimage[setup_sdk_path2][Project Default][scale=0.4]
+//indepimage[setup_sdk_path2][Project Default][scale=0.35]
 
 「Project Default」をクリックします。
 
-//indepimage[setup_sdk_path3][Project Structure][scale=0.4]
+//indepimage[setup_sdk_path3][Project Structure][scale=0.35]
 
 「Project Structure」をクリックします。
 
