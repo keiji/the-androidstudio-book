@@ -214,7 +214,7 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
 //}
 
 
-==== P.221
+==== P.211
 
 掲載されているバージョンとAPI Levelの対照表で、@<tt>{API Level 20}のプラットフォームバージョンが@<tt>{Android Wear 4.4.1W}と記載がありますが、
 これは@<tt>{Android Wear 4.4W}の誤りです。
