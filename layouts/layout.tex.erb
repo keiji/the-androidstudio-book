@@ -20,7 +20,7 @@
   \MakeFramed {\FrameRestore}}%
  {\endMakeFramed}
 
-\usepackage[top=8zw,bottom=8zw,left=8zw,right=8zw]{geometry}
+\usepackage[top=6zw,bottom=6zw,left=6zw,right=5zw]{geometry}
 %\usepackage[top=5zw,bottom=5zw,left=1zw,right=1zw]{geometry}
 
 
@@ -171,7 +171,14 @@
 }
 \makeatother
 
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+    \hbox{}%
+    \thispagestyle{plainhead}%
+    \newpage%
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
 <%= values["usepackage"] %>
+\makeatother
 
 \usepackage[T1]{fontenc}
 
