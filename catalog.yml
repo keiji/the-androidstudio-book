@@ -1,4 +1,5 @@
 PREDEF:
+  - introduction.re
   - abstract.re
   - history.re
 
