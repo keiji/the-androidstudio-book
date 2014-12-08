@@ -7,14 +7,14 @@
 Android Studioをダウンロードします。
 ブラウザから、次のURLにアクセスします。
 
-@<href>{https://developer.android.com/sdk/installing/studio.html}
+@<href>{http://developer.android.com/sdk/index.html}
 
-//image[download_android_studio1][Android Studio 1.0RCx][scale=0.3]{
+//image[download_android_studio1][Android Studio 1.0][scale=0.3]{
 //}
 
-画面右側の「Download Android Studio...」をクリックします。
+緑色のボタン「Download Android Studio...」をクリックします。
 
-//image[download_android_studio2][Android Studio 1.0RCx][scale=0.3]{
+//image[download_android_studio2][Android Studio 1.0][scale=0.3]{
 //}
 
 Android Studioをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_android_studio2}）。
@@ -23,6 +23,8 @@ Android Studioをダウンロードするには、ライセンスに合意する
 
 画面が切り替わり、Android Studioのパッケージがダウンロードされます。
 
+ダウンロードするパッケージは、Mac版で約230MB、Windows版では約830MBと、非常に大きいため、
+必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
 
 =====[column]ダウンロード後の表示は？
 //image[download_android_studio3][Install Android Studio][scale=0.3]{
@@ -66,15 +68,13 @@ JDKをインストール済みで@<img>{install-androidstudio3}が表示され�
 //image[install-androidstudio4][Choose Components][scale=0.5]{
 //}
 
-インストールするコンポーネントを選択する画面です。本稿執筆時点ではAndroid Studioしか選択肢がありません。
-
+インストールするコンポーネントを選択する画面です。
 「Next」をクリックします。
 
 //image[install-androidstudio5][Configuration Settings][scale=0.5]{
 //}
 
-インストールする場所を設定します。
-
+Android StudioとAndroid SDKをインストールする場所を設定します。
 ここではなにも変更せず「Next」をクリックします。
 
 //image[install-androidstudio6][Choose Start Menu Folder][scale=0.5]{
@@ -87,7 +87,7 @@ JDKをインストール済みで@<img>{install-androidstudio3}が表示され�
 //image[install-androidstudio7][Installing][scale=0.5]{
 //}
 
-コンピュータの性能にも依りますが、インストールには5分から10分程度かかります。
+コンピュータの性能にも依りますが、インストールには10分から20分程度かかります。
 
 //image[install-androidstudio8][Installation Complete][scale=0.5]{
 //}
@@ -101,12 +101,11 @@ JDKをインストール済みで@<img>{install-androidstudio3}が表示され�
 
 ==== Mac OS Xの場合
 
-ダウンロードしたパッケージは、ZIP形式で圧縮されています。
-ダブルクリックで開くなどして、圧縮ファイルを展開します。
+ダウンロードしたファイルは、DMG（ディスクイメージ）形式です。
+ダブルクリックで開くと、インストールを促す画面が表示されるので、表示されているAndroid Studioのアイコンを、
+ドラッグ＆ドロップで「アプリケーション」に移動します。
 
 //indepimage[move-androidstudio][Android Studioをドラッグ＆ドロップで移動][scale=0.4]
-
-展開後のAndroid Studioを、ドラッグ＆ドロップで「アプリケーション」に移動します。
 
 == Android Studioの実行
 
@@ -118,6 +117,14 @@ Android Studioを実行します。
 
 スタートメニューを表示して、左下の下矢印をクリックすると表示される「インストール済みの全てのアプリケーション」から
 「Android Studio」のアイコンをクリックして実行します。
+
+//image[launch-androidstudio2-win][起動時にコンポーネントをダウンロードする][scale=0.45]{
+//}
+
+Android Studioは、初回起動時にAndroidアプリ開発を始めるために必要なパッケージをダウンロードします。
+接続している回線の速度にもよりますが、約10分から20分程度かかります。
+
+この処理では非常に大きなパッケージをダウンロードするため、必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
 
 === Mac OS Xの場合
 
@@ -178,7 +185,7 @@ Android Studioが起動すると、Android @<kw>{SDK, Software Development Kit}�
 
 =====[column] セットアップウィザードのキャンセル
 
-@<img>{setup-androidstudio1}の通り、セットアップウィザードでは、3GB以上と非常に大きなパッケージをダウンロードします。
+@<img>{setup-androidstudio1}にある通り、セットアップウィザードでは、3GB以上と非常に大きなパッケージをダウンロードします。
 必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
 
 今はセットアップしたくない人、既にAndroid SDKのセットアップを完了している人は、セットアップウィザードをキャンセルできます。
