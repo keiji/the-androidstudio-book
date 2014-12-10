@@ -7,28 +7,26 @@
 # ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
 bookname: the-androidstudio-book
 # 書名
-booktitle: 「Android Studioではじめる 簡単Androidアプリ開発」補足資料
+booktitle: 「Android Studioで始める 簡単Androidアプリ開発」 補足資料
 # 著者
 aut: 有山 圭二
-#prt: keiji.io
+ill: イラストレータ
+prt: blog.keiji.io
 prt_url:  https://github.com/keiji/the-androidstudio-book
 #edt: 有山圭二
-date: 1.0
+date: コミックマーケット87
 rights: |
-  本文書は、有山圭二の著作物であり、クリエイティブコモンズ2.1の表示—非営利—改変禁止ライセンスの元で提供しています。
-description: 
+  本書の内容は、有山圭二の著作物です。また、本書の表紙及び裏表紙のイラストは　　　　の著作物です。
+  本書の全部、または一部について、著作者から文書による許諾を得ずに複製することは禁じられています。
+description:
 # 以下はオプション
-# prt: 出版社
 # asn: Associated name
 # ant: Bibliographic antecedent
 # clb: 貢献者
 # edt: 編集者
 # dsr: デザイナ
-# ill: イラストレータ
 # pht: 撮影者
 # trl: 翻訳者
-# date: 刊行日
-# rights: 権利表記
 # description: ブックの説明
 #
 # coverfile: カバーページのbody要素内に挿入する内容を記述したファイル名
@@ -54,5 +52,5 @@ mytoc: true
 colophon: true
 texstyle: reviewmacro
 pubhistory: |
-  1.0 対応版
+  Android Studio 1.0 対応版
 debug: false
