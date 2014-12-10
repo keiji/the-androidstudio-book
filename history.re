@@ -1,4 +1,4 @@
-= 更新履歴
+= Android Studio更新内容
 
 == 1.0 リリース
 
@@ -28,7 +28,7 @@ Android SDKのダウンロードとセットアップが実行できるように
 
 Android Studio 1.0では、起動時に表示されるメニューの各種テキストと、一部メニューの順番が変更されました。
 
-//image[android-studio-start-menu][1.0のスタートメニュー（左）。旧スタートメニュー（右）][scale=0.6]{
+//image[android-studio-start-menu][1.0のスタートメニュー（左）。旧スタートメニュー（右）][scale=0.5]{
 //}
 
 ==== プロジェクト作成時の標準値の変更

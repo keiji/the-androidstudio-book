@@ -118,7 +118,7 @@ Android Studioを実行します。
 スタートメニューを表示して、左下の下矢印をクリックすると表示される「インストール済みの全てのアプリケーション」から
 「Android Studio」のアイコンをクリックして実行します。
 
-//image[launch-androidstudio2-win][起動時にコンポーネントをダウンロードする][scale=0.45]{
+//image[launch-androidstudio2-win][起動時にコンポーネントをダウンロードする][scale=0.3]{
 //}
 
 Android Studioは、初回起動時にAndroidアプリ開発を始めるために必要なパッケージをダウンロードします。
@@ -143,7 +143,7 @@ Android Studioは、初回起動時にAndroidアプリ開発を始めるため�
 
 アプリケーション一覧から「システム設定（@<img>{AndroidStudio-mac-security1}右上）」をクリックします。
 
-//image[AndroidStudio-mac-security2][Security & Privacy][scale=0.5]{
+//image[AndroidStudio-mac-security2][Security & Privacy][scale=0.4]{
 //}
 
 左下の錠前のマーク@<icon>{AndroidStudio-mac-security_lock}をクリックします。
@@ -153,7 +153,7 @@ Android Studioは、初回起動時にAndroidアプリ開発を始めるため�
 
 ユーザーのパスワードを入力して「OK」をクリックします。
 
-//image[AndroidStudio-mac-security4][Security & Privacy][scale=0.5]{
+//image[AndroidStudio-mac-security4][Security & Privacy][scale=0.4]{
 //}
 
 「ダウンロードしたアプリケーションの実行許可」から「Mac App Storeと確認済みの開発元からのアプリケーションを許可」をクリックしてチェックを入れます。
@@ -178,7 +178,7 @@ Android Studioを最初に起動するとき、既にあるAndroid Studioの設�
 
 Android Studioが起動すると、Android @<kw>{SDK, Software Development Kit}のセットアップウィザードが起動します。
 
-//image[setup-androidstudio1][Setup Wizard - SDK Settings][scale=0.40]{
+//image[setup-androidstudio1][Setup Wizard - SDK Settings][scale=0.35]{
 //}
 
 「Finish」ボタンを押すと、Android SDKのパッケージのダウンロードとインストールを開始します。

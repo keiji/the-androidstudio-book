@@ -11,14 +11,14 @@ JDKのインストール用パッケージをダウンロードします。
 
 @<href>{http://www.oracle.com/technetwork/java/javase/downloads/index.html}
 
-//image[JDK_download1][Java SE Downloads][scale=0.3]{
+//image[JDK_download1][Java SE Downloads][scale=0.25]{
 //}
 
 Javaのダウンロードページ（@<img>{JDK_download1}）が表示されます。
 
 右側にあるJDKのボタンをクリックすると、JDKのダウンロード画面が表示されます。
 
-//image[JDK_download2][Java SE Development Kit 8 Downloads][scale=0.3]{
+//image[JDK_download2][Java SE Development Kit 8 Downloads][scale=0.25]{
 //}
 
 JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。
@@ -108,17 +108,17 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 
 左側のメニューからシステムの詳細設定をクリックします。
 
-//image[JDK_add_env4][][scale=0.5]{
+//image[JDK_add_env4][][scale=0.4]{
 //}
 
 「詳細設定」タブを選択して、「環境変数」をクリックします。
 
-//image[JDK_add_env5][][scale=0.5]{
+//image[JDK_add_env5][][scale=0.4]{
 //}
 
 上部のユーザー環境設定の「新規」をクリックします。
 
-//image[JDK_add_env6][][scale=0.5]{
+//image[JDK_add_env6][][scale=0.4]{
 //}
 
 変数名にJAVA_HOME。
@@ -149,22 +149,22 @@ Java for OS Xのインストール用パッケージをダウンロードしま�
 Java for OS Xをインストールします。
 インストールパッケージを、ダブルクリックするなどして開きます。
 
-//image[install_java_mac1][][scale=0.5]{
+//image[install_java_mac1][][scale=0.3]{
 //}
 
 JavaForOSX.pkgをダブルクリックして実行します。
 
-//image[install_java_mac2][][scale=0.5]{
+//image[install_java_mac2][][scale=0.4]{
 //}
 
 「続ける」をクリックします。
 
-//image[install_java_mac3][][scale=0.5]{
+//image[install_java_mac3][][scale=0.4]{
 //}
 
 「続ける」をクリックします。
 
-//image[install_java_mac4][][scale=0.5]{
+//image[install_java_mac4][][scale=0.4]{
 //}
 
 Java for OS Xをインストールするには、ソフトウェア使用許諾書の条件に同意する必要があります。
@@ -173,17 +173,17 @@ Java for OS Xをインストールするには、ソフトウェア使用許諾�
 
 同意についてもう一度確認が表示される場合は、あらためて「同意する」をクリックします。
 
-//image[install_java_mac5][][scale=0.5]{
+//image[install_java_mac5][][scale=0.4]{
 //}
 
 「インストール」をクリックします。
 
-//image[install_java_mac6][][scale=0.5]{
+//image[install_java_mac6][][scale=0.4]{
 //}
 
 パスワードを入力して「OK」をクリックすると、インストール処理を開始します。
 
-//image[install_java_mac7][][scale=0.5]{
+//image[install_java_mac7][][scale=0.4]{
 //}
 
 以上で、Java for OS Xのセットアップは完了です。
