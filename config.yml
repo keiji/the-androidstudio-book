@@ -10,13 +10,13 @@ bookname: the-androidstudio-book
 booktitle: 「Android Studioで始める 簡単Androidアプリ開発」 補足資料
 # 著者
 aut: 有山 圭二
-ill: イラストレータ
+ill: 根雪れい
 prt: blog.keiji.io
 prt_url:  https://github.com/keiji/the-androidstudio-book
 #edt: 有山圭二
 date: コミックマーケット87
 rights: |
-  本書の内容は、有山圭二の著作物です。また、本書の表紙及び裏表紙のイラストは　　　　の著作物です。
+  本書の内容は、有山圭二の著作物です。また、本書の表紙及び裏表紙のイラストは根雪れいの著作物です。
   本書の全部、または一部について、著作者から文書による許諾を得ずに複製することは禁じられています。
 description:
 # 以下はオプション
