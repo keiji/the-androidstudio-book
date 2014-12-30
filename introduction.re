@@ -6,14 +6,14 @@ Android Studioは、米Google社が開発しているスマートフォン向け
 
 //indepimage[android_studio_splash][][scale=0.4]
 
-元々、Androidの開発環境として、@<kw>{ADT, Android Development Tools}と呼ばれるソフトウェアがありました。　
+元々、Androidの開発環境として、@<kw>{ADT, Android Developer Tools}と呼ばれるソフトウェアがありました。　
 
 //indepimage[adt_splash][][scale=0.3]
 
 ADTは、Eclipseベースの統合開発環境で、2007年11月にAndroidが発表になってから2013年の4月までのおよそ５年半、
 Google社が提供する唯一のAndroidアプリ開発環境でした。
 
-ところが、2013年4月、Google社は突然、新しい開発環境として「Android Studio」を発表します。
+ところが、2013年5月、Google社は突然、新しい開発環境として「Android Studio」を発表します。
 
 表向きは「ADTと平行して、新しい選択肢としてのAndroid Studio」という位置づけでしたが、
 多くの開発者は「実質的なADTの廃棄宣言」と受け取りました。
@@ -105,7 +105,7 @@ Android Studioの発表直後のバージョンは「0.1.0 I/O Preview」。そ�
 
 //indepimage[fb20141111][そして書籍の発売日当日、Android Studio 1.0 RC1がCanaryに登場して、筆者は震え上がることになる][scale=0.3]
 
-12月10日にはAndroid Studio 1.0がリリースされ、ADTが表舞台から去りました。
+12月8日（米国西海岸標準時）にはAndroid Studio 1.0がリリースされ、ADTが表舞台から去りました。
 Android Studioは、Android公式の開発環境として、今後ますます重要になってくるでしょう。
 
 本書は、前述の補足資料をAndroid 1.0に対応して、コミックマーケット 87向けに特別版として印刷したものです。
