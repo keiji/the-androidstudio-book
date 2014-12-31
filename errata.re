@@ -8,6 +8,21 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
 
 === Web APIで情報を取得する天気予報アプリを作ろう
 
+==== P.77
+
+リスト6-2の中段付近、BufferedReaderをインスタンス化している処理の最後尾に必要な閉じ括弧")"とセミコロン";"が抜け落ちています。
+
+//list[list_6_2wrong][誤 リスト6-2]{
+    BufferedReader br = new BufferedReader(
+        new InputStreamReader(response.getEntity().getContent())
+//}
+
+//list[list_6_2correct][正 リスト6-2]{
+    BufferedReader br = new BufferedReader(
+        new InputStreamReader(response.getEntity().getContent()));
+//}
+
+
 ==== P.78
 
 『取得した天気情報を表示する』で、リスト6-3として表記されているファイル名に誤りがあります。
