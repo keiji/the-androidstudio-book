@@ -19,10 +19,15 @@ Android SDKのダウンロードとセットアップが実行できるように
 
 これは、0.8.14 BETAから、それまでAndroid Studioに含まれていたAndroid SDKがバンドルされなくなった変更を補填するものです。
 
-また、Windows版についてはAndroid SDKが同梱されたインストーラーが標準となり、初回起動時に必要なパッケージのみをダウンロードするように変更されています。
-
 //image[setup-androidstudio][Android StudioのSDK Setup][scale=0.35]{
 //}
+
+また、システムにJDK 7がインストールされていない場合、セットアップ時にインストールを促すように変更されています。
+
+なお、Mac OS Xでは、JDK 7と平行して、これまでのJava for OS X(JDK 6相当)もインストールする必要があります。
+複数バージョンのJDKを必要とする状態は、次バージョン（Android Studio 1.1）では解消する予定です@<fn>{jdk6and7}。
+
+//footnote[jdk6and7][Android Studio doesn't start, unable to find valid JVM： @<href>{https://code.google.com/p/android/issues/detail?id=82378}]
 
 ==== スタートメニューのテキスト変更
 

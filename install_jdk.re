@@ -6,23 +6,21 @@ Android Studioをインストールする前に、@<kw>{JDK, Java Development Ki
 
 === ダウンロード
 
-JDKのインストール用パッケージをダウンロードします。
+JDK 7のインストール用パッケージをダウンロードします。
 ブラウザから、次のURLにアクセスします。
 
-@<href>{http://www.oracle.com/technetwork/java/javase/downloads/index.html}
+@<href>{http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html}
 
-//image[JDK_download1][Java SE Downloads][scale=0.3]{
+//image[win-jdk7-download1][Java SE Development Kit 7 Downloads][scale=0.45]{
 //}
 
-Javaのダウンロードページ（@<img>{JDK_download1}）が表示されます。
-
-右側にあるJDKのボタンをクリックすると、JDKのダウンロード画面が表示されます。
-
-//image[JDK_download2][Java SE Development Kit 8 Downloads][scale=0.3]{
-//}
+Javaのダウンロードページ（@<img>{win-jdk7-download1}）が表示されます。
 
 JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。
-"Oracle Binary Code License Agreement for Java SE"を読み、同意する場合は"Accept License Agreement"の左側の丸をクリックします。
+"Oracle Binary Code License Agreement for Java SE"を読み、同意する場合は"Accept License Agreement"の左側の丸をクリックします（@<img>{win-jdk7-download2}）。
+
+//image[win-jdk7-download2][Java SE Development Kit 7 Downloads][scale=0.45]{
+//}
 
 利用許諾に同意をしたら、右側のリンクをクリックして、お使いのプラットフォームにあったJDKを選択すると、インストールパッケージがダウンロードされます。
 
@@ -36,12 +34,12 @@ JDKには、32bit対応と64bit対応のバージョンが用意されていま�
 =====[/column]
 
 =====[column]ダウンロード後の表示は？
-//image[JDK_download3][Internet Explorerのダウンロード][scale=0.3]{
+//image[win-jdk7-download3][Internet Explorerのダウンロード][scale=0.45]{
 //}
 
 ダウンロードの手続きは、使用しているブラウザによって異なります。
 
-例えば、Internet Explorerの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{JDK_download3}下部）。
+例えば、Internet Explorerの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{win-jdk7-download3}下部）。
 
 なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、JDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。
 
@@ -53,19 +51,19 @@ JDKをインストールします。
 
 ダウンロードしたインストールパッケージをダブルクリックするなどして実行します。
 
-//image[JDK_install0][起動確認][scale=0.5]{
+//image[win-jdk7-install1][起動確認][scale=0.75]{
 //}
 
-インストーラーの起動確認が表示されるので「はい(Y)」をクリックします。
+インストーラーの起動確認が表示されるので、発行元が"Oracle America, Inc."になっていることを確認してから「はい(Y)」をクリックします。
 
-//image[JDK_install1][JDKセットアップ][scale=0.5]{
+//image[win-jdk7-install2][JDKセットアップ][scale=0.6]{
 //}
 
 JDKのインストーラーが起動します。
 
 「次(N) >」をクリックします。
 
-//image[JDK_install2][JDKセットアップ][scale=0.5]{
+//image[win-jdk7-install3-4][JDKセットアップ][scale=0.45]{
 //}
 
 インストールするパッケージの選択と、インストール先のディレクトリを設定します。
@@ -74,16 +72,16 @@ JDKのインストーラーが起動します。
 
 インストール先のディレクトリは、あとで環境変数を設定するときに必要になるので、必ずメモをしておいてください。
 
-「次(N) >」をクリックすると、JDKのインストールがはじまります。
-
-//image[JDK_install4][JDKセットアップ][scale=0.5]{
-//}
+「次(N) >」をクリックすると、JDKのインストールがはじまります（@<img>{win-jdk7-install5}）。
 
 JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Java Runtime Environment}をインストールします。
 
+//image[win-jdk7-install5][JREセットアップ][scale=0.6]{
+//}
+
 「次 >」をクリックするとインストールがはじまります。
 
-//image[JDK_install5][JDKセットアップ][scale=0.5]{
+//image[win-jdk7-install6-7][JREセットアップ][scale=0.45]{
 //}
 
 「閉じる(C)」をクリックして、インストーラーを終了します。
@@ -93,38 +91,33 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 引き続き、環境変数JAVA_HOMEを設定します。
 これはAndroid Studioに、どこにJDKをインストールしたのかを伝える作業です。
 
-//image[JDK_add_env1][][scale=0.35]{
+//image[win-add-env0][][scale=0.5]{
 //}
 
-デスクトップ左下のスタートメニューで右クリックをして表示されるメニューから「コントロールパネル」を選択します。
+デスクトップ左下のスタートメニューで右クリックをして表示されるメニューから「システム」を選択します。
 
-//image[JDK_add_env2][][scale=0.3]{
+//image[win-add-env1][][scale=0.35]{
 //}
 
-「システム」をクリックします。
+左側のメニューから「システムの詳細設定」をクリックします。
 
-//image[JDK_add_env3][][scale=0.3]{
+//image[win-add-env2][][scale=0.5]{
 //}
 
-左側のメニューからシステムの詳細設定をクリックします。
+「詳細設定」タブの「環境変数」をクリックします。
 
-//image[JDK_add_env4][][scale=0.5]{
-//}
-
-「詳細設定」タブを選択して、「環境変数」をクリックします。
-
-//image[JDK_add_env5][][scale=0.5]{
+//image[win-add-env3][][scale=0.5]{
 //}
 
 上部のユーザー環境設定の「新規」をクリックします。
 
-//image[JDK_add_env6][][scale=0.5]{
+//image[win-add-env4][][scale=0.75]{
 //}
 
 変数名にJAVA_HOME。
 変数値に、JDKをインストールしたディレクトリ@<fn>{jdk_path}を設定します。
 
-//footnote[jdk_path][JDKは、標準でC:\Program Files\Java\jdk1.8.0_25\にインストールされます]
+//footnote[jdk_path][JDKは、標準でC:\Program Files\Java\jdk1.7.0_71\にインストールされます]
 
 入力を終えたら「OK」をクリックし、これまでのウィンドウを全て閉じていきます。
 
@@ -132,39 +125,43 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 
 == Mac OS Xの場合
 
-=== ダウンロード
+Mac OS Xの場合、"JDK"に加えて"Java for OS X"の両方をインストールする必要があります@<fn>{jdk_java_for_os_x}。
+
+//footnote[jdk_java_for_os_x][Android Studio 1.1では、JDKのみのインストールになるとアナウンスされています。 @<href>{https://code.google.com/p/android/issues/detail?id=82378}]
+
+=== Java for OS Xのダウンロード
 
 Java for OS Xのインストール用パッケージをダウンロードします。
 ブラウザから、次のURLにアクセスします。
 
 @<href>{http://support.apple.com/kb/DL1572}
 
-//image[download_java_mac][][scale=0.2]{
+//image[download-java-mac][][scale=0.2]{
 //}
 
 ダウンロードのボタンをクリックすると、インストールパッケージがダウンロードされます。
 
-=== インストール
+=== Java for OS Xのインストール
 
 Java for OS Xをインストールします。
 インストールパッケージを、ダブルクリックするなどして開きます。
 
-//image[install_java_mac1][][scale=0.5]{
+//image[mac-jdk6-install1][][scale=0.45]{
 //}
 
 JavaForOSX.pkgをダブルクリックして実行します。
 
-//image[install_java_mac2][][scale=0.5]{
+//image[mac-jdk6-install2][][scale=0.5]{
 //}
 
 「続ける」をクリックします。
 
-//image[install_java_mac3][][scale=0.5]{
+//image[mac-jdk6-install3][][scale=0.5]{
 //}
 
 「続ける」をクリックします。
 
-//image[install_java_mac4][][scale=0.5]{
+//image[mac-jdk6-install4-5][][scale=0.3]{
 //}
 
 Java for OS Xをインストールするには、ソフトウェア使用許諾書の条件に同意する必要があります。
@@ -173,17 +170,70 @@ Java for OS Xをインストールするには、ソフトウェア使用許諾�
 
 同意についてもう一度確認が表示される場合は、あらためて「同意する」をクリックします。
 
-//image[install_java_mac5][][scale=0.5]{
+//image[mac-jdk6-install6][][scale=0.5]{
 //}
 
 「インストール」をクリックします。
 
-//image[install_java_mac6][][scale=0.5]{
+//image[mac-jdk6-install7][][scale=0.5]{
 //}
 
 パスワードを入力して「OK」をクリックすると、インストール処理を開始します。
 
-//image[install_java_mac7][][scale=0.5]{
+//image[mac-jdk6-install8-9][][scale=0.3]{
 //}
 
-以上で、Java for OS Xのセットアップは完了です。
+以上で、Java for OS Xのセットアップは完了です。引き続き、JDKのインストールを行います。
+
+=== JDKのダウンロード
+
+JDK 7のインストール用パッケージをダウンロードします。
+ブラウザから、次のURLにアクセスします。
+
+@<href>{http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html}
+
+//image[mac-jdk7-download1][Java SE Development Kit 7 Downloads][scale=0.3]{
+//}
+
+Javaのダウンロードページ（@<img>{mac-jdk7-download1}）が表示されます。
+
+JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。
+"Oracle Binary Code License Agreement for Java SE"を読み、同意する場合は"Accept License Agreement"の左側の丸をクリックします。
+
+//image[mac-jdk7-download2][Java SE Development Kit 7 Downloads][scale=0.3]{
+//}
+
+利用許諾に同意をしたら、右側のリンクをクリックして、"Mac OS X x64"の右側のリンクを選択すると、インストールパッケージがダウンロードされます。
+
+=== JDKのインストール
+
+JDKをインストールします。
+
+ダウンロードしたインストールパッケージをダブルクリックするなどして実行すると、JDKのインストーラーが表示されます。
+
+//image[mac-jdk7-install1][起動確認][scale=0.5]{
+//}
+
+表示された"JDK 7 Update 71.pkg"をダブルクリックするなどして実行すると、インストーラーが起動します。
+
+//image[mac-jdk7-install2][はじめに][scale=0.45]{
+//}
+
+「続ける」をクリックします。
+
+//image[mac-jdk7-install3][JDKセットアップ][scale=0.45]{
+//}
+
+「インストール」をクリックします。
+
+//image[mac-jdk7-install4][JDKセットアップ][scale=0.45]{
+//}
+
+パスワードを入力して「ソフトウェアをインストール」をクリックすると、インストール処理を開始します。
+
+//image[mac-jdk7-install5-6][JDKセットアップ][scale=0.3]{
+//}
+
+インストールが終わると、「閉じる」をクリックしてインストーラーを終了します。
+
+以上で、JDKのセットアップは完了です。
