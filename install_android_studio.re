@@ -188,23 +188,34 @@ Android Studioを最初に起動するとき、既にあるAndroid Studioの設�
 
 == Android SDKのセットアップ
 
+=== Windowsの場合
+
+//image[setup-androidstudio1-2][起動時にコンポーネントをダウンロードする][scale=0.25]{
+//}
+
+Android Studioは、初回起動時にAndroidアプリ開発を始めるために必要なパッケージをダウンロードします。
+接続している回線の速度にもよりますが、約10分から20分程度かかります。
+
+この処理では非常に大きなパッケージをダウンロードするため、必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
+
+
 === Mac OS Xの場合
 
 Android Studioは最初に起動すると、セットアップウィザードを表示します。
 
-//image[mac-androidstudio-setup2][Welcome][scale=0.35]{
+//image[mac-androidstudio-setup2][Welcome][scale=0.3]{
 //}
 
 「Next」ボタンを押すと、セットアップを開始します。
 
 なお、@<kw>{JDK, Java Development Kit}がインストールされていない場合、@<img>{mac-androidstudio-install3-no-jdk}の画面が表示されます。
 
-//image[mac-androidstudio-install3-no-jdk][Java Settings][scale=0.35]{
+//image[mac-androidstudio-install3-no-jdk][Java Settings][scale=0.3]{
 //}
 
 JDKをインストール済みで@<img>{mac-androidstudio-install3-no-jdk}が表示された場合、JDKをインストールした場所を指定して「Next」をクリックします。
 
-//image[mac-androidstudio-setup3][セットアップタイプの選択][scale=0.35]{
+//image[mac-androidstudio-setup3][セットアップタイプの選択][scale=0.3]{
 //}
 
 セットアップのタイプを選択します。
@@ -230,7 +241,7 @@ Android StudioにAndroid SDKの場所を設定してください。
 
 =====[/column]
 
-//image[mac-androidstudio-setup4][License Agreement][scale=0.35]{
+//image[mac-androidstudio-setup4][License Agreement][scale=0.3]{
 //}
 
 セットアップを進めるには、インストールする全てのパッケージについて、ライセンスに合意する必要があります。
@@ -242,7 +253,7 @@ Android StudioにAndroid SDKの場所を設定してください。
 
 全てのライセンスに合意して「Finish」のボタンを押すと、セットアップウィザードは、パッケージのダウンロードとインストールを開始します。
 
-//image[mac-androidstudio-setup5][Download Components][scale=0.35]{
+//image[mac-androidstudio-setup5][Download Components][scale=0.3]{
 //}
 
 //image[mac-androidstudio-setup6][パスワードの入力][scale=0.5]{
@@ -250,7 +261,7 @@ Android StudioにAndroid SDKの場所を設定してください。
 
 インストールの途中でパスワードが求められる場合があります。パスワードを入力して「OK」を押します。
 
-//image[mac-androidstudio-setup7][Download Components][scale=0.35]{
+//image[mac-androidstudio-setup7][Download Components][scale=0.3]{
 //}
 
 ダウンロードとインストールを完了後、「Finish」を押すと、Android Studioが起動します。
