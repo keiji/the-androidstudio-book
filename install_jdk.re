@@ -11,7 +11,7 @@ JDK 7のインストール用パッケージをダウンロードします。
 
 @<href>{http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html}
 
-//image[win-jdk7-download1][Java SE Development Kit 7 Downloads][scale=0.45]{
+//image[win-jdk7-download1][Java SE Development Kit 7 Downloads][scale=0.35]{
 //}
 
 Javaのダウンロードページ（@<img>{win-jdk7-download1}）が表示されます。
@@ -19,7 +19,7 @@ Javaのダウンロードページ（@<img>{win-jdk7-download1}）が表示さ�
 JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。
 "Oracle Binary Code License Agreement for Java SE"を読み、同意する場合は"Accept License Agreement"の左側の丸をクリックします（@<img>{win-jdk7-download2}）。
 
-//image[win-jdk7-download2][Java SE Development Kit 7 Downloads][scale=0.45]{
+//image[win-jdk7-download2][Java SE Development Kit 7 Downloads][scale=0.35]{
 //}
 
 利用許諾に同意をしたら、右側のリンクをクリックして、お使いのプラットフォームにあったJDKを選択すると、インストールパッケージがダウンロードされます。
@@ -51,12 +51,12 @@ JDKをインストールします。
 
 ダウンロードしたインストールパッケージをダブルクリックするなどして実行します。
 
-//image[win-jdk7-install1][起動確認][scale=0.75]{
+//image[win-jdk7-install1][起動確認][scale=0.5]{
 //}
 
 インストーラーの起動確認が表示されるので、発行元が"Oracle America, Inc."になっていることを確認してから「はい(Y)」をクリックします。
 
-//image[win-jdk7-install2][JDKセットアップ][scale=0.6]{
+//image[win-jdk7-install2][JDKセットアップ][scale=0.5]{
 //}
 
 JDKのインストーラーが起動します。
@@ -111,13 +111,13 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 
 上部のユーザー環境設定の「新規」をクリックします。
 
-//image[win-add-env4][][scale=0.75]{
+//image[win-add-env4][][scale=0.5]{
 //}
 
 変数名にJAVA_HOME。
 変数値に、JDKをインストールしたディレクトリ@<fn>{jdk_path}を設定します。
 
-//footnote[jdk_path][JDKは、標準でC:\Program Files\Java\jdk1.7.0_71\にインストールされます]
+//footnote[jdk_path][JDKは、標準でC:\Program Files\Java\jdk1.7.0_75\にインストールされます]
 
 入力を終えたら「OK」をクリックし、これまでのウィンドウを全て閉じていきます。
 
@@ -214,7 +214,7 @@ JDKをインストールします。
 //image[mac-jdk7-install1][起動確認][scale=0.5]{
 //}
 
-表示された"JDK 7 Update 71.pkg"をダブルクリックするなどして実行すると、インストーラーが起動します。
+表示された"JDK 7 Update 75.pkg"をダブルクリックするなどして実行すると、インストーラーが起動します。
 
 //image[mac-jdk7-install2][はじめに][scale=0.45]{
 //}
