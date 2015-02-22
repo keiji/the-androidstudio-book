@@ -125,66 +125,6 @@ JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Ja
 
 == Mac OS Xの場合
 
-Mac OS Xの場合、"JDK"に加えて"Java for OS X"の両方をインストールする必要があります@<fn>{jdk_java_for_os_x}。
-
-//footnote[jdk_java_for_os_x][Android Studio 1.1では、JDKのみのインストールになるとアナウンスされています。 @<href>{https://code.google.com/p/android/issues/detail?id=82378}]
-
-=== Java for OS Xのダウンロード
-
-Java for OS Xのインストール用パッケージをダウンロードします。
-ブラウザから、次のURLにアクセスします。
-
-@<href>{http://support.apple.com/kb/DL1572}
-
-//image[download-java-mac][][scale=0.2]{
-//}
-
-ダウンロードのボタンをクリックすると、インストールパッケージがダウンロードされます。
-
-=== Java for OS Xのインストール
-
-Java for OS Xをインストールします。
-インストールパッケージを、ダブルクリックするなどして開きます。
-
-//image[mac-jdk6-install1][][scale=0.45]{
-//}
-
-JavaForOSX.pkgをダブルクリックして実行します。
-
-//image[mac-jdk6-install2][][scale=0.5]{
-//}
-
-「続ける」をクリックします。
-
-//image[mac-jdk6-install3][][scale=0.5]{
-//}
-
-「続ける」をクリックします。
-
-//image[mac-jdk6-install4-5][][scale=0.3]{
-//}
-
-Java for OS Xをインストールするには、ソフトウェア使用許諾書の条件に同意する必要があります。
-
-表示される条件を読み、「続ける」をクリックします。
-
-同意についてもう一度確認が表示される場合は、あらためて「同意する」をクリックします。
-
-//image[mac-jdk6-install6][][scale=0.5]{
-//}
-
-「インストール」をクリックします。
-
-//image[mac-jdk6-install7][][scale=0.5]{
-//}
-
-パスワードを入力して「OK」をクリックすると、インストール処理を開始します。
-
-//image[mac-jdk6-install8-9][][scale=0.3]{
-//}
-
-以上で、Java for OS Xのセットアップは完了です。引き続き、JDKのインストールを行います。
-
 === JDKのダウンロード
 
 JDK 7のインストール用パッケージをダウンロードします。

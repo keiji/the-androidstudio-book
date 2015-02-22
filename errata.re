@@ -6,6 +6,17 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
 
 詳細は@<chapref>{install_jdk}および@<chapref>{install_android_studio}を参照してください。
 
+== 新しいプロジェクトを作成しよう
+
+本書で、新規プロジェクト作成時に指定するActivity Name、Layout Name、Titleの初期値にとして、MyActivity/activity_my/MyActivityと、
+名前に@<tt>{My}が付与されて記載されていますが、Android Studio 0.8.14からは@<tt>{Main}が付与されるように変更になりました。
+
+以下に示す二つの方法から、一つを選んで読み進めてください。
+
+ * 本書で記載されているMyActivity.javaなど@<tt>{My}が付与されている部分を、全て@<tt>{Main}に読み替える（推奨）
+ * 新規プロジェクト作成時に、Activity Nameを@<tt>{MyActivity}。Layout Nameを@<tt>{activity_my}に変更する
+
+
 === Web APIで情報を取得する天気予報アプリを作ろう
 
 ==== P.77
@@ -160,6 +171,20 @@ import java.io.IOException;
 //}
 
 
+==== P.137
+
+Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
+
+drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap7}）。
+
+//image[add_resource_dir_chap7][New -> Directory][scale=0.25]{
+//}
+
+作成するディレクトリ名に、"drawable-xxhdpi"と入力して[OK]をクリックします。
+
+//image[create_xxhdpi_dir_chap7][New Directory][scale=0.5]{
+//}
+
 ==== P.150
 
 リスト7-12で@<tt>{jumpDroid}メソッドがfloat型の引数@<tt>{power}の記載がありますが、これは誤りです。
@@ -170,6 +195,19 @@ import java.io.IOException;
 正	@<tt>{private void jumpDroid() { }
 //}
 
+==== P.179
+
+Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
+
+drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap8}）。
+
+//image[add_resource_dir_chap8][New -> Directory][scale=0.25]{
+//}
+
+作成するディレクトリ名に、"drawable-xxhdpi"と入力して[OK]をクリックします。
+
+//image[create_xxhdpi_dir_chap8][New Directory][scale=0.5]{
+//}
 
 ==== P.186
 
@@ -237,4 +275,18 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
 //table[api_version][]{
 誤	@<tt>{Android Wear 4.4.1W}
 正	@<tt>{Android Wear 4.4W}
+//}
+
+==== P.217
+
+Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
+
+drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap9}）。
+
+//image[add_resource_dir_chap9][New -> Directory][scale=0.25]{
+//}
+
+作成するディレクトリ名に、"drawable-xxhdpi"と入力して[OK]をクリックします。
+
+//image[create_xxhdpi_dir_chap9][New Directory][scale=0.5]{
 //}

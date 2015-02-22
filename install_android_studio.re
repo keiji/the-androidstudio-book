@@ -23,7 +23,7 @@ Android Studioをダウンロードするには、ライセンスに合意する
 
 画面が切り替わり、Android Studioのパッケージがダウンロードされます。
 
-ダウンロードするパッケージは、Mac版で約250MB、Windows版では約850MBと、非常に大きいため、
+ダウンロードするパッケージは、Mac版で約260MB、Windows版では約840MBと、非常に大きいため、
 必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
 
 =====[column]ダウンロード後の表示は？
@@ -43,7 +43,9 @@ Android Studioをダウンロードするには、ライセンスに合意する
 
 ==== Windowsの場合
 
-ダウンロードしたパッケージは、実行可能な形式です。ダブルクリックで開くなどして実行すると、インストーラーが起動します。
+ダウンロードしたパッケージは、実行可能な形式です@<fn>{win-filename}。ダブルクリックで開くなどして実行すると、インストーラーが起動します。
+
+//footnote[win-filename][ダウンロードする時期によってファイル名は異なる場合があります]
 
 //image[win-androidstudio-install0][インストーラーの起動][scale=0.35]{
 //}
@@ -121,9 +123,11 @@ Intel HAXMを利用する場合に割り当てるメモリの量を設定しま�
 
 ==== Mac OS Xの場合
 
-ダウンロードしたファイルは、DMG（ディスクイメージ）形式です。
+ダウンロードしたファイルは、DMG（ディスクイメージ）形式です@<fn>{mac-filename}。
 ダブルクリックで開くと、インストールを促す画面が表示されるので、表示されているAndroid Studioのアイコンを、
 ドラッグ＆ドロップで「アプリケーション」に移動します。
+
+//footnote[mac-filename][ダウンロードする時期によってファイル名は異なる場合があります]
 
 //indepimage[move-androidstudio][Android Studioをドラッグ＆ドロップで移動][scale=0.4]
 
@@ -274,15 +278,15 @@ Android StudioにAndroid SDKの場所を設定してください。
 「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後にAndroid Studioの
 スタートメニューが表示されます。
 
-//indepimage[setup_sdk_path1][Configure][scale=0.4]
+//indepimage[setup_sdk_path1][Configure][scale=0.35]
 
 「Configure」をクリックします。
 
-//indepimage[setup_sdk_path2][Project Default][scale=0.4]
+//indepimage[setup_sdk_path2][Project Default][scale=0.35]
 
 「Project Default」をクリックします。
 
-//indepimage[setup_sdk_path3][Project Structure][scale=0.4]
+//indepimage[setup_sdk_path3][Project Structure][scale=0.35]
 
 「Project Structure」をクリックします。
 

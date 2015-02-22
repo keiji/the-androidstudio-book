@@ -1,5 +1,24 @@
 = 更新履歴
 
+== 1.1 リリース
+
+=== 変更の概要
+
+==== アイコン画像のmipmapへの移動
+
+Android Studio 1.1では、新規プロジェクト作成時のアイコン画像(ic_launcher.png)が、これまでのdrawableから、
+mipmap@<fn>{about_mipmap}ディレクトリに配置されるようになりました。
+
+//image[android-studio-change-drawable-to-mipmap][アイコン画像がmipmap以下に追加されている][scale=0.35]{
+//}
+
+また、プロジェクトの新規作成時に設定される標準のアイコン画像も変更になっています。
+
+//image[ic_launcher][新しいアイコン画像][scale=0.5]{
+//}
+
+//footnote[about_mipmap][3Dグラフィックスのテクスチャ用途に最適化された画像群。@<href>{http://ja.wikipedia.org/wiki/%E3%83%9F%E3%83%83%E3%83%97%E3%83%9E%E3%83%83%E3%83%97}]
+
 == 1.0 リリース
 
 === 変更の概要
