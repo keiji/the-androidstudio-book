@@ -290,3 +290,18 @@ drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを�
 
 //image[create_xxhdpi_dir_chap9][New Directory][scale=0.5]{
 //}
+
+
+==== P.255
+
+リスト9-27に、@<tt>{LabyrinthView}クラスに変数@<tt>{seed}と、@<tt>{setSeed}メソッドを追加する記述が抜け落ちています。
+
+@<tt>{LabyrinthView.java}を開いて、@<tt>{LabyrinthView}クラスに@<list>{list_9_27pre}の記述を追加します。
+
+//list[list_9_27pre][LabyrinthViewに変数とsetSeedメソッドを追加]{
++    private int seed;
+
++    public void setSeed(int seed) {
++        this.seed = seed;
++    }
+//}
