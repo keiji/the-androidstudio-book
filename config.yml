@@ -39,6 +39,10 @@ description:
 urnid: http://gihyo.jp/book/2014/978-4-7741-6998-9
 # CSSファイル (yamlファイルおよびRe:VIEWファイルを置いたディレクトリにあること
 stylesheet: style.css
+
+# 目次を作成するか。省略した場合はnull（作成しない）
+# toc: true
+
 # 目次として抽出するレベル
 toclevel: 2
 # セクション番号を表示するレベル
