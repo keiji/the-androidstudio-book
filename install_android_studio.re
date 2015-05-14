@@ -9,12 +9,12 @@ Android Studioをダウンロードします。
 
 @<href>{http://developer.android.com/sdk/index.html}
 
-//image[download_android_studio1][Android Studio 1.0.1][scale=0.3]{
+//image[download_android_studio1][Android Studio 1.2][scale=0.3]{
 //}
 
 緑色のボタン「Download Android Studio...」をクリックします。
 
-//image[download_android_studio2][Android Studio 1.0.1][scale=0.3]{
+//image[download_android_studio2][Android Studio 1.2][scale=0.3]{
 //}
 
 Android Studioをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_android_studio2}）。
@@ -193,6 +193,11 @@ Android Studioを最初に起動するとき、既にあるAndroid Studioの設�
 == Android SDKのセットアップ
 
 === Windowsの場合
+
+//image[setup-androidstudio0-5][テーマの選択][scale=0.4]{
+//}
+
+Android Studioのテーマ（見た目）を選択します。標準はIntelliJです。必要に応じて変更してください。
 
 //image[setup-androidstudio1-2][起動時にコンポーネントをダウンロードする][scale=0.25]{
 //}
