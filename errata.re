@@ -33,6 +33,14 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
         new InputStreamReader(response.getEntity().getContent()));
 //}
 
+===== 注意
+
+リスト6-2では、AndroidHttpClientクラスを使ってネットワークへアクセスしていますが、
+このクラスはAndroid 5.1(API Level 22)から、deprecated（非推奨）に指定されています@<fn>{about_androidhttpclient}。
+
+本稿更新の時点で動作はしますが、留意が必要です。
+
+//footnote[about_androidhttpclient][AndroidHttpClientの代わりに、HttpUrlConnectionを使用してください。]
 
 ==== P.78
 
