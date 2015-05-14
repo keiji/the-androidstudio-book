@@ -203,6 +203,15 @@ drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを�
 正	@<tt>{private void jumpDroid() { }
 //}
 
+==== P.159
+
+『ゲームオーバーになったことをコールバックする』で、ファイル名に誤りがあります。
+
+//table[list_7_21][]{
+誤	@<tt>{GameOver.javaを開いて}
+正	@<tt>{GameView.javaを開いて}
+//}
+
 ==== P.179
 
 Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
