@@ -6,11 +6,12 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <meta name="generator" content="Re:VIEW" />
-  <title>Android Studioではじめる 簡単Androidアプリ開発 セットアップガイド</title>
+  <title>Android Studio セットアップガイド</title>
 </head>
 <body>
-<h1><a id="h"></a>「Android Studioではじめる 簡単Androidアプリ開発」 補足集</h1>
-<p>この文書は、「Android Studioではじめる 簡単Androidアプリ開発<a id="fnb-gihyo_site" href="#fn-gihyo_site" class="noteref">*1</a>」の内容を補足する目的で、Android Studioのインストールと初期設定について説明しています。</p>
+<h1><a id="h"></a>Android Studio セットアップガイド</h1>
+<p>この文書は「Android Studioではじめる 簡単Androidアプリ開発<a id="fnb-gihyo_site" href="#fn-gihyo_site" class="noteref">*1</a>」内容を補足する目的で、 Android Studio のインストールと初期設定について説明していました。</p>
+<p>現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。</p>
 <div class="image">
 <img src="images/abstract/cover.png" alt="Android Studioではじめる 簡単Androidアプリ開発" width="30%" />
 <p class="caption">
@@ -21,8 +22,6 @@
 
 <h2><a id="h-0"></a>目次</h2>
 <ul>
-<li><a href="#h-errata" class="link">正誤表</a></li>
-<li><a href="#h0" class="link">更新履歴</a></li>
 <li><a href="#h1" class="link">JDKのセットアップ</a></li>
 <li><a href="#h2" class="link">Android Studioのセットアップ</a></li>
 <li><a href="#h3" class="link">「Android Studioではじめる 簡単Androidアプリ開発」</a></li>
@@ -39,439 +38,29 @@
 <p>本文書に関する最新情報は引き続き、</p>
 <ul>
 <li>技術評論社サイト <a href="http://gihyo.jp/book/2014/978-4-7741-6998-9" class="link">http://gihyo.jp/book/2014/978-4-7741-6998-9</a></li>
-<li>HTML版 <a href="http://keiji.github.io/the-androidstudio-book/" class="link">http://keiji.github.io/the-androidstudio-book/</a></li>
-<li>PDF版 <a href="http://keiji.github.io/the-androidstudio-book/archives/book.pdf" class="link">http://keiji.github.io/the-androidstudio-book/archives/book.pdf</a></li>
+<li>Android Stuidoセットアップガイド HTML版 <a href="http://keiji.github.io/the-androidstudio-book/" class="link">http://keiji.github.io/the-androidstudio-book/</a></li>
+<li>Android Stuidoセットアップガイド PDF版 <a href="http://keiji.github.io/the-androidstudio-book/archives/book.pdf" class="link">http://keiji.github.io/the-androidstudio-book/archives/book.pdf</a></li>
+<li>正誤表 PDF版 <a href="http://keiji.github.io/the-androidstudio-book/archives/errata.pdf" class="link">http://keiji.github.io/the-androidstudio-book/archives/book.pdf</a></li>
 <li>GitHub <a href="https://github.com/keiji/the-androidstudio-book" class="link">https://github.com/keiji/the-androidstudio-book</a></li>
 </ul>
 <p>で、提供します。</p>
 
-<h1><a id="h-errata"></a>正誤表</h1>
-
-<h2><a id="h-1"></a>Android Studioをインストールしよう</h2>
-<p>Android Studio 0.8.14からセットアップ方法が大幅に変更されています。</p>
-<p>詳細は第1章「JDKのセットアップ」および第2章「Android Studioのセットアップ」を参照してください。</p>
-
-<h2><a id="h-2"></a>新しいプロジェクトを作成しよう</h2>
-<p>本書で、新規プロジェクト作成時に指定するActivity Name、Layout Name、Titleの初期値にとして、MyActivity/activity_my/MyActivityと、名前に<tt>My</tt>が付与されて記載されていますが、Android Studio 0.8.14からは<tt>Main</tt>が付与されるように変更になりました。</p>
-<p>以下に示す二つの方法から、一つを選んで読み進めてください。</p>
-<ul>
-<li>本書で記載されているMyActivity.javaなど<tt>My</tt>が付与されている部分を、全て<tt>Main</tt>に読み替える（推奨）</li>
-<li>新規プロジェクト作成時に、Activity Nameを<tt>MyActivity</tt>。Layout Nameを<tt>activity_my</tt>に変更する</li>
-</ul>
-
-<h3><a id="h-2-1"></a>Web APIで情報を取得する天気予報アプリを作ろう</h3>
-
-<h4><a id="h-2-1-1"></a>P.77</h4>
-<p>リスト6-2の中段付近、BufferedReaderをインスタンス化している処理の最後尾に必要な閉じ括弧&quot;)&quot;とセミコロン&quot;;&quot;が抜け落ちています。</p>
-<div class="caption-code">
-<p class="caption">リスト1: 誤 リスト6-2</p>
-<pre class="list">    BufferedReader br = new BufferedReader(
-        new InputStreamReader(response.getEntity().getContent())
-</pre>
-</div>
-<div class="caption-code">
-<p class="caption">リスト2: 正 リスト6-2</p>
-<pre class="list">    BufferedReader br = new BufferedReader(
-        new InputStreamReader(response.getEntity().getContent()));
-</pre>
-</div>
-
-<h5><a id="h-2-1-1-1"></a>注意</h5>
-<p>リスト6-2では、AndroidHttpClientクラスを使ってネットワークへアクセスしていますが、このクラスはAndroid 5.1(API Level 22)から、deprecated（非推奨）に指定されています<a id="fnb-about_androidhttpclient" href="#fn-about_androidhttpclient" class="noteref">*1</a>。</p>
-<p>本稿更新の時点で動作はしますが、留意が必要です。</p>
-<div class="footnote" id="fn-about_androidhttpclient"><p class="footnote">[<a href="#fnb-about_androidhttpclient">*1</a>] AndroidHttpClientの代わりに、HttpUrlConnectionを使用してください。</p></div>
-
-<h4><a id="h-2-1-2"></a>P.78</h4>
-<p>『取得した天気情報を表示する』で、リスト6-3として表記されているファイル名に誤りがあります。</p>
-<div id="list_6_3" class="table">
-<p class="caption">表1: </p>
-<table>
-<tr><th>誤</th><td><tt>my_activity.xml</tt></td></tr>
-<tr><th>正</th><td><tt>activity_my.xml</tt></td></tr>
-</table>
-</div>
-
-<h4><a id="h-2-1-3"></a>P.99</h4>
-<p>リスト6-14の15行目、ImageLoaderTaskのクラス宣言部の書き換えに関する記述が抜け落ちています。</p>
-<div class="caption-code">
-<p class="caption">リスト3: +記号は追加する行、-記号は削除する行</p>
-<pre class="list">- public class ImageLoaderTask {
-+ public class ImageLoaderTask extends AsyncTask&lt;ImageView, Void, Bitmap&gt; {
-</pre>
-</div>
-
-<h4><a id="h-2-1-4"></a>P.105</h4>
-<p>リスト6-17の作業以前に、<tt>Temperature</tt>クラスに<tt>toString</tt>メソッドを追加する記述が抜け落ちています。</p>
-<p><tt>WeatherForecast.java</tt>を開いて、<tt>Temperature</tt>クラスにリストformat_number_without_headerの記述を追加します。</p>
-<div class="caption-code">
-<p class="caption">リスト4: toStringメソッド（+記号で示す範囲）をTemperatureクラスの中に追加</p>
-<pre class="list">    public class Temperature {
-
-+       @Override
-+       public String toString() {
-+           StringBuffer sb = new StringBuffer();
-+
-+           // 最低気温 / 最高気温
-+           if (min.celsius != null) {
-+               sb.append(min.celsius);
-+           } else {
-+               sb.append(&quot; - &quot;);
-+           }
-+           sb.append(&quot;℃ / &quot;);
-+
-+           if (max.celsius != null) {
-+               sb.append(max.celsius);
-+           } else {
-+               sb.append(&quot; - &quot;);
-+           }
-+           sb.append(&quot;℃&quot;);
-+
-+           return sb.toString();
-+       }
-
-    }
-</pre>
-</div>
-
-<h4><a id="h-2-1-5"></a>P.109</h4>
-<p>『6-9 読み込み中を表示する』で、リスト6-20として表記されているファイル名に誤りがあります。</p>
-<div id="list_6_20" class="table">
-<p class="caption">表2: </p>
-<table>
-<tr><th>誤</th><td><tt>my_activity.java</tt></td></tr>
-<tr><th>正</th><td><tt>activity_my.xml</tt></td></tr>
-</table>
-</div>
-
-<h4><a id="h-2-1-6"></a>P.110</h4>
-<p>リスト6-21にインデントのずれがあります。リストformat_number_without_headerがより正確な表記です。</p>
-<div class="caption-code">
-<p class="caption">リスト5: +記号で示す行を追加</p>
-<pre class="list">+ import android.widget.ProgressBar;
-
-  public class MyActivity extends Activity {
-
-+     private ProgressBar progress;
-
-      private class GetWeatherForecastTask extends GetWeatherForecastApiTask {
-
-+         @Override
-+         protected void onPreExecute() {
-+             super.onPreExecute();
-+             progress.setVisibility(View.VISIBLE);
-+         }
-
-          @Override
-          protected void onPostExecute(WeatherApi.WeatherForecast data) {
-              super.onPostExecute(data);
-
-+             progress.setVisibility(View.GONE);
-
-              if (data != null) {
-                  location.setText(data.location.area + &quot; &quot; +
-                          data.location.prefecture + &quot; &quot; + data.location.city);
-              }
-          }
-
-      // 省略
-
-      @Override
-      protected void onCreate(Bundle savedInstanceState) {
-          super.onCreate(savedInstanceState);
-          setContentView(R.layout.activity_my);
-          location = (TextView) findViewById(R.id.tv_location);
-          forecastLayout = (LinearLayout) findViewById(R.id.ll_forecasts);
-+         progress = (ProgressBar) findViewById(R.id.progress);
-          new GetWeatherForecastTask(this).execute(&quot;400040&quot;);
-      }
-
-</pre>
-</div>
-
-<h4><a id="h-2-1-7"></a>P.114</h4>
-<p>リスト6-27のimport文に不要な<tt>+</tt>記号が表示されています。</p>
-<p>これは執筆段階での追加(+)と削除(-)を示す指定が残ったもので、import文の先頭に<tt>+</tt>をつけない表記が正しいものです。</p>
-<div class="caption-code">
-<p class="caption">リスト6: import文に+記号は不要</p>
-<pre class="list">import android.content.Context;
-import android.graphics.Bitmap;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.json.JSONException;
-
-import java.io.IOException;
-</pre>
-</div>
-
-<h4><a id="h-2-1-8"></a>P.137</h4>
-<p>Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が<tt>res/mipmap</tt>に配置されるように変更になったため、<tt>res/drawable-xxhdpi</tt>を作成する必要があります。</p>
-<p>drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（図1）。</p>
-<div id="add_resource_dir_chap7" class="image">
-<img src="images/errata/add_resource_dir_chap7.png" alt="New -&amp;gt; Directory" width="25%" />
-<p class="caption">
-図1: New -&gt; Directory
-</p>
-</div>
-<p>作成するディレクトリ名に、&quot;drawable-xxhdpi&quot;と入力して[OK]をクリックします。</p>
-<div id="create_xxhdpi_dir_chap7" class="image">
-<img src="images/errata/create_xxhdpi_dir_chap7.png" alt="New Directory" width="50%" />
-<p class="caption">
-図2: New Directory
-</p>
-</div>
-
-<h4><a id="h-2-1-9"></a>P.150</h4>
-<p>リスト7-12で<tt>jumpDroid</tt>メソッドがfloat型の引数<tt>power</tt>の記載がありますが、これは誤りです。<tt>jumpDroid</tt>メソッドに引数は記述しません。</p>
-<div id="list_7_12" class="table">
-<p class="caption">表3: </p>
-<table>
-<tr><th>誤</th><td><tt>private void jumpDroid(float power) { </tt></td></tr>
-<tr><th>正</th><td><tt>private void jumpDroid() { </tt></td></tr>
-</table>
-</div>
-
-<h4><a id="h-2-1-10"></a>P.159</h4>
-<p>『ゲームオーバーになったことをコールバックする』で、ファイル名に誤りがあります。</p>
-<div id="list_7_21" class="table">
-<p class="caption">表4: </p>
-<table>
-<tr><th>誤</th><td><tt>GameOver.javaを開いて</tt></td></tr>
-<tr><th>正</th><td><tt>GameView.javaを開いて</tt></td></tr>
-</table>
-</div>
-
-<h4><a id="h-2-1-11"></a>P.179</h4>
-<p>Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が<tt>res/mipmap</tt>に配置されるように変更になったため、<tt>res/drawable-xxhdpi</tt>を作成する必要があります。</p>
-<p>drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（図3）。</p>
-<div id="add_resource_dir_chap8" class="image">
-<img src="images/errata/add_resource_dir_chap8.png" alt="New -&amp;gt; Directory" width="25%" />
-<p class="caption">
-図3: New -&gt; Directory
-</p>
-</div>
-<p>作成するディレクトリ名に、&quot;drawable-xxhdpi&quot;と入力して[OK]をクリックします。</p>
-<div id="create_xxhdpi_dir_chap8" class="image">
-<img src="images/errata/create_xxhdpi_dir_chap8.png" alt="New Directory" width="50%" />
-<p class="caption">
-図4: New Directory
-</p>
-</div>
-
-<h4><a id="h-2-1-12"></a>P.186</h4>
-<p>リスト8-7の7行目、定数<tt>MISSILE_LAUNCH_WEIGHT</tt>の記述が追加行に指定されていますが、ここで追加の必要はありません。（既にリスト8-2で追加をしているため）</p>
-
-<h4><a id="h-2-1-13"></a>P.188 - 189 リスト8-8について</h4>
-<p>21行目、<tt>DrawThread</tt>内で<tt>drawGame</tt>メソッドを実行している記述がありますが、これは<tt>drawObject</tt>メソッドの誤りです。</p>
-<div id="list_8_8" class="table">
-<p class="caption">表5: </p>
-<table>
-<tr><th>誤</th><td><tt>drawGame(canvas);</tt></td></tr>
-<tr><th>正</th><td><tt>drawObject(canvas);</tt></td></tr>
-</table>
-</div>
-<p>P.189下部、<tt>onDraw</tt>メソッド内、変数<tt>width</tt>と<tt>height</tt>の行に変更（削除と追加）が指定されていますが、変更の必要はありません。（既にリスト8-2で、<tt>canvas.getWidth()</tt>および<tt>canvas.getHeight()</tt>としているため）</p>
-<div class="caption-code">
-<p class="caption">リスト7: +記号は追加する行、-記号は削除する行</p>
-<pre class="list">    @Override
--   protected void onDraw(Canvas canvas) {
-+   private void drawObject(Canvas canvas) {
--       super.onDraw(canvas);
-
-        int width = canvas.getWidth();
-        int height = canvas.getHeight();
-
-+       canvas.drawColor(Color.WHITE);
-
-        // 省略
-
-        droid.draw(canvas);
-
--       invalidate();
-    }
-}
-</pre>
-</div>
-
-<h4><a id="h-2-1-14"></a>P.194</h4>
-<p>リスト8-11、<tt>BaseObject</tt>クラスの<tt>isAvailable</tt>メソッド内への追加に関する記述が抜け落ちています。</p>
-<div class="caption-code">
-<p class="caption">リスト8: isAvailableメソッド内に+記号で示す行を追加</p>
-<pre class="list">    public boolean isAvailable(int width, int height) {
-        if (yPosition &lt; 0 || xPosition &lt; 0 || yPosition &gt; height || xPosition &gt; width) {
-            return false;
-        }
-
-+       if (status == STATUS_DESTROYED) {
-+           return false;
-+       }
-
-        return true;
-    }
-</pre>
-</div>
-
-<h4><a id="h-2-1-15"></a>P.211</h4>
-<p>掲載されているバージョンとAPI Levelの対照表で、<tt>API Level 20</tt>のプラットフォームバージョンが<tt>Android Wear 4.4.1W</tt>と記載がありますが、これは<tt>Android Wear 4.4W</tt>の誤りです。</p>
-<div id="api_version" class="table">
-<p class="caption">表6: </p>
-<table>
-<tr><th>誤</th><td><tt>Android Wear 4.4.1W</tt></td></tr>
-<tr><th>正</th><td><tt>Android Wear 4.4W</tt></td></tr>
-</table>
-</div>
-
-<h4><a id="h-2-1-16"></a>P.217</h4>
-<p>Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が<tt>res/mipmap</tt>に配置されるように変更になったため、<tt>res/drawable-xxhdpi</tt>を作成する必要があります。</p>
-<p>drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（図5）。</p>
-<div id="add_resource_dir_chap9" class="image">
-<img src="images/errata/add_resource_dir_chap9.png" alt="New -&amp;gt; Directory" width="25%" />
-<p class="caption">
-図5: New -&gt; Directory
-</p>
-</div>
-<p>作成するディレクトリ名に、&quot;drawable-xxhdpi&quot;と入力して[OK]をクリックします。</p>
-<div id="create_xxhdpi_dir_chap9" class="image">
-<img src="images/errata/create_xxhdpi_dir_chap9.png" alt="New Directory" width="50%" />
-<p class="caption">
-図6: New Directory
-</p>
-</div>
-
-<h4><a id="h-2-1-17"></a>P.255</h4>
-<p>リスト9-27に、<tt>LabyrinthView</tt>クラスに変数<tt>seed</tt>と、<tt>setSeed</tt>メソッドを追加する記述が抜け落ちています。</p>
-<p><tt>LabyrinthView.java</tt>を開いて、<tt>LabyrinthView</tt>クラスにリストformat_number_without_headerの記述を追加します。</p>
-<div class="caption-code">
-<p class="caption">リスト9: LabyrinthViewに変数とsetSeedメソッドを追加</p>
-<pre class="list">+    private int seed;
-
-+    public void setSeed(int seed) {
-+        this.seed = seed;
-+    }
-</pre>
-</div>
-
-<h1><a id="h0"></a>更新履歴</h1>
-
-<h2><a id="h-1"></a>1.0 リリース</h2>
-
-<h3><a id="h-1-1"></a>変更の概要</h3>
-
-<h4><a id="h-1-1-1"></a>インストーラー(Windows)の追加</h4>
-<p>Android Studio 1.0では、Windows用のインストーラーが追加されました。これは、0.8.14 BETAで廃止された旧インストーラーに代わるものです。</p>
-<div id="android-studio-installer-win" class="image">
-    <img src="images/history/android-studio-installer-win.png" alt="Android Studioのインストーラー" width="50%" />
-    <p class="caption">
-        図1: Android Studioのインストーラー
-    </p>
-</div>
-
-<h4><a id="h-1-1-2"></a>Android SDK Setup Wizardの追加</h4>
-<p>Android Studio 1.0では、Android SDK Setup Wizardが追加され、Android Studioの初回起動時にAndroid SDKのダウンロードとセットアップが実行できるようになりました。</p>
-<p>これは、0.8.14 BETAから、それまでAndroid Studioに含まれていたAndroid SDKがバンドルされなくなった変更を補填するものです。</p>
-<div id="setup-androidstudio" class="image">
-    <img src="images/history/setup-androidstudio.png" alt="Android StudioのSDK Setup" width="35%" />
-    <p class="caption">
-        図2: Android StudioのSDK Setup
-    </p>
-</div>
-<p>また、システムにJDK 7がインストールされていない場合、セットアップ時にインストールを促すように変更されています。</p>
-<p>なお、Mac OS Xでは、JDK 7と平行して、これまでのJava for OS X(JDK 6相当)もインストールする必要があります。複数バージョンのJDKを必要とする状態は、次バージョン（Android Studio 1.1）では解消する予定です<a id="fnb-jdk6and7" href="#fn-jdk6and7" class="noteref">*1</a>。</p>
-<div class="footnote" id="fn-jdk6and7"><p class="footnote">[<a href="#fnb-jdk6and7">*1</a>] Android Studio doesn't start, unable to find valid JVM： <a href="https://code.google.com/p/android/issues/detail?id=82378" class="link">https://code.google.com/p/android/issues/detail?id=82378</a></p></div>
-
-<h4><a id="h-1-1-3"></a>スタートメニューのテキスト変更</h4>
-<p>Android Studio 1.0では、起動時に表示されるメニューの各種テキストと、一部メニューの順番が変更されました。</p>
-<div id="android-studio-start-menu" class="image">
-    <img src="images/history/android-studio-start-menu.png" alt="1.0のスタートメニュー（左）。旧スタートメニュー（右）" width="60%" />
-    <p class="caption">
-        図3: 1.0のスタートメニュー（左）。旧スタートメニュー（右）
-    </p>
-</div>
-
-<h4><a id="h-1-1-4"></a>プロジェクト作成時の標準値の変更</h4>
-<p>これまでのAndroid Studioは、プロジェクト作成時に標準で、Activity名が<tt>MyActivity</tt>、Layout名が<tt>activity_my</tt>など、<tt>My</tt>を付加した命名になっていましたが、1.0ではこれらが<tt>Main</tt>に変更されました。</p>
-<p>また、新しくMenu Resource Nameを指定できるようになっています。</p>
-<div id="new-project-1_0" class="image">
-    <img src="images/history/new-project-1_0.png" alt="標準値が変更されたProject作成画面" width="25%" />
-    <p class="caption">
-        図4: 標準値が変更されたProject作成画面
-    </p>
-</div>
-
-<h4><a id="h-1-1-5"></a>Gradle Plugin for Androidのサポートバージョン変更</h4>
-<p>Android Studio 1.0では、Gradle Plugin for Androidのサポートバージョンが<tt>1.0.0</tt>以上となり、それより前のバージョンのプロジェクトでは、Gradle Pluginのバージョンを更新する必要があります。</p>
-<p>また、Gradle plugin for Androidの<tt>1.0.0</tt><a id="fnb-gradle_plugin" href="#fn-gradle_plugin" class="noteref">*1</a>では、runProguardがminifyEnabledになるなど、build.gradleのプロパティ名が変更されています。</p>
-<div class="footnote" id="fn-gradle_plugin"><p class="footnote">[<a href="#fnb-gradle_plugin">*1</a>] minifyEnabledが導入されたバージョンは、正確にはGradle Plugin for Android 0.14ですが、本文書ではリリースを基準にしているため、1.0.0と記載しています。</p></div>
-
-<h2><a id="h-2"></a>0.8.14 Betaリリース - Oct 29, 2014</h2>
-<p><a href="http://tools.android.com/recent/androidstudio0814inbetachannel" class="link">http://tools.android.com/recent/androidstudio0814inbetachannel</a></p>
-
-<h3><a id="h-2-1"></a>変更の概要</h3>
-
-<h4><a id="h-2-1-1"></a>Android SDKの同梱の廃止</h4>
-<p>これまでのAndroid Studioは、ダウンロードすると、アプリ開発に必要なAndroid SDKが標準で含まれていました。しかし、0.8.14よりパッケージが分割され、Android SDKは別にダウンロード、セットアップしなければならなくなりました。</p>
-
-<h4><a id="h-2-1-2"></a>Windows版インストーラーの（一時的な）廃止</h4>
-<p>これまでのWindows版Android Studioでは、インストーラーを実行して、セットアップしていました。しかし、0.8.14よりインストーラーが廃止され、ZIP書庫の形式を展開してのセットアップに変更されました。</p>
-<p>Android Tools ProjectのXavier Ducrohet氏は、Android Tools Projectのグループadt-devにおいて「Android SDKのセットアップも含めた新しいインストーラーを現在準備中である<a id="fnb-adt-dev" href="#fn-adt-dev" class="noteref">*2</a>」と、述べています。このことから、Windows版は将来的に、再びインストーラー形式での提供に戻ると思われます。</p>
-<div class="footnote" id="fn-adt-dev"><p class="footnote">[<a href="#fnb-adt-dev">*2</a>] Error: The Android SDK folder can no longer be inside the application folder： <a href="https://groups.google.com/d/topic/adt-dev/LQyik6JIU_Q/discussion" class="link">https://groups.google.com/d/topic/adt-dev/LQyik6JIU_Q/discussion</a></p></div>
-
-<h4><a id="h-2-1-3"></a>プロジェクト作成時に表示されるビューの変更</h4>
-<p>これまでのAndroid Studioでは、新規プロジェクトを作成した場合、標準でProject Viewが表示されていましたが、0.8.14より、Android Viewが表示されるように変更されました。</p>
-<p>Android Viewでは、プロジェクトを単純な階層表示ではなく、Androidに則したツリー構成で表示するほか、リソース修飾子が異なる同じ種類のリソースをまとめて表示します。</p>
-<div id="project-android-view" class="image">
-    <img src="images/history/project-android-view.png" alt="Android View（左）、Project View（右）" width="50%" />
-    <p class="caption">
-        図5: Android View（左）、Project View（右）
-    </p>
-</div>
-
-<h4><a id="h-2-1-4"></a>AVD Managerデザイン変更</h4>
-<p>Android Studio 0.8.14では、<b class="kw">AVD (Android Virtual Device)</b><!-- IDX:AVD --> Managerのデザインが一新されました。</p>
-<div id="new-avd-manager" class="image">
-    <img src="images/history/new-avd-manager.png" alt="新しいAVD Managerのデザイン" width="25%" />
-    <p class="caption">
-        図6: 新しいAVD Managerのデザイン
-    </p>
-</div>
-<div id="old-avd-manager" class="image">
-    <img src="images/history/old-avd-manager.png" alt="旧AVD Managerのデザイン" width="35%" />
-    <p class="caption">
-        図7: 旧AVD Managerのデザイン
-    </p>
-</div>
-
-<h1><a id="h1"></a>第1章　JDKのセットアップ</h1>
+<h1><a id="h1"></a><span class="secno">第1章　</span>JDKのセットアップ</h1>
 <p>Android Studioをインストールする前に、<b class="kw">JDK (Java Development Kit)</b><!-- IDX:JDK -->をインストールする必要があります。</p>
 
-<h2><a id="h1-1"></a>1.1　Windowsの場合</h2>
+<h2><a id="h1-1"></a><span class="secno">1.1　</span>Windowsの場合</h2>
 
 <h3><a id="h1-1-1"></a>ダウンロード</h3>
-<p>JDK 7のインストール用パッケージをダウンロードします。ブラウザから、次のURLにアクセスします。</p>
-<p><a href="http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html" class="link">http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html</a></p>
-<div id="win-jdk7-download1" class="image">
-<img src="images/install_jdk/win-jdk7-download1.png" alt="Java SE Development Kit 7 Downloads" width="35%" />
+<p>JDK 8のインストール用パッケージをダウンロードします。ブラウザから、次のURLにアクセスします。</p>
+<p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" class="link">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+<div id="win-jdk8-download1" class="image">
+<img src="images/install_jdk/win-jdk8-download1.png" alt="Java SE Development Kit 8 Downloads" width="35%" />
 <p class="caption">
-図1.1: Java SE Development Kit 7 Downloads
+図1.1: Java SE Development Kit 8 Downloads
 </p>
 </div>
-<p>Javaのダウンロードページ（図1.1）が表示されます。</p>
+<p>JDKのダウンロードページ（図1.1）が表示されます。</p>
 <p>JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。&quot;Oracle Binary Code License Agreement for Java SE&quot;を読み、同意する場合は&quot;Accept License Agreement&quot;の左側の丸をクリックします（図1.2）。</p>
-<div id="win-jdk7-download2" class="image">
-<img src="images/install_jdk/win-jdk7-download2.png" alt="Java SE Development Kit 7 Downloads" width="35%" />
-<p class="caption">
-図1.2: Java SE Development Kit 7 Downloads
-</p>
-</div>
 <p>利用許諾に同意をしたら、右側のリンクをクリックして、お使いのプラットフォームにあったJDKを選択すると、インストールパッケージがダウンロードされます。</p>
 <div class="column">
 
@@ -482,119 +71,119 @@ import java.io.IOException;
 <div class="column">
 
 <h5><a id="column-2"></a>ダウンロード後の表示は？</h5>
-<div id="win-jdk7-download3" class="image">
-<img src="images/install_jdk/win-jdk7-download3.png" alt="Internet Explorerのダウンロード" width="45%" />
+<div id="win-jdk8-download2" class="image">
+<img src="images/install_jdk/win-jdk8-download2.png" alt="Microsoft Edgeを使ったダウンロード" width="35%" />
 <p class="caption">
-図1.3: Internet Explorerのダウンロード
+図1.2: Microsoft Edgeを使ったダウンロード
 </p>
 </div>
 <p>ダウンロードの手続きは、使用しているブラウザによって異なります。</p>
-<p>例えば、Internet Explorerの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図1.3下部）。</p>
+<p>例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図1.2下部）。</p>
 <p>なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、JDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。</p>
 </div>
 
 <h3><a id="h1-1-2"></a>インストール</h3>
 <p>JDKをインストールします。</p>
 <p>ダウンロードしたインストールパッケージをダブルクリックするなどして実行します。</p>
-<div id="win-jdk7-install1" class="image">
-<img src="images/install_jdk/win-jdk7-install1.png" alt="起動確認" width="50%" />
+<div id="win-jdk8-install1" class="image">
+<img src="images/install_jdk/win-jdk8-install1.png" alt="起動確認" width="50%" />
 <p class="caption">
-図1.4: 起動確認
+図1.3: 起動確認
 </p>
 </div>
 <p>インストーラーの起動確認が表示されるので、発行元が&quot;Oracle America, Inc.&quot;になっていることを確認してから「はい(Y)」をクリックします。</p>
-<div id="win-jdk7-install2" class="image">
-<img src="images/install_jdk/win-jdk7-install2.png" alt="JDKセットアップ" width="50%" />
+<div id="win-jdk8-install2" class="image">
+<img src="images/install_jdk/win-jdk8-install2.png" alt="JDKセットアップ" width="50%" />
 <p class="caption">
-図1.5: JDKセットアップ
+図1.4: JDKセットアップ
 </p>
 </div>
 <p>JDKのインストーラーが起動します。</p>
 <p>「次(N) &gt;」をクリックします。</p>
-<div id="win-jdk7-install3-4" class="image">
-<img src="images/install_jdk/win-jdk7-install3-4.png" alt="JDKセットアップ" width="45%" />
+<div id="win-jdk8-install3" class="image">
+<img src="images/install_jdk/win-jdk8-install3.png" alt="JDKセットアップ" width="45%" />
 <p class="caption">
-図1.6: JDKセットアップ
+図1.5: JDKセットアップ
 </p>
 </div>
 <p>インストールするパッケージの選択と、インストール先のディレクトリを設定します。</p>
-<p>インストールパッケージのうち、「ソースコード」は対象から外しても問題ありません。</p>
+<p>インストールパッケージのうち、「ソース・コード」は対象から外しても問題ありません。</p>
 <p>インストール先のディレクトリは、あとで環境変数を設定するときに必要になるので、必ずメモをしておいてください。</p>
-<p>「次(N) &gt;」をクリックすると、JDKのインストールがはじまります（図1.7）。</p>
+<p>「次(N) &gt;」をクリックすると、JDKのインストールがはじまります（図1.6）。</p>
+<div id="win-jdk8-install4-5" class="image">
+<img src="images/install_jdk/win-jdk8-install4-5.png" alt="JREセットアップ" width="35%" />
+<p class="caption">
+図1.6: JREセットアップ
+</p>
+</div>
 <p>JDKのインストールが終わると、続いてJava実行環境<b class="kw">JRE (Java Runtime Environment)</b><!-- IDX:JRE -->をインストールします。</p>
-<div id="win-jdk7-install5" class="image">
-<img src="images/install_jdk/win-jdk7-install5.png" alt="JREセットアップ" width="60%" />
+<div id="win-jdk8-install6-7" class="image">
+<img src="images/install_jdk/win-jdk8-install6-7.png" alt="JREセットアップ" width="35%" />
 <p class="caption">
 図1.7: JREセットアップ
 </p>
 </div>
 <p>「次 &gt;」をクリックするとインストールがはじまります。</p>
-<div id="win-jdk7-install6-7" class="image">
-<img src="images/install_jdk/win-jdk7-install6-7.png" alt="JREセットアップ" width="45%" />
-<p class="caption">
-図1.8: JREセットアップ
-</p>
-</div>
-<p>「閉じる(C)」をクリックして、インストーラーを終了します。</p>
+<p>完了したら「閉じる(C)」をクリックして、インストーラーを終了します。</p>
 
 <h3><a id="h1-1-3"></a>環境変数の追加</h3>
 <p>引き続き、環境変数JAVA_HOMEを設定します。これはAndroid Studioに、どこにJDKをインストールしたのかを伝える作業です。</p>
 <div id="win-add-env0" class="image">
 <img src="images/install_jdk/win-add-env0.png" alt="" width="50%" />
 <p class="caption">
-図1.9:
+図1.8:
 </p>
 </div>
 <p>デスクトップ左下のスタートメニューで右クリックをして表示されるメニューから「システム」を選択します。</p>
 <div id="win-add-env1" class="image">
 <img src="images/install_jdk/win-add-env1.png" alt="" width="35%" />
 <p class="caption">
-図1.10:
+図1.9:
 </p>
 </div>
 <p>左側のメニューから「システムの詳細設定」をクリックします。</p>
 <div id="win-add-env2" class="image">
 <img src="images/install_jdk/win-add-env2.png" alt="" width="50%" />
 <p class="caption">
-図1.11:
+図1.10:
 </p>
 </div>
 <p>「詳細設定」タブの「環境変数」をクリックします。</p>
 <div id="win-add-env3" class="image">
 <img src="images/install_jdk/win-add-env3.png" alt="" width="50%" />
 <p class="caption">
-図1.12:
+図1.11:
 </p>
 </div>
-<p>上部のユーザー環境設定の「新規」をクリックします。</p>
+<p>上部のユーザー環境変数の「新規」をクリックします。</p>
 <div id="win-add-env4" class="image">
 <img src="images/install_jdk/win-add-env4.png" alt="" width="50%" />
 <p class="caption">
-図1.13:
+図1.12:
 </p>
 </div>
 <p>変数名にJAVA_HOME。変数値に、JDKをインストールしたディレクトリ<a id="fnb-jdk_path" href="#fn-jdk_path" class="noteref">*1</a>を設定します。</p>
-<div class="footnote" id="fn-jdk_path"><p class="footnote">[<a href="#fnb-jdk_path">*1</a>] JDKは、標準でC:\Program Files\Java\jdk1.7.0_75\にインストールされます</p></div>
+<div class="footnote" id="fn-jdk_path"><p class="footnote">[<a href="#fnb-jdk_path">*1</a>] JDKは、標準でC:\Program Files\Java\jdk1.8.0_60\にインストールされます</p></div>
 <p>入力を終えたら「OK」をクリックし、これまでのウィンドウを全て閉じていきます。</p>
 <p>以上で、JDKのセットアップは完了です。</p>
 
-<h2><a id="h1-2"></a>1.2　Mac OS Xの場合</h2>
+<h2><a id="h1-2"></a><span class="secno">1.2　</span>Mac OS Xの場合</h2>
 
 <h3><a id="h1-2-1"></a>JDKのダウンロード</h3>
-<p>JDK 7のインストール用パッケージをダウンロードします。ブラウザから、次のURLにアクセスします。</p>
-<p><a href="http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html" class="link">http://www.oracle.com/technetwork/jp/java/javase/downloads/jdk7-downloads-1880260.html</a></p>
-<div id="mac-jdk7-download1" class="image">
-<img src="images/install_jdk/mac-jdk7-download1.png" alt="Java SE Development Kit 7 Downloads" width="30%" />
+<p>JDK 8のインストール用パッケージをダウンロードします。ブラウザから、次のURLにアクセスします。</p>
+<p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" class="link">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+<div id="mac-jdk8-download1" class="image">
+<img src="images/install_jdk/mac-jdk8-download1.png" alt="Java SE Development Kit 8 Downloads" width="30%" />
 <p class="caption">
-図1.14: Java SE Development Kit 7 Downloads
+図1.13: Java SE Development Kit 8 Downloads
 </p>
 </div>
-<p>Javaのダウンロードページ（図1.14）が表示されます。</p>
+<p>JDKのダウンロードページが表示されます。</p>
 <p>JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。&quot;Oracle Binary Code License Agreement for Java SE&quot;を読み、同意する場合は&quot;Accept License Agreement&quot;の左側の丸をクリックします。</p>
-<div id="mac-jdk7-download2" class="image">
-<img src="images/install_jdk/mac-jdk7-download2.png" alt="Java SE Development Kit 7 Downloads" width="30%" />
+<div id="mac-jdk8-download2" class="image">
+<img src="images/install_jdk/mac-jdk8-download2.png" alt="Java SE Development Kit 8 Downloads" width="30%" />
 <p class="caption">
-図1.15: Java SE Development Kit 7 Downloads
+図1.14: Java SE Development Kit 8 Downloads
 </p>
 </div>
 <p>利用許諾に同意をしたら、右側のリンクをクリックして、&quot;Mac OS X x64&quot;の右側のリンクを選択すると、インストールパッケージがダウンロードされます。</p>
@@ -602,78 +191,78 @@ import java.io.IOException;
 <h3><a id="h1-2-2"></a>JDKのインストール</h3>
 <p>JDKをインストールします。</p>
 <p>ダウンロードしたインストールパッケージをダブルクリックするなどして実行すると、JDKのインストーラーが表示されます。</p>
-<div id="mac-jdk7-install1" class="image">
-<img src="images/install_jdk/mac-jdk7-install1.png" alt="起動確認" width="50%" />
+<div id="mac-jdk8-install1" class="image">
+<img src="images/install_jdk/mac-jdk8-install1.png" alt="起動確認" width="50%" />
 <p class="caption">
-図1.16: 起動確認
+図1.15: 起動確認
 </p>
 </div>
-<p>表示された&quot;JDK 7 Update 75.pkg&quot;をダブルクリックするなどして実行すると、インストーラーが起動します。</p>
-<div id="mac-jdk7-install2" class="image">
-<img src="images/install_jdk/mac-jdk7-install2.png" alt="はじめに" width="45%" />
+<p>表示された&quot;JDK 8 Update 60.pkg&quot;をダブルクリックするなどして実行すると、インストーラーが起動します。</p>
+<div id="mac-jdk8-install2" class="image">
+<img src="images/install_jdk/mac-jdk8-install2.png" alt="はじめに" width="45%" />
 <p class="caption">
-図1.17: はじめに
+図1.16: はじめに
 </p>
 </div>
 <p>「続ける」をクリックします。</p>
-<div id="mac-jdk7-install3" class="image">
-<img src="images/install_jdk/mac-jdk7-install3.png" alt="JDKセットアップ" width="45%" />
+<div id="mac-jdk8-install3" class="image">
+<img src="images/install_jdk/mac-jdk8-install3.png" alt="JDKセットアップ" width="45%" />
+<p class="caption">
+図1.17: JDKセットアップ
+</p>
+</div>
+<p>「インストール」をクリックします。</p>
+<div id="mac-jdk8-install4" class="image">
+<img src="images/install_jdk/mac-jdk8-install4.png" alt="JDKセットアップ" width="45%" />
 <p class="caption">
 図1.18: JDKセットアップ
 </p>
 </div>
-<p>「インストール」をクリックします。</p>
-<div id="mac-jdk7-install4" class="image">
-<img src="images/install_jdk/mac-jdk7-install4.png" alt="JDKセットアップ" width="45%" />
+<p>パスワードを入力して「ソフトウェアをインストール」をクリックすると、インストール処理を開始します。</p>
+<div id="mac-jdk8-install5" class="image">
+<img src="images/install_jdk/mac-jdk8-install5.png" alt="JDKセットアップ" width="30%" />
 <p class="caption">
 図1.19: JDKセットアップ
-</p>
-</div>
-<p>パスワードを入力して「ソフトウェアをインストール」をクリックすると、インストール処理を開始します。</p>
-<div id="mac-jdk7-install5-6" class="image">
-<img src="images/install_jdk/mac-jdk7-install5-6.png" alt="JDKセットアップ" width="30%" />
-<p class="caption">
-図1.20: JDKセットアップ
 </p>
 </div>
 <p>インストールが終わると、「閉じる」をクリックしてインストーラーを終了します。</p>
 <p>以上で、JDKのセットアップは完了です。</p>
 
-<h1><a id="h2"></a>第2章　Android Studioのセットアップ</h1>
+<h1><a id="h2"></a><span class="secno">第2章　</span>Android Studioのセットアップ</h1>
 
-<h2><a id="h2-1"></a>2.1　Android Studioのインストール</h2>
+<h2><a id="h2-1"></a><span class="secno">2.1　</span>Android Studioのインストール</h2>
 
 <h3><a id="h2-1-1"></a>ダウンロード</h3>
 <p>Android Studioをダウンロードします。ブラウザから、次のURLにアクセスします。</p>
 <p><a href="http://developer.android.com/sdk/index.html" class="link">http://developer.android.com/sdk/index.html</a></p>
-<div id="download_android_studio1" class="image">
-<img src="images/install_android_studio/download_android_studio1.png" alt="Android Studio 1.2" width="30%" />
+<div id="download_androidstudio1" class="image">
+<img src="images/install_android_studio/download_androidstudio1.png" alt="Android Studio 1.4" width="30%" />
 <p class="caption">
-図2.1: Android Studio 1.2
+図2.1: Android Studio 1.4
 </p>
 </div>
 <p>緑色のボタン「Download Android Studio...」をクリックします。</p>
-<div id="download_android_studio2" class="image">
-<img src="images/install_android_studio/download_android_studio2.png" alt="Android Studio 1.2" width="30%" />
+<div id="download_androidstudio2" class="image">
+<img src="images/install_android_studio/download_androidstudio2.png" alt="Android Studio 1.4" width="30%" />
 <p class="caption">
-図2.2: Android Studio 1.2
+図2.2: Android Studio 1.4
 </p>
 </div>
 <p>Android Studioをダウンロードするには、ライセンスに合意する必要があります（図2.2）。</p>
 <p>表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio...」のボタンをクリックします。</p>
 <p>画面が切り替わり、Android Studioのパッケージがダウンロードされます。</p>
-<p>ダウンロードするパッケージは、Mac版で約260MB、Windows版では約840MBと、非常に大きいため、必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。</p>
+<p>ダウンロードするパッケージは、Mac版で約360MB、Windows版では約1.2GBと、非常に大きいため、必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。</p>
 <div class="column">
 
 <h5><a id="column-1"></a>ダウンロード後の表示は？</h5>
-<div id="download_android_studio3" class="image">
-<img src="images/install_android_studio/download_android_studio3.png" alt="Install Android Studio" width="30%" />
+<div id="download_androidstudio3" class="image">
+<img src="images/install_android_studio/download_androidstudio3.png" alt="Install Android Studio" width="30%" />
 <p class="caption">
 図2.3: Install Android Studio
 </p>
 </div>
 <p>ダウンロードの手続きは、使用しているブラウザによって異なります。</p>
-<p>例えば、Internet Explorerの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図2.3下部）。</p>
+<p>例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図2.3下部）。</p>
 <p>なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、Android SDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。</p>
 </div>
 
@@ -682,91 +271,79 @@ import java.io.IOException;
 <h4><a id="h2-1-2-1"></a>Windowsの場合</h4>
 <p>ダウンロードしたパッケージは、実行可能な形式です<a id="fnb-win-filename" href="#fn-win-filename" class="noteref">*1</a>。ダブルクリックで開くなどして実行すると、インストーラーが起動します。</p>
 <div class="footnote" id="fn-win-filename"><p class="footnote">[<a href="#fnb-win-filename">*1</a>] ダウンロードする時期によってファイル名は異なる場合があります</p></div>
-<div id="win-androidstudio-install0" class="image">
-<img src="images/install_android_studio/win-androidstudio-install0.png" alt="インストーラーの起動" width="35%" />
-<p class="caption">
-図2.4: インストーラーの起動
-</p>
-</div>
 <p>この際「ユーザーアカウント制御」が警告を出す場合がありますが、発行元がGoogleになっていることを確認した後「はい」をクリックしてインストールを続行します。</p>
 <div id="win-androidstudio-install1" class="image">
-<img src="images/install_android_studio/win-androidstudio-install1.png" alt="ユーザーアカウント制御。発行元がGoogleであることを確認する" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install1.png" alt="ユーザーアカウント制御。発行元がGoogleであることを確認する" width="50%" />
 <p class="caption">
-図2.5: ユーザーアカウント制御。発行元がGoogleであることを確認する
+図2.4: ユーザーアカウント制御。発行元がGoogleであることを確認する
 </p>
 </div>
 <div id="win-androidstudio-install2" class="image">
-<img src="images/install_android_studio/win-androidstudio-install2.png" alt="インストーラー" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install2.png" alt="インストーラー" width="50%" />
 <p class="caption">
-図2.6: インストーラー
+図2.5: インストーラー
 </p>
 </div>
-<p>「Next」をクリックします。なお、<b class="kw">JDK (Java Development Kit)</b><!-- IDX:JDK -->がインストールされていない場合、図2.7の画面が表示されます。</p>
+<p>「Next」をクリックします。なお、<b class="kw">JDK (Java Development Kit)</b><!-- IDX:JDK -->がインストールされていない場合、図2.6の画面が表示されます。</p>
 <div id="win-androidstudio-install3-no-jdk" class="image">
-<img src="images/install_android_studio/win-androidstudio-install3-no-jdk.png" alt="System Check" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install3-no-jdk.png" alt="System Check" width="50%" />
 <p class="caption">
-図2.7: System Check
+図2.6: System Check
 </p>
 </div>
-<p>JDKをインストール済みで図2.7が表示された場合、JDKをインストールした場所を指定して「Next」をクリックします。</p>
-<div id="win-androidstudio-install3-with-haxm" class="image">
-<img src="images/install_android_studio/win-androidstudio-install3-with-haxm.png" alt="Choose Components" width="50%" />
+<p>JDKをインストール済みで図2.6が表示された場合、JDKをインストールした場所を指定して「Next」をクリックします。</p>
+<div id="win-androidstudio-install3-haxm" class="image">
+<img src="images/install_android_studio/win-androidstudio-install3-haxm.png" alt="Choose Components" width="50%" />
 <p class="caption">
-図2.8: Choose Components
+図2.7: Choose Components
 </p>
 </div>
-<p>インストールするコンポーネントを選択する画面です。使用しているPCによって表示されるコンポーネントが異なります。PCがIntel HAXM<a id="fnb-about_haxm" href="#fn-about_haxm" class="noteref">*2</a>に対応している場合は、&quot;Performance&quot;のコンポーネントが表示されます（図2.8右）。</p>
+<p>インストールするコンポーネントを選択する画面です。使用しているPCによって表示されるコンポーネントが異なります。PCがIntel HAXM<a id="fnb-about_haxm" href="#fn-about_haxm" class="noteref">*2</a>に対応している場合は、&quot;Performance&quot;のコンポーネントが表示されます（図2.7）。</p>
 <p>標準の選択のまま「Next」をクリックします。</p>
 <div class="footnote" id="fn-about_haxm"><p class="footnote">[<a href="#fnb-about_haxm">*2</a>] <b class="kw">HAXM (Hardware Accelerated Execution Manager)</b><!-- IDX:HAXM -->: HAXMを使うと、高速にエミュレーターを動作させるIntelイメージを使ってアプリケーションを開発できる。</p></div>
 <div id="win-androidstudio-install4" class="image">
-<img src="images/install_android_studio/win-androidstudio-install4.png" alt="Lisence Agreement" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install4.png" alt="Lisence Agreement" width="50%" />
 <p class="caption">
-図2.9: Lisence Agreement
+図2.8: Lisence Agreement
 </p>
 </div>
 <p>Android Studioをインストールするにはライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。</p>
 <div id="win-androidstudio-install5-haxm" class="image">
-<img src="images/install_android_studio/win-androidstudio-install5-haxm.png" alt="Lisence Agreement" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install5-haxm.png" alt="Lisence Agreement" width="50%" />
 <p class="caption">
-図2.10: Lisence Agreement
+図2.9: Lisence Agreement
 </p>
 </div>
 <p>インストールするコンポーネントで&quot;Performance&quot;を選択した場合に表示されます。</p>
 <p>Intel HAXMをインストールするには、ライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。</p>
 <div id="win-androidstudio-install6" class="image">
-<img src="images/install_android_studio/win-androidstudio-install6.png" alt="Install Locations" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install6.png" alt="Install Locations" width="50%" />
 <p class="caption">
-図2.11: Install Locations
+図2.10: Install Locations
 </p>
 </div>
 <p>Android StudioとAndroid SDKをインストールする場所を設定します。ここではなにも変更せず「Next」をクリックします。</p>
 <div id="win-androidstudio-install7-haxm" class="image">
-<img src="images/install_android_studio/win-androidstudio-install7-haxm.png" alt="Emulator Setup" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install7-haxm.png" alt="Emulator Setup" width="50%" />
 <p class="caption">
-図2.12: Emulator Setup
+図2.11: Emulator Setup
 </p>
 </div>
 <p>インストールするコンポーネントで&quot;Performance&quot;を選択した場合に表示されます。</p>
 <p>Intel HAXMを利用する場合に割り当てるメモリの量を設定します。ここではなにも変更せず「Next」をクリックします。</p>
 <div id="win-androidstudio-install8" class="image">
-<img src="images/install_android_studio/win-androidstudio-install8.png" alt="Choose Start Menu Folder" width="75%" />
+<img src="images/install_android_studio/win-androidstudio-install8.png" alt="Choose Start Menu Folder" width="50%" />
 <p class="caption">
-図2.13: Choose Start Menu Folder
+図2.12: Choose Start Menu Folder
 </p>
 </div>
 <p>スタートメニューの名前を設定します。</p>
 <p>「Install」をクリックすると、Android Studioのインストールを開始します。コンピュータの性能にも依りますが、インストールには10分から20分程度かかります。</p>
-<div id="win-androidstudio-install9-10" class="image">
-<img src="images/install_android_studio/win-androidstudio-install9-10.png" alt="Android Studioのインストール" width="50%" />
-<p class="caption">
-図2.14: Android Studioのインストール
-</p>
-</div>
 <p>完了したら「Next」をクリックします。</p>
-<div id="win-androidstudio-install11" class="image">
-<img src="images/install_android_studio/win-androidstudio-install11.png" alt="Completing the Android Studio Setup" width="75%" />
+<div id="win-androidstudio-install9" class="image">
+<img src="images/install_android_studio/win-androidstudio-install9.png" alt="Completing the Android Studio Setup" width="50%" />
 <p class="caption">
-図2.15: Completing the Android Studio Setup
+図2.13: Completing the Android Studio Setup
 </p>
 </div>
 <p>インストールが完了した画面です。「Finish」をクリックするとAndroid Studioが起動します。</p>
@@ -775,64 +352,64 @@ import java.io.IOException;
 <p>ダウンロードしたファイルは、DMG（ディスクイメージ）形式です<a id="fnb-mac-filename" href="#fn-mac-filename" class="noteref">*3</a>。ダブルクリックで開くと、インストールを促す画面が表示されるので、表示されているAndroid Studioのアイコンを、ドラッグ＆ドロップで「アプリケーション」に移動します。</p>
 <div class="footnote" id="fn-mac-filename"><p class="footnote">[<a href="#fnb-mac-filename">*3</a>] ダウンロードする時期によってファイル名は異なる場合があります</p></div>
 <div class="image">
-<img src="images/install_android_studio/move-androidstudio.png" alt="Android Studioをドラッグ＆ドロップで移動" width="40%" />
+<img src="images/install_android_studio/mac-androidstudio-install1.png" alt="Android Studioをドラッグ＆ドロップで移動" width="40%" />
 <p class="caption">
 図: Android Studioをドラッグ＆ドロップで移動
 </p>
 </div>
 
-<h2><a id="h2-2"></a>2.2　Android Studioの実行</h2>
+<h2><a id="h2-2"></a><span class="secno">2.2　</span>Android Studioの実行</h2>
 <p>Android Studioを実行します。</p>
 
 <h3><a id="h2-2-1"></a>Windowsの場合</h3>
 <div class="image">
-<img src="images/install_android_studio/launch-androidstudio1-win.png" alt="スタートメニューからAndroid Studioのアイコンをクリック" width="45%" />
+<img src="images/install_android_studio/launch-androidstudio1-win.png" alt="スタートメニューからAndroid Studioのアイコンをクリック" width="80%" />
 <p class="caption">
 図: スタートメニューからAndroid Studioのアイコンをクリック
 </p>
 </div>
-<p>スタートメニューを表示して、左下の下矢印をクリックすると表示される「インストール済みの全てのアプリケーション」から「Android Studio」のアイコンをクリックして実行します。</p>
+<p>スタートメニューを表示して「すべてのアプリ」から「Android Studio」のアイコンをクリックして実行します。</p>
 
 <h3><a id="h2-2-2"></a>Mac OS Xの場合</h3>
 <p>アプリケーションにインストールした「Android Studio」をクリックして実行します。</p>
 <div id="AndroidStudio-mac-launch" class="image">
-<img src="images/install_android_studio/AndroidStudio-mac-launch.png" alt="アプリケーション" width="45%" />
+<img src="images/install_android_studio/AndroidStudio-mac-launch.png" alt="アプリケーション" width="50%" />
 <p class="caption">
-図2.16: アプリケーション
+図2.14: アプリケーション
 </p>
 </div>
 <div id="AndroidStudio-mac-security0" class="image">
 <img src="images/install_android_studio/AndroidStudio-mac-security0.png" alt="セキュリティ警告" width="50%" />
 <p class="caption">
-図2.17: セキュリティ警告
+図2.15: セキュリティ警告
 </p>
 </div>
-<p>図2.17のダイアログが表示されて実行できない場合は、セキュリティの設定が必要です。</p>
+<p>ダイアログが表示されて実行できない場合は、セキュリティの設定が必要です。</p>
 <div id="AndroidStudio-mac-security1" class="image">
-<img src="images/install_android_studio/AndroidStudio-mac-security1.png" alt="アプリケーション" width="45%" />
+<img src="images/install_android_studio/AndroidStudio-mac-security1.png" alt="アプリケーション" width="50%" />
 <p class="caption">
-図2.18: アプリケーション
+図2.16: アプリケーション
 </p>
 </div>
-<p>アプリケーション一覧から「システム設定（図2.18右上）」をクリックします。</p>
+<p>アプリケーション一覧から「システム設定（図2.16右上）」をクリックします。</p>
 <div id="AndroidStudio-mac-security2" class="image">
-<img src="images/install_android_studio/AndroidStudio-mac-security2.png" alt="Security &amp;amp; Privacy" width="50%" />
+<img src="images/install_android_studio/AndroidStudio-mac-security2.png" alt="Security &amp;amp; Privacy" width="45%" />
 <p class="caption">
-図2.19: Security &amp; Privacy
+図2.17: Security &amp; Privacy
 </p>
 </div>
 <p>左下の錠前のマーク<img src="images/install_android_studio/AndroidStudio-mac-security_lock.png" alt="[AndroidStudio-mac-security_lock]" />をクリックします。</p>
 <div id="AndroidStudio-mac-security3" class="image">
 <img src="images/install_android_studio/AndroidStudio-mac-security3.png" alt="パスワードの入力" width="50%" />
 <p class="caption">
-図2.20: パスワードの入力
+図2.18: パスワードの入力
 </p>
 </div>
 <p>ユーザーのパスワードを入力して「OK」をクリックします。</p>
 <div id="AndroidStudio-mac-security4" class="image">
-<img src="images/install_android_studio/AndroidStudio-mac-security4.png" alt="Security &amp;amp; Privacy" width="50%" />
+<img src="images/install_android_studio/AndroidStudio-mac-security4.png" alt="Security &amp;amp; Privacy" width="45%" />
 <p class="caption">
-図2.21: Security &amp; Privacy
+図2.19: Security &amp; Privacy
 </p>
 </div>
 <p>「ダウンロードしたアプリケーションの実行許可」から「Mac App Storeと確認済みの開発元からのアプリケーションを許可」をクリックしてチェックを入れます。設定を変更したら、もう一度、錠前のマーク<img src="images/install_android_studio/AndroidStudio-mac-security_unlock.png" alt="[AndroidStudio-mac-security_unlock]" />をクリックして、設定をロックします。</p>
@@ -840,7 +417,7 @@ import java.io.IOException;
 <div id="AndroidStudio-mac-security5" class="image">
 <img src="images/install_android_studio/AndroidStudio-mac-security5.png" alt="セキュリティ確認" width="50%" />
 <p class="caption">
-図2.22: セキュリティ確認
+図2.20: セキュリティ確認
 </p>
 </div>
 <p>起動の確認が表示されるので「開く」をクリックします。</p>
@@ -848,27 +425,20 @@ import java.io.IOException;
 <h3><a id="h2-2-3"></a>設定の引き継ぎ</h3>
 <p>Android Studioを最初に起動するとき、既にあるAndroid Studioの設定を引き継ぐかの確認が表示されます。</p>
 <div class="image">
-<img src="images/install_android_studio/launch-androidstudio2.png" alt="Complete Installation" width="50%" />
+<img src="images/install_android_studio/androidstudio-import-setting.png" alt="Complete Installation" width="50%" />
 <p class="caption">
 図: Complete Installation
 </p>
 </div>
 <p>ここでは「I do not have...」が選択されていることを確認して「OK」をクリックします。</p>
 
-<h2><a id="h2-3"></a>2.3　Android SDKのセットアップ</h2>
+<h2><a id="h2-3"></a><span class="secno">2.3　</span>Android SDKのセットアップ</h2>
 
 <h3><a id="h2-3-1"></a>Windowsの場合</h3>
-<div id="setup-androidstudio0-5" class="image">
-<img src="images/install_android_studio/setup-androidstudio0-5.png" alt="テーマの選択" width="40%" />
-<p class="caption">
-図2.23: テーマの選択
-</p>
-</div>
-<p>Android Studioのテーマ（見た目）を選択します。標準はIntelliJです。必要に応じて変更してください。</p>
 <div id="setup-androidstudio1-2" class="image">
 <img src="images/install_android_studio/setup-androidstudio1-2.png" alt="起動時にコンポーネントをダウンロードする" width="25%" />
 <p class="caption">
-図2.24: 起動時にコンポーネントをダウンロードする
+図2.21: 起動時にコンポーネントをダウンロードする
 </p>
 </div>
 <p>Android Studioは、初回起動時にAndroidアプリ開発を始めるために必要なパッケージをダウンロードします。接続している回線の速度にもよりますが、約10分から20分程度かかります。</p>
@@ -879,22 +449,14 @@ import java.io.IOException;
 <div id="mac-androidstudio-setup2" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup2.png" alt="Welcome" width="30%" />
 <p class="caption">
-図2.25: Welcome
+図2.22: Welcome
 </p>
 </div>
 <p>「Next」ボタンを押すと、セットアップを開始します。</p>
-<p>なお、<b class="kw">JDK (Java Development Kit)</b><!-- IDX:JDK -->がインストールされていない場合、図2.26の画面が表示されます。</p>
-<div id="mac-androidstudio-install3-no-jdk" class="image">
-<img src="images/install_android_studio/mac-androidstudio-install3-no-jdk.png" alt="Java Settings" width="30%" />
-<p class="caption">
-図2.26: Java Settings
-</p>
-</div>
-<p>JDKをインストール済みで図2.26が表示された場合、JDKをインストールした場所を指定して「Next」をクリックします。</p>
 <div id="mac-androidstudio-setup3" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup3.png" alt="セットアップタイプの選択" width="30%" />
 <p class="caption">
-図2.27: セットアップタイプの選択
+図2.23: セットアップタイプの選択
 </p>
 </div>
 <p>セットアップのタイプを選択します。</p>
@@ -907,46 +469,43 @@ import java.io.IOException;
 <div id="setup-androidstudio0" class="image">
 <img src="images/install_android_studio/setup-androidstudio0.png" alt="次回もセットアップウィザードを起動するか確認するダイアログ" width="45%" />
 <p class="caption">
-図2.28: 次回もセットアップウィザードを起動するか確認するダイアログ
+図2.24: 次回もセットアップウィザードを起動するか確認するダイアログ
 </p>
 </div>
-<p>セットアップウィザードをキャンセルすると、図2.28のダイアログが表示されます。ここで&quot;Re-run the setup wizard&quot;を選択してOKを押すと、次回起動時にセットアップウィザードが起動します。</p>
+<p>セットアップウィザードをキャンセルすると、図2.24のダイアログが表示されます。ここで&quot;Re-run the setup wizard&quot;を選択してOKを押すと、次回起動時にセットアップウィザードが起動します。</p>
 <p>なお、既にAndroid SDKのセットアップを完了している人は、次の「Android SDKの場所を設定する」を参考に、Android StudioにAndroid SDKの場所を設定してください。</p>
 </div>
 <div id="mac-androidstudio-setup4" class="image">
-<img src="images/install_android_studio/mac-androidstudio-setup4.png" alt="License Agreement" width="30%" />
+<img src="images/install_android_studio/mac-androidstudio-setup4.png" alt="Verify Settings" width="30%" />
 <p class="caption">
-図2.29: License Agreement
+図2.25: Verify Settings
 </p>
 </div>
-<p>セットアップを進めるには、インストールする全てのパッケージについて、ライセンスに合意する必要があります。</p>
-<p>それぞれライセンスを選択して、内容を読み、合意する場合は&quot;Accept&quot;を押してください。</p>
-<p>「Finish」ボタンを押すには、表示されている全てのライセンスに合意する必要があります。例えば、図2.29の場合、&quot;android-sdk-license&quot;と&quot;intel-android-extra-license&quot;の2つのライセンスに、それぞれ合意する必要があります。</p>
-<p>全てのライセンスに合意して「Finish」のボタンを押すと、セットアップウィザードは、パッケージのダウンロードとインストールを開始します。</p>
+<p>「Finish」のボタンを押すと、セットアップウィザードは、パッケージのダウンロードとインストールを開始します。</p>
 <div id="mac-androidstudio-setup5" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup5.png" alt="Download Components" width="30%" />
 <p class="caption">
-図2.30: Download Components
+図2.26: Download Components
 </p>
 </div>
 <div id="mac-androidstudio-setup6" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup6.png" alt="パスワードの入力" width="50%" />
 <p class="caption">
-図2.31: パスワードの入力
+図2.27: パスワードの入力
 </p>
 </div>
 <p>インストールの途中でパスワードが求められる場合があります。パスワードを入力して「OK」を押します。</p>
 <div id="mac-androidstudio-setup7" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup7.png" alt="Download Components" width="30%" />
 <p class="caption">
-図2.32: Download Components
+図2.28: Download Components
 </p>
 </div>
 <p>ダウンロードとインストールを完了後、「Finish」を押すと、Android Studioが起動します。</p>
 <p>引き続き「Android Studioではじめる 簡単Androidアプリ開発」のChapter 3 『Android Studioをセッティングしよう』を参照して、アプリの開発環境を整えてください。</p>
 
 <h3><a id="h2-3-3"></a>Android SDKの場所を設定する</h3>
-<p>「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後にAndroid Studioのスタートメニューが表示されます。</p>
+<p>「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後に表示されるAndroid StudioのスタートメニューからAndroid SDKのパスを設定できます。</p>
 <div class="image">
 <img src="images/install_android_studio/setup_sdk_path1.png" alt="Configure" width="35%" />
 <p class="caption">
