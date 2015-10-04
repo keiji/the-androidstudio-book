@@ -71,12 +71,12 @@ JDKのインストーラーが起動します。
 
 「次(N) >」をクリックすると、JDKのインストールがはじまります（@<img>{win-jdk8-install4-5}）。
 
-//image[win-jdk8-install4-5][JREセットアップ][scale=0.6]{
+//image[win-jdk8-install4-5][JREセットアップ][scale=0.35]{
 //}
 
 JDKのインストールが終わると、続いてJava実行環境@<kw>{JRE, Java Runtime Environment}をインストールします。
 
-//image[win-jdk8-install6-7][JREセットアップ][scale=0.6]{
+//image[win-jdk8-install6-7][JREセットアップ][scale=0.35]{
 //}
 
 「次 >」をクリックするとインストールがはじまります。
@@ -132,7 +132,7 @@ JDK 8のインストール用パッケージをダウンロードします。
 //image[mac-jdk8-download1][Java SE Development Kit 8 Downloads][scale=0.3]{
 //}
 
-JDKのダウンロードページ（@<img>{mac-jdk8-download1}）が表示されます。
+JDKのダウンロードページが表示されます。
 
 JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。
 "Oracle Binary Code License Agreement for Java SE"を読み、同意する場合は"Accept License Agreement"の左側の丸をクリックします。

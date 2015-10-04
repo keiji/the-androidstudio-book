@@ -9,15 +9,15 @@ Android Studioをダウンロードします。
 
 @<href>{http://developer.android.com/sdk/index.html}
 
-//image[download_android_studio1][Android Studio 1.4][scale=0.3]{
+//image[download_androidstudio1][Android Studio 1.4][scale=0.3]{
 //}
 
 緑色のボタン「Download Android Studio...」をクリックします。
 
-//image[download_android_studio2][Android Studio 1.4][scale=0.3]{
+//image[download_androidstudio2][Android Studio 1.4][scale=0.3]{
 //}
 
-Android Studioをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_android_studio2}）。
+Android Studioをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_androidstudio2}）。
 
 表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio...」のボタンをクリックします。
 
@@ -27,12 +27,12 @@ Android Studioをダウンロードするには、ライセンスに合意する
 必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。
 
 =====[column]ダウンロード後の表示は？
-//image[download_android_studio3][Install Android Studio][scale=0.3]{
+//image[download_androidstudio3][Install Android Studio][scale=0.3]{
 //}
 
 ダウンロードの手続きは、使用しているブラウザによって異なります。
 
-例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{download_android_studio3}下部）。
+例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{download_androidstudio3}下部）。
 
 なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、Android SDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。
 
@@ -50,16 +50,16 @@ Android Studioをダウンロードするには、ライセンスに合意する
 この際「ユーザーアカウント制御」が警告を出す場合がありますが、発行元がGoogleになっていることを確認した後
 「はい」をクリックしてインストールを続行します。
 
-//image[win-androidstudio-install1][ユーザーアカウント制御。発行元がGoogleであることを確認する][scale=0.75]{
+//image[win-androidstudio-install1][ユーザーアカウント制御。発行元がGoogleであることを確認する][scale=0.5]{
 //}
 
-//image[win-androidstudio-install2][インストーラー][scale=0.75]{
+//image[win-androidstudio-install2][インストーラー][scale=0.5]{
 //}
 
 「Next」をクリックします。
 なお、@<kw>{JDK, Java Development Kit}がインストールされていない場合、@<img>{win-androidstudio-install3-no-jdk}の画面が表示されます。
 
-//image[win-androidstudio-install3-no-jdk][System Check][scale=0.75]{
+//image[win-androidstudio-install3-no-jdk][System Check][scale=0.5]{
 //}
 
 JDKをインストール済みで@<img>{win-androidstudio-install3-no-jdk}が表示された場合、JDKをインストールした場所を指定して「Next」をクリックします。
@@ -75,32 +75,32 @@ JDKをインストール済みで@<img>{win-androidstudio-install3-no-jdk}が表
 
 //footnote[about_haxm][@<kw>{HAXM, Hardware Accelerated Execution Manager}: HAXMを使うと、高速にエミュレーターを動作させるIntelイメージを使ってアプリケーションを開発できる。]
 
-//image[win-androidstudio-install4][Lisence Agreement][scale=0.75]{
+//image[win-androidstudio-install4][Lisence Agreement][scale=0.5]{
 //}
 
 Android Studioをインストールするにはライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。
 
-//image[win-androidstudio-install5-haxm][Lisence Agreement][scale=0.75]{
+//image[win-androidstudio-install5-haxm][Lisence Agreement][scale=0.5]{
 //}
 
 インストールするコンポーネントで"Performance"を選択した場合に表示されます。
 
 Intel HAXMをインストールするには、ライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。
 
-//image[win-androidstudio-install6][Install Locations][scale=0.75]{
+//image[win-androidstudio-install6][Install Locations][scale=0.5]{
 //}
 
 Android StudioとAndroid SDKをインストールする場所を設定します。
 ここではなにも変更せず「Next」をクリックします。
 
-//image[win-androidstudio-install7-haxm][Emulator Setup][scale=0.75]{
+//image[win-androidstudio-install7-haxm][Emulator Setup][scale=0.5]{
 //}
 
 インストールするコンポーネントで"Performance"を選択した場合に表示されます。
 
 Intel HAXMを利用する場合に割り当てるメモリの量を設定します。ここではなにも変更せず「Next」をクリックします。
 
-//image[win-androidstudio-install8][Choose Start Menu Folder][scale=0.75]{
+//image[win-androidstudio-install8][Choose Start Menu Folder][scale=0.5]{
 //}
 
 スタートメニューの名前を設定します。
@@ -110,7 +110,7 @@ Intel HAXMを利用する場合に割り当てるメモリの量を設定しま�
 
 完了したら「Next」をクリックします。
 
-//image[win-androidstudio-install9][Completing the Android Studio Setup][scale=0.75]{
+//image[win-androidstudio-install9][Completing the Android Studio Setup][scale=0.5]{
 //}
 
 インストールが完了した画面です。「Finish」をクリックするとAndroid Studioが起動します。
@@ -131,7 +131,7 @@ Android Studioを実行します。
 
 === Windowsの場合
 
-//indepimage[launch-androidstudio1-win][スタートメニューからAndroid Studioのアイコンをクリック][scale=0.45]
+//indepimage[launch-androidstudio1-win][スタートメニューからAndroid Studioのアイコンをクリック][scale=0.8]
 
 スタートメニューを表示して「すべてのアプリ」から「Android Studio」のアイコンをクリックして実行します。
 
@@ -139,20 +139,20 @@ Android Studioを実行します。
 
 アプリケーションにインストールした「Android Studio」をクリックして実行します。
 
-//image[AndroidStudio-mac-launch][アプリケーション][scale=0.45]{
+//image[AndroidStudio-mac-launch][アプリケーション][scale=0.5]{
 //}
 
 //image[AndroidStudio-mac-security0][セキュリティ警告][scale=0.5]{
 //}
 
-@<img>{AndroidStudio-mac-security0}のダイアログが表示されて実行できない場合は、セキュリティの設定が必要です。
+ダイアログが表示されて実行できない場合は、セキュリティの設定が必要です。
 
-//image[AndroidStudio-mac-security1][アプリケーション][scale=0.45]{
+//image[AndroidStudio-mac-security1][アプリケーション][scale=0.5]{
 //}
 
 アプリケーション一覧から「システム設定（@<img>{AndroidStudio-mac-security1}右上）」をクリックします。
 
-//image[AndroidStudio-mac-security2][Security & Privacy][scale=0.5]{
+//image[AndroidStudio-mac-security2][Security & Privacy][scale=0.45]{
 //}
 
 左下の錠前のマーク@<icon>{AndroidStudio-mac-security_lock}をクリックします。
@@ -162,7 +162,7 @@ Android Studioを実行します。
 
 ユーザーのパスワードを入力して「OK」をクリックします。
 
-//image[AndroidStudio-mac-security4][Security & Privacy][scale=0.5]{
+//image[AndroidStudio-mac-security4][Security & Privacy][scale=0.45]{
 //}
 
 「ダウンロードしたアプリケーションの実行許可」から「Mac App Storeと確認済みの開発元からのアプリケーションを許可」をクリックしてチェックを入れます。
