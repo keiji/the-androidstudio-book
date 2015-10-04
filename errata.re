@@ -4,7 +4,7 @@
 
 Android Studio 0.8.14からセットアップ方法が大幅に変更されています。
 
-詳細は@<chapref>{install_jdk}および@<chapref>{install_android_studio}を参照してください。
+詳細はおよび@<chapref>{install_android_studio}を参照してください。
 
 == 新しいプロジェクトを作成しよう
 

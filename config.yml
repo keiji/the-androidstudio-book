@@ -13,7 +13,7 @@ aut: 有山 圭二
 #prt: keiji.io
 prt_url:  https://github.com/keiji/the-androidstudio-book
 #edt: 有山圭二
-date: 2015/05/14
+date: 2015/10/04
 rights: |
   本文書は、有山圭二の著作物であり、クリエイティブコモンズ2.1の表示—非営利—改変禁止ライセンスの元で提供しています。
 description:
@@ -55,5 +55,5 @@ mytoc: true
 colophon: true
 texstyle: reviewmacro
 pubhistory: |
-  1.2 対応版
+  1.4 対応版
 debug: false
