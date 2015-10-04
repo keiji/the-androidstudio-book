@@ -49,8 +49,8 @@ toclevel: 2
 secnolevel: 3
 # review-compileに渡すパラメータ
 params: --stylesheet=style.css
-# 目次生成用？
-mytoc: true
+# 目次生成用
+toc: true
 # 奥付生成用
 colophon: true
 texstyle: reviewmacro
