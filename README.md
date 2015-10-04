@@ -1,7 +1,11 @@
 
 # この文書について
 
-この文書は、「[Android Studioではじめる 簡単Androidアプリ開発]」の内容を補足する目的で、Android Studioのインストールと初期設定について説明しています。
+この文書は「Android Studioではじめる 簡単Androidアプリ開発」の内容を補足する目的で、Android Studioのインストールと初期設定について説明していました。
+
+現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。
+
+「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください。
 
 [Android Studioではじめる 簡単Androidアプリ開発]: [http://gihyo.jp/book/2014/978-4-7741-6998-9](http://gihyo.jp/book/2014/978-4-7741-6998-9)
 
@@ -20,10 +24,11 @@
 
 本文書に関する最新情報は引き続き、
 
-
 * 技術評論社サイト [http://gihyo.jp/book/2014/978-4-7741-6998-9](http://gihyo.jp/book/2014/978-4-7741-6998-9)
-* HTML版 [http://keiji.github.io/the-androidstudio-book/](http://keiji.github.io/the-androidstudio-book/)
-* PDF版 [http://keiji.github.io/the-androidstudio-book/archives/book.pdf](http://keiji.github.io/the-androidstudio-book/archives/book.pdf)
+* Android Studioセットアップガイド
+ * HTML版 [http://keiji.github.io/the-androidstudio-book/](http://keiji.github.io/the-androidstudio-book/)
+ * PDF版 [http://keiji.github.io/the-androidstudio-book/archives/book.pdf](http://keiji.github.io/the-androidstudio-book/archives/book.pdf)
+* 正誤情報 @<href>{http://keiji.github.io/the-androidstudio-book/archives/errata.pdf}
 * GitHub [https://github.com/keiji/the-androidstudio-book](https://github.com/keiji/the-androidstudio-book)
 
-で、提供します。
+で、提供していきます。
