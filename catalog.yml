@@ -1,7 +1,5 @@
 PREDEF:
   - abstract.re
-  - errata.re
-  - history.re
 
 CHAPS:
   - install_jdk.re

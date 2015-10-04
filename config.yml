@@ -7,7 +7,7 @@
 # ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
 bookname: the-androidstudio-book
 # 書名
-booktitle: 「Android Studioではじめる 簡単Androidアプリ開発」補足資料
+booktitle: Android Studioセットアップガイド
 # 著者
 aut: 有山 圭二
 #prt: keiji.io
