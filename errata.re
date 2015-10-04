@@ -4,8 +4,6 @@
 
 Android Studio 0.8.14からセットアップ方法が大幅に変更されています。
 
-詳細はおよび@<chapref>{install_android_studio}を参照してください。
-
 == 新しいプロジェクトを作成しよう
 
 本書で、新規プロジェクト作成時に指定するActivity Name、Layout Name、Titleの初期値にとして、MyActivity/activity_my/MyActivityと、

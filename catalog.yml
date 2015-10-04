@@ -1,11 +1,8 @@
 PREDEF:
   - abstract.re
-  - errata.re
-  - history.re
 
 CHAPS:
-  - install_jdk.re
-  - install_android_studio.re
+  - errata.re
 
 APPENDIX:
   - about_book.re
