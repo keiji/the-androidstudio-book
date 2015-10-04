@@ -30,6 +30,6 @@
 
 == QRコード
 
-//indepimage[qr_gihyo][技術評論社のサイトへ][scale=0.35]
+//indepimage[qr_gihyo][技術評論社のサイトへ][scale=0.3]
 
-//indepimage[qr_amazon][Amazonの商品ページへ][scale=0.35]
+//indepimage[qr_amazon][Amazonの商品ページへ][scale=0.3]
