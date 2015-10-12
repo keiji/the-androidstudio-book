@@ -16,9 +16,9 @@
 
 ## ライセンス
 
-本文書は、有山圭二の著作物であり、[クリエイティブコモンズ2.1の表示—非営利—改変禁止ライセンス]の元で提供しています。
+本文書は、有山圭二の著作物であり、[クリエイティブコモンズ4.0の表示—改変禁止ライセンス]の元で提供しています。
 
-[クリエイティブコモンズ2.1の表示—非営利—改変禁止ライセンス]: [http://creativecommons.org/licenses/by-nc-nd/2.1/jp/](http://creativecommons.org/licenses/by-nc-nd/2.1/jp/)
+[クリエイティブコモンズ4.0の表示—改変禁止ライセンス]: [http://creativecommons.org/licenses/by-nd/4.0/deed.ja](http://creativecommons.org/licenses/by-nd/4.0/deed.ja)
 
 ## 最新情報の提供
 
