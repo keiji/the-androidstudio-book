@@ -22,9 +22,9 @@
 
 == ライセンス
 
-本文書は、有山圭二の著作物であり、クリエイティブコモンズ2.1の表示—非営利—改変禁止@<fn>{license}ライセンスの元で提供しています。
+本文書は、有山圭二の著作物であり、クリエイティブコモンズ4.0の表示—改変禁止@<fn>{license}ライセンスの元で提供しています。
 
-//footnote[license][@<href>{http://creativecommons.org/licenses/by-nc-nd/2.1/jp/}]
+//footnote[license][@<href>{http://creativecommons.org/licenses/by-nd/4.0/deed.ja}]
 
 
 == 最新情報の提供
@@ -33,8 +33,8 @@
 
  * 技術評論社サイト @<href>{http://gihyo.jp/book/2014/978-4-7741-6998-9}
  * Android Studioセットアップガイド
-  * HTML版 @<href>{http://keiji.github.io/the-androidstudio-book/}
-  * PDF版 @<href>{http://keiji.github.io/the-androidstudio-book/archives/book.pdf}
+ ** HTML版 @<href>{http://keiji.github.io/the-androidstudio-book/}
+ ** PDF版 @<href>{http://keiji.github.io/the-androidstudio-book/archives/book.pdf}
  * 正誤情報 @<href>{http://keiji.github.io/the-androidstudio-book/archives/errata.pdf}
  * GitHub @<href>{https://github.com/keiji/the-androidstudio-book}
 
