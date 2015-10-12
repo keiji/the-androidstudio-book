@@ -6,6 +6,17 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
 
 == 新しいプロジェクトを作成しよう
 
+=== Activityのテンプレートの変更
+
+Android Studio 1.4から"Blank Activity"を選んだときに生成するActivityのコードが大幅に変更されています。
+
+//image[create_project_add_activity][Empty Activityを選択][scale=0.25]{
+//}
+
+"Blank Activity"ではなく"Empty Activity"を選択すると、もっとも本書の内容に近いコードが生成されます。
+
+=== 初期名称の変更
+
 本書で、新規プロジェクト作成時に指定するActivity Name、Layout Name、Titleの初期値にとして、MyActivity/activity_my/MyActivityと、
 名前に@<tt>{My}が付与されて記載されていますが、Android Studio 0.8.14からは@<tt>{Main}が付与されるように変更になりました。
 
@@ -31,14 +42,40 @@ Android Studio 0.8.14からセットアップ方法が大幅に変更されて�
         new InputStreamReader(response.getEntity().getContent()));
 //}
 
-===== 注意
+==== AndroidHttpClient
 
 リスト6-2では、AndroidHttpClientクラスを使ってネットワークへアクセスしていますが、
-このクラスはAndroid 5.1(API Level 22)から、deprecated（非推奨）に指定されています@<fn>{about_androidhttpclient}。
-
-本稿更新の時点で動作はしますが、留意が必要です。
+このクラスはAndroid 5.1(API Level 22)から、deprecated（非推奨）に指定され、Android 6.0(API Level 23)では完全に削除されました@<fn>{about_androidhttpclient}。
 
 //footnote[about_androidhttpclient][AndroidHttpClientの代わりに、HttpUrlConnectionを使用してください。]
+
+最新のAndroid Studioではプロジェクトを生成すると自動的に@<tt>{compileSdkVersion}が23に設定されるので、正常にビルドができません。
+
+解決方法は二つあります。
+
+===== compileSdkVersionを22に設定する
+
+@<tt>{app/build.gradle}を開いて、@<tt>{compileSdkVersion}を22以下に設定してください。
+
+//list[compilesdkversion_22][compileSdkVersionを22に]{
+  apply plugin: 'com.android.application'
+
+  android {
+-      compileSdkVersion 23
++      compileSdkVersion 22
+       buildToolsVersion "23.0.1"
+//}
+
+===== AndroidHttpClientを使うことを明示的に設定する
+
+@<tt>{app/build.gradle}を開いて@<tt>{useLibrary}を追加してください（@<list>{use_library}）
+
+//list[use_library][useLibraryを追加する]{
+  apply plugin: 'com.android.application'
+
+  android {
++     useLibrary 'org.apache.http.legacy'
+//}
 
 ==== P.78
 
