@@ -26,9 +26,9 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
  * 新規プロジェクト作成時に、Activity Nameを@<tt>{MyActivity}。Layout Nameを@<tt>{activity_my}に変更する
 
 
-=== Web APIで情報を取得する天気予報アプリを作ろう
+== Web APIで情報を取得する天気予報アプリを作ろう
 
-==== P.77
+=== P.77
 
 リスト6-2の中段付近、BufferedReaderをインスタンス化している処理の最後尾に必要な閉じ括弧")"とセミコロン";"が抜け落ちています。
 
@@ -42,7 +42,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
         new InputStreamReader(response.getEntity().getContent()));
 //}
 
-==== AndroidHttpClient
+=== AndroidHttpClient
 
 リスト6-2では、AndroidHttpClientクラスを使ってネットワークへアクセスしていますが、
 このクラスはAndroid 5.1(API Level 22)から、deprecated（非推奨）に指定され、Android 6.0(API Level 23)では完全に削除されました@<fn>{about_androidhttpclient}。
@@ -53,7 +53,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 
 解決方法は二つあります。
 
-===== compileSdkVersionを22に設定する
+==== compileSdkVersionを22に設定する
 
 @<tt>{app/build.gradle}を開いて、@<tt>{compileSdkVersion}を22以下に設定してください。
 
@@ -66,7 +66,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
        buildToolsVersion "23.0.1"
 //}
 
-===== AndroidHttpClientを使うことを明示的に設定する
+==== AndroidHttpClientを使うことを明示的に設定する
 
 @<tt>{app/build.gradle}を開いて@<tt>{useLibrary}を追加してください（@<list>{use_library}）
 
@@ -77,7 +77,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 +     useLibrary 'org.apache.http.legacy'
 //}
 
-==== P.78
+=== P.78
 
 『取得した天気情報を表示する』で、リスト6-3として表記されているファイル名に誤りがあります。
 
@@ -86,7 +86,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 正	@<tt>{activity_my.xml}
 //}
 
-==== P.99
+=== P.99
 
 リスト6-14の15行目、ImageLoaderTaskのクラス宣言部の書き換えに関する記述が抜け落ちています。
 
@@ -96,7 +96,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 //}
 
 
-==== P.105
+=== P.105
 
 リスト6-17の作業以前に、@<tt>{Temperature}クラスに@<tt>{toString}メソッドを追加する記述が抜け落ちています。
 
@@ -130,8 +130,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
     }
 //}
 
-
-==== P.109
+=== P.109
 
 『6-9 読み込み中を表示する』で、リスト6-20として表記されているファイル名に誤りがあります。
 
@@ -140,7 +139,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 正	@<tt>{activity_my.xml}
 //}
 
-==== P.110
+=== P.110
 
 リスト6-21にインデントのずれがあります。
 @<list>{list_6_21}がより正確な表記です。
@@ -186,8 +185,7 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 
 //}
 
-
-==== P.114
+=== P.114
 
 リスト6-27のimport文に不要な@<tt>{+}記号が表示されています。
 
@@ -213,8 +211,9 @@ import org.json.JSONException;
 import java.io.IOException;
 //}
 
+== 障害物や穴を飛び越えるアクションゲームを作ろう
 
-==== P.137
+=== P.137
 
 Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
 
@@ -228,7 +227,7 @@ drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを�
 //image[create_xhdpi_dir_chap7][New Directory][scale=0.5]{
 //}
 
-==== P.150
+=== P.150
 
 リスト7-12で@<tt>{jumpDroid}メソッドがfloat型の引数@<tt>{power}の記載がありますが、これは誤りです。
 @<tt>{jumpDroid}メソッドに引数は記述しません。
@@ -238,7 +237,7 @@ drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを�
 正	@<tt>{private void jumpDroid() { }
 //}
 
-==== P.159
+=== P.159
 
 『ゲームオーバーになったことをコールバックする』で、ファイル名に誤りがあります。
 
@@ -247,7 +246,9 @@ drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを�
 正	@<tt>{GameView.javaを開いて}
 //}
 
-==== P.179
+== スコアによって難易度が変わるシューティングゲームを作ろう
+
+=== P.179
 
 Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
 
@@ -261,13 +262,13 @@ drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを�
 //image[create_xhdpi_dir_chap8][New Directory][scale=0.5]{
 //}
 
-==== P.186
+=== P.186
 
 リスト8-7の7行目、定数@<tt>{MISSILE_LAUNCH_WEIGHT}の記述が追加行に指定されていますが、ここで追加の必要はありません。
 （既にリスト8-2で追加をしているため）
 
 
-==== P.188 - 189 リスト8-8について
+=== P.188 - 189 リスト8-8について
 
 21行目、@<tt>{DrawThread}内で@<tt>{drawGame}メソッドを実行している記述がありますが、これは@<tt>{drawObject}メソッドの誤りです。
 
@@ -299,8 +300,7 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
 }
 //}
 
-
-==== P.194
+=== P.194
 
 リスト8-11、@<tt>{BaseObject}クラスの@<tt>{isAvailable}メソッド内への追加に関する記述が抜け落ちています。
 
@@ -318,8 +318,7 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
     }
 //}
 
-
-==== P.211
+=== P.211
 
 掲載されているバージョンとAPI Levelの対照表で、@<tt>{API Level 20}のプラットフォームバージョンが@<tt>{Android Wear 4.4.1W}と記載がありますが、
 これは@<tt>{Android Wear 4.4W}の誤りです。
@@ -329,7 +328,9 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
 正	@<tt>{Android Wear 4.4W}
 //}
 
-==== P.217
+== 端末の傾きで玉を移動する迷路ゲームを作ろう
+
+=== P.217
 
 Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
 
@@ -344,7 +345,7 @@ drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを�
 //}
 
 
-==== P.255
+=== P.255
 
 リスト9-27に、@<tt>{LabyrinthView}クラスに変数@<tt>{seed}と、@<tt>{setSeed}メソッドを追加する記述が抜け落ちています。
 
