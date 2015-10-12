@@ -28,7 +28,9 @@
 * Android Studioセットアップガイド
  * HTML版 [http://keiji.github.io/the-androidstudio-book/](http://keiji.github.io/the-androidstudio-book/)
  * PDF版 [http://keiji.github.io/the-androidstudio-book/archives/book.pdf](http://keiji.github.io/the-androidstudio-book/archives/book.pdf)
-* 正誤情報 [http://keiji.github.io/the-androidstudio-book/archives/errata.pdf](http://keiji.github.io/the-androidstudio-book/archives/errata.pdf)
+* 正誤情報
+ * 初版１刷向け [http://keiji.github.io/the-androidstudio-book/archives/errata.pdf](http://keiji.github.io/the-androidstudio-book/archives/errata.pdf)
+ * 初版２刷向け [http://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf](http://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf)
 * GitHub [https://github.com/keiji/the-androidstudio-book](https://github.com/keiji/the-androidstudio-book)
 
 で、提供していきます。
