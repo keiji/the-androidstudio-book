@@ -216,16 +216,16 @@ import java.io.IOException;
 
 ==== P.137
 
-Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
+Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
 
-drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap7}）。
+drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap7}）。
 
 //image[add_resource_dir_chap7][New -> Directory][scale=0.25]{
 //}
 
-作成するディレクトリ名に、"drawable-xxhdpi"と入力して[OK]をクリックします。
+作成するディレクトリ名に、"drawable-xhdpi"と入力して[OK]をクリックします。
 
-//image[create_xxhdpi_dir_chap7][New Directory][scale=0.5]{
+//image[create_xhdpi_dir_chap7][New Directory][scale=0.5]{
 //}
 
 ==== P.150
@@ -249,16 +249,16 @@ drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを�
 
 ==== P.179
 
-Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
+Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
 
-drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap8}）。
+drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap8}）。
 
 //image[add_resource_dir_chap8][New -> Directory][scale=0.25]{
 //}
 
-作成するディレクトリ名に、"drawable-xxhdpi"と入力して[OK]をクリックします。
+作成するディレクトリ名に、"drawable-xhdpi"と入力して[OK]をクリックします。
 
-//image[create_xxhdpi_dir_chap8][New Directory][scale=0.5]{
+//image[create_xhdpi_dir_chap8][New Directory][scale=0.5]{
 //}
 
 ==== P.186
@@ -331,16 +331,16 @@ P.189下部、@<tt>{onDraw}メソッド内、変数@<tt>{width}と@<tt>{height}�
 
 ==== P.217
 
-Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xxhdpi}を作成する必要があります。
+Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
 
-drawable-xxhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap9}）。
+drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap9}）。
 
 //image[add_resource_dir_chap9][New -> Directory][scale=0.25]{
 //}
 
-作成するディレクトリ名に、"drawable-xxhdpi"と入力して[OK]をクリックします。
+作成するディレクトリ名に、"drawable-xhdpi"と入力して[OK]をクリックします。
 
-//image[create_xxhdpi_dir_chap9][New Directory][scale=0.5]{
+//image[create_xhdpi_dir_chap9][New Directory][scale=0.5]{
 //}
 
 
