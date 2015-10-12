@@ -51,9 +51,10 @@ secnolevel: 3
 params: --stylesheet=style.css
 # 目次生成用？
 mytoc: true
+toc: true
 # 奥付生成用
 colophon: true
 texstyle: reviewmacro
 pubhistory: |
-  1.4 暫定対応版
+  初版第１刷向け 1.4 暫定対応版
 debug: false
