@@ -65,6 +65,15 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 
 == 障害物や穴を飛び越えるアクションゲームを作ろう
 
+=== P.93
+
+XMLの正式名の表記に誤りがあります。
+
+//table[xml][]{
+誤	@<tt>{Xtensible Markup Language}
+正	@<tt>{Extensible Markup Language}
+//}
+
 === P.137
 
 Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
