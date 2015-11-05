@@ -86,6 +86,15 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
 正	@<tt>{activity_my.xml}
 //}
 
+=== P.93
+
+XMLの正式名の表記に誤りがあります。
+
+//table[xml][]{
+誤	@<tt>{Xtensible Markup Language}
+正	@<tt>{Extensible Markup Language}
+//}
+
 === P.99
 
 リスト6-14の15行目、ImageLoaderTaskのクラス宣言部の書き換えに関する記述が抜け落ちています。
