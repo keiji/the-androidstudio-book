@@ -9,9 +9,11 @@
   <title>Android Studio セットアップガイド</title>
 </head>
 <body>
-<h1><a id="h"></a>Android Studio セットアップガイド</h1>
-<p>この文書は「Android Studioではじめる 簡単Androidアプリ開発<a id="fnb-gihyo_site" href="#fn-gihyo_site" class="noteref">*1</a>」内容を補足する目的で、 Android Studio のインストールと初期設定について説明していました。</p>
-<p>現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。</p>
+
+<h1><a id="h0"></a>この文書について</h1>
+<p>この文書は「Android Studioではじめる 簡単Androidアプリ開発<a id="fnb-gihyo_site" href="#fn-gihyo_site" class="noteref">*1</a>」の内容を補足する目的で、Android Studioのインストールと初期設定について説明していました。</p>
+<p>現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。</p>
+<p>「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください（現在は）。</p>
 <div class="image">
 <img src="images/abstract/cover.png" alt="Android Studioではじめる 簡単Androidアプリ開発" width="30%" />
 <p class="caption">
@@ -19,6 +21,8 @@
 </p>
 </div>
 <div class="footnote" id="fn-gihyo_site"><p class="footnote">[<a href="#fnb-gihyo_site">*1</a>] <a href="http://gihyo.jp/book/2014/978-4-7741-6998-9" class="link">http://gihyo.jp/book/2014/978-4-7741-6998-9</a></p></div>
+<p>なお、「Android Studioではじめる 簡単Androidアプリ開発」については現在、改訂版<a id="fnb-gihyo_site2" href="#fn-gihyo_site2" class="noteref">*2</a>が発売しています。そちらも併せてよろしくお願いいたします</p>
+<div class="footnote" id="fn-gihyo_site2"><p class="footnote">[<a href="#fnb-gihyo_site2">*2</a>] ［改訂］Android Studioではじめる 簡単Androidアプリ開発<br /> <a href="http://gihyo.jp/book/2016/978-4-7741-7859-2" class="link">http://gihyo.jp/book/2016/978-4-7741-7859-2</a></p></div>
 
 <h2><a id="h-0"></a>目次</h2>
 <ul>
@@ -31,13 +35,12 @@
 <p>本文書に記載されている会社名、製品名などは、一般に各社の登録商標または商標、商品名です。会社名、製品名については、本文中では©、®、™マークなどは表示していません。</p>
 
 <h2><a id="h-2"></a>ライセンス</h2>
-<p>本文書は、有山圭二の著作物であり、クリエイティブコモンズ4.0の表示—改変禁止<a id="fnb-license" href="#fn-license" class="noteref">*2</a>ライセンスの元で提供しています。</p>
-<div class="footnote" id="fn-license"><p class="footnote">[<a href="#fnb-license">*2</a>] <a href="http://creativecommons.org/licenses/by-nd/4.0/deed.ja" class="link">http://creativecommons.org/licenses/by-nd/4.0/deed.ja</a></p></div>
+<p>本文書は、有山圭二の著作物であり、クリエイティブコモンズ4.0の表示—改変禁止<a id="fnb-license" href="#fn-license" class="noteref">*3</a>ライセンスの元で提供しています。</p>
+<div class="footnote" id="fn-license"><p class="footnote">[<a href="#fnb-license">*3</a>] <a href="http://creativecommons.org/licenses/by-nd/4.0/deed.ja" class="link">http://creativecommons.org/licenses/by-nd/4.0/deed.ja</a></p></div>
 
 <h2><a id="h-3"></a>最新情報の提供</h2>
 <p>本文書に関する最新情報は引き続き、</p>
 <ul>
-<li>技術評論社サイト <a href="http://gihyo.jp/book/2014/978-4-7741-6998-9" class="link">http://gihyo.jp/book/2014/978-4-7741-6998-9</a></li>
 <li>Android Studioセットアップガイド<ul>
 <li>HTML版 <a href="http://keiji.github.io/the-androidstudio-book/" class="link">http://keiji.github.io/the-androidstudio-book/</a></li>
 <li>PDF版 <a href="http://keiji.github.io/the-androidstudio-book/archives/book.pdf" class="link">http://keiji.github.io/the-androidstudio-book/archives/book.pdf</a></li>
@@ -67,7 +70,7 @@
 </p>
 </div>
 <p>JDKのダウンロードページ（図1.1）が表示されます。</p>
-<p>JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。&quot;Oracle Binary Code License Agreement for Java SE&quot;を読み、同意する場合は&quot;Accept License Agreement&quot;の左側の丸をクリックします（図1.2）。</p>
+<p>JDKをダウンロードするにはLicense Agreement（利用許諾）に同意する必要があります。&quot;Oracle Binary Code License Agreement for Java SE&quot;を読み、同意する場合は&quot;Accept License Agreement&quot;の左側の丸をクリックします（図1.2）。</p>
 <p>利用許諾に同意をしたら、右側のリンクをクリックして、お使いのプラットフォームにあったJDKを選択すると、インストールパッケージがダウンロードされます。</p>
 <div class="column">
 
@@ -84,14 +87,12 @@
 図1.2: Microsoft Edgeを使ったダウンロード
 </p>
 </div>
-<p>ダウンロードの手続きは、使用しているブラウザによって異なります。</p>
-<p>例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図1.2下部）。</p>
+<p>ダウンロードの手続きは、使用しているブラウザによって異なります。例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図1.2下部）。</p>
 <p>なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、JDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。</p>
 </div>
 
 <h3><a id="h1-1-2"></a>インストール</h3>
-<p>JDKをインストールします。</p>
-<p>ダウンロードしたインストールパッケージをダブルクリックするなどして実行します。</p>
+<p>JDKをインストールします。ダウンロードしたインストールパッケージをダブルクリックするなどして実行します。</p>
 <div id="win-jdk8-install1" class="image">
 <img src="images/install_jdk/win-jdk8-install1.png" alt="起動確認" width="50%" />
 <p class="caption">
@@ -113,9 +114,7 @@
 図1.5: JDKセットアップ
 </p>
 </div>
-<p>インストールするパッケージの選択と、インストール先のディレクトリを設定します。</p>
-<p>インストールパッケージのうち、「ソース・コード」は対象から外しても問題ありません。</p>
-<p>インストール先のディレクトリは、あとで環境変数を設定するときに必要になるので、必ずメモをしておいてください。</p>
+<p>インストールするパッケージの選択と、インストール先のディレクトリを設定します。インストールパッケージのうち、「ソース・コード」は対象から外しても問題ありません。インストール先のディレクトリは、あとで環境変数を設定するときに必要になるので、必ずメモをしておいてください。</p>
 <p>「次(N) &gt;」をクリックすると、JDKのインストールがはじまります（図1.6）。</p>
 <div id="win-jdk8-install4-5" class="image">
 <img src="images/install_jdk/win-jdk8-install4-5.png" alt="JREセットアップ" width="35%" />
@@ -130,8 +129,7 @@
 図1.7: JREセットアップ
 </p>
 </div>
-<p>「次 &gt;」をクリックするとインストールがはじまります。</p>
-<p>完了したら「閉じる(C)」をクリックして、インストーラーを終了します。</p>
+<p>「次 &gt;」をクリックするとインストールがはじまります。完了したら「閉じる(C)」をクリックして、インストーラーを終了します。</p>
 
 <h3><a id="h1-1-3"></a>環境変数の追加</h3>
 <p>引き続き、環境変数JAVA_HOMEを設定します。これはAndroid Studioに、どこにJDKをインストールしたのかを伝える作業です。</p>
@@ -186,7 +184,7 @@
 </p>
 </div>
 <p>JDKのダウンロードページが表示されます。</p>
-<p>JDKをダウンロードするには、License Agreement（利用許諾）に同意する必要があります。&quot;Oracle Binary Code License Agreement for Java SE&quot;を読み、同意する場合は&quot;Accept License Agreement&quot;の左側の丸をクリックします。</p>
+<p>JDKをダウンロードするにはLicense Agreement（利用許諾）に同意する必要があります。&quot;Oracle Binary Code License Agreement for Java SE&quot;を読み、同意する場合は&quot;Accept License Agreement&quot;の左側の丸をクリックします。</p>
 <div id="mac-jdk8-download2" class="image">
 <img src="images/install_jdk/mac-jdk8-download2.png" alt="Java SE Development Kit 8 Downloads" width="30%" />
 <p class="caption">
@@ -196,8 +194,7 @@
 <p>利用許諾に同意をしたら、右側のリンクをクリックして、&quot;Mac OS X x64&quot;の右側のリンクを選択すると、インストールパッケージがダウンロードされます。</p>
 
 <h3><a id="h1-2-2"></a>JDKのインストール</h3>
-<p>JDKをインストールします。</p>
-<p>ダウンロードしたインストールパッケージをダブルクリックするなどして実行すると、JDKのインストーラーが表示されます。</p>
+<p>JDKをインストールします。ダウンロードしたインストールパッケージをダブルクリックするなどして実行すると、JDKのインストーラーが表示されます。</p>
 <div id="mac-jdk8-install1" class="image">
 <img src="images/install_jdk/mac-jdk8-install1.png" alt="起動確認" width="50%" />
 <p class="caption">
@@ -242,34 +239,38 @@
 <h3><a id="h2-1-1"></a>ダウンロード</h3>
 <p>Android Studioをダウンロードします。ブラウザから、次のURLにアクセスします。</p>
 <p><a href="http://developer.android.com/sdk/index.html" class="link">http://developer.android.com/sdk/index.html</a></p>
-<div id="download_androidstudio1" class="image">
-<img src="images/install_android_studio/download_androidstudio1.png" alt="Android Studio 1.4" width="30%" />
+<div class="column">
+
+<h5><a id="column-1"></a>サイトの言語設定を「英語」に変更してください</h5>
+<p>本稿執筆時点で、Android Developersサイトの日本語版にアクセスすると、古いバージョン（1.4）のAndroid Studioが公開されています。最新のバージョン「1.5」を手に入れるためにはダウンロードの前にサイトの言語を「日本語」から「英語」に変更する必要があります。</p>
+<p>言語の変更はサイトの最下部から設定できます（図2.1）。</p>
+<div id="change_language" class="image">
+<img src="images/install_android_studio/change_language.png" alt="ダウンロードの前に言語設定を英語に変更する" width="30%" />
 <p class="caption">
-図2.1: Android Studio 1.4
+図2.1: ダウンロードの前に言語設定を英語に変更する
 </p>
+</div>
 </div>
 <p>緑色のボタン「Download Android Studio...」をクリックします。</p>
 <div id="download_androidstudio2" class="image">
-<img src="images/install_android_studio/download_androidstudio2.png" alt="Android Studio 1.4" width="30%" />
+<img src="images/install_android_studio/download_androidstudio2.png" alt="Android Studio 1.5" width="30%" />
 <p class="caption">
-図2.2: Android Studio 1.4
+図2.2: Android Studio 1.5
 </p>
 </div>
-<p>Android Studioをダウンロードするには、ライセンスに合意する必要があります（図2.2）。</p>
-<p>表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio...」のボタンをクリックします。</p>
+<p>Android Studioをダウンロードするには、ライセンスに合意する必要があります（図2.2）。表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio...」のボタンをクリックします。</p>
 <p>画面が切り替わり、Android Studioのパッケージがダウンロードされます。</p>
 <p>ダウンロードするパッケージは、Mac版で約360MB、Windows版では約1.2GBと、非常に大きいため、必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。</p>
 <div class="column">
 
-<h5><a id="column-1"></a>ダウンロード後の表示は？</h5>
+<h5><a id="column-2"></a>ダウンロード後の表示は？</h5>
 <div id="download_androidstudio3" class="image">
 <img src="images/install_android_studio/download_androidstudio3.png" alt="Install Android Studio" width="30%" />
 <p class="caption">
 図2.3: Install Android Studio
 </p>
 </div>
-<p>ダウンロードの手続きは、使用しているブラウザによって異なります。</p>
-<p>例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図2.3下部）。</p>
+<p>ダウンロードの手続きは、使用しているブラウザによって異なります。例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（図2.3下部）。</p>
 <p>なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、Android SDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。</p>
 </div>
 
@@ -278,7 +279,7 @@
 <h4><a id="h2-1-2-1"></a>Windowsの場合</h4>
 <p>ダウンロードしたパッケージは、実行可能な形式です<a id="fnb-win-filename" href="#fn-win-filename" class="noteref">*1</a>。ダブルクリックで開くなどして実行すると、インストーラーが起動します。</p>
 <div class="footnote" id="fn-win-filename"><p class="footnote">[<a href="#fnb-win-filename">*1</a>] ダウンロードする時期によってファイル名は異なる場合があります</p></div>
-<p>この際「ユーザーアカウント制御」が警告を出す場合がありますが、発行元がGoogleになっていることを確認した後「はい」をクリックしてインストールを続行します。</p>
+<p>この際「ユーザーアカウント制御」が警告を出す場合があります。発行元がGoogleになっていることを確認した後「はい」をクリックしてインストールを続行します。</p>
 <div id="win-androidstudio-install1" class="image">
 <img src="images/install_android_studio/win-androidstudio-install1.png" alt="ユーザーアカウント制御。発行元がGoogleであることを確認する" width="50%" />
 <p class="caption">
@@ -322,7 +323,7 @@
 </p>
 </div>
 <p>インストールするコンポーネントで&quot;Performance&quot;を選択した場合に表示されます。</p>
-<p>Intel HAXMをインストールするには、ライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。</p>
+<p>Intel HAXMをインストールするにはライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。</p>
 <div id="win-androidstudio-install6" class="image">
 <img src="images/install_android_studio/win-androidstudio-install6.png" alt="Install Locations" width="50%" />
 <p class="caption">
@@ -344,8 +345,7 @@
 図2.12: Choose Start Menu Folder
 </p>
 </div>
-<p>スタートメニューの名前を設定します。</p>
-<p>「Install」をクリックすると、Android Studioのインストールを開始します。コンピュータの性能にも依りますが、インストールには10分から20分程度かかります。</p>
+<p>スタートメニューの名前を設定します。「Install」をクリックするとAndroid Studioのインストールを開始します。コンピュータの性能にも依りますが、インストールには10分から20分程度かかります。</p>
 <p>完了したら「Next」をクリックします。</p>
 <div id="win-androidstudio-install9" class="image">
 <img src="images/install_android_studio/win-androidstudio-install9.png" alt="Completing the Android Studio Setup" width="50%" />
@@ -356,7 +356,7 @@
 <p>インストールが完了した画面です。「Finish」をクリックするとAndroid Studioが起動します。</p>
 
 <h4><a id="h2-1-2-2"></a>Mac OS Xの場合</h4>
-<p>ダウンロードしたファイルは、DMG（ディスクイメージ）形式です<a id="fnb-mac-filename" href="#fn-mac-filename" class="noteref">*3</a>。ダブルクリックで開くと、インストールを促す画面が表示されるので、表示されているAndroid Studioのアイコンを、ドラッグ＆ドロップで「アプリケーション」に移動します。</p>
+<p>ダウンロードしたファイルはDMG（ディスクイメージ）形式です<a id="fnb-mac-filename" href="#fn-mac-filename" class="noteref">*3</a>。ダブルクリックで開くと、インストールを促す画面が表示されます。表示されているAndroid Studioのアイコンを、ドラッグ＆ドロップで「アプリケーション」に移動します。</p>
 <div class="footnote" id="fn-mac-filename"><p class="footnote">[<a href="#fnb-mac-filename">*3</a>] ダウンロードする時期によってファイル名は異なる場合があります</p></div>
 <div class="image">
 <img src="images/install_android_studio/mac-androidstudio-install1.png" alt="Android Studioをドラッグ＆ドロップで移動" width="40%" />
@@ -459,18 +459,17 @@
 図2.22: Welcome
 </p>
 </div>
-<p>「Next」ボタンを押すと、セットアップを開始します。</p>
+<p>「Next」ボタンを押すとセットアップを開始します。</p>
 <div id="mac-androidstudio-setup3" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup3.png" alt="セットアップタイプの選択" width="30%" />
 <p class="caption">
 図2.23: セットアップタイプの選択
 </p>
 </div>
-<p>セットアップのタイプを選択します。</p>
-<p>&quot;Standard&quot;を選択していることを確認してから「Next」ボタンを押します。</p>
+<p>セットアップのタイプを選択します。&quot;Standard&quot;を選択していることを確認してから「Next」ボタンを押します。</p>
 <div class="column">
 
-<h5><a id="column-2"></a>セットアップウィザードのキャンセル</h5>
+<h5><a id="column-3"></a>セットアップウィザードのキャンセル</h5>
 <p>セットアップでは、非常に大きなパッケージをダウンロードします。必ず、Wi-Fiなどの高速で安定した通信が確保できる状況で実行してください。</p>
 <p>今はセットアップしたくない人、既にAndroid SDKのセットアップを完了している人は、左上の「閉じる」ボタンを押してキャンセルできます。</p>
 <div id="setup-androidstudio0" class="image">
@@ -488,7 +487,7 @@
 図2.25: Verify Settings
 </p>
 </div>
-<p>「Finish」のボタンを押すと、セットアップウィザードは、パッケージのダウンロードとインストールを開始します。</p>
+<p>「Finish」のボタンを押すと、パッケージのダウンロードとインストールを開始します。</p>
 <div id="mac-androidstudio-setup5" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup5.png" alt="Download Components" width="30%" />
 <p class="caption">
@@ -501,7 +500,7 @@
 図2.27: パスワードの入力
 </p>
 </div>
-<p>インストールの途中でパスワードが求められる場合があります。パスワードを入力して「OK」を押します。</p>
+<p>インストールの途中でパスワードが求められた場合、パスワードを入力して「OK」を押します。</p>
 <div id="mac-androidstudio-setup7" class="image">
 <img src="images/install_android_studio/mac-androidstudio-setup7.png" alt="Download Components" width="30%" />
 <p class="caption">
@@ -509,7 +508,7 @@
 </p>
 </div>
 <p>ダウンロードとインストールを完了後、「Finish」を押すと、Android Studioが起動します。</p>
-<p>引き続き「Android Studioではじめる 簡単Androidアプリ開発」のChapter 3 『Android Studioをセッティングしよう』を参照して、アプリの開発環境を整えてください。</p>
+<p>引き続き「［改訂版］Android Studioではじめる 簡単Androidアプリ開発」のChapter 4 『アプリを実行しよう』を参照して、アプリを実行する環境を整えてください。</p>
 
 <h3><a id="h2-3-3"></a>Android SDKの場所を設定する</h3>
 <p>「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後に表示されるAndroid StudioのスタートメニューからAndroid SDKのパスを設定できます。</p>
@@ -544,14 +543,14 @@
 <p>また、既に値が入力されている場合は、そのまま「OK」をクリックして設定を終了します。</p>
 <div class="column">
 
-<h5><a id="column-3"></a>Android SDKの場所</h5>
+<h5><a id="column-4"></a>Android SDKの場所</h5>
 <p>Windowsの場合、Android SDKはC:\Users\<tt>[ユーザー名]</tt>\AppData\Local\Android\sdkにインストールされます。</p>
 <p>Stand-alone版のSDKは、C:\Users\<tt>[ユーザー名]</tt>\AppData\Local\Android\android-sdkにインストールされます。</p>
 <p>Mac OS Xの場合、/Users/<tt>ユーザー名</tt>/Library/Android/sdkにインストールされます。</p>
 <p>Stand-alone版のSDKは、ZIP書庫の形式でダウンロードして、android-sdk-macosxの名前で展開されます。</p>
 </div>
 
-<h1><a id="h3"></a>付録1　「Android Studio ではじめる 簡単Androidアプリ開発」紹介</h1>
+<h1><a id="h3"></a><span class="secno">付録1　</span>紹介［改訂版］Android Studioではじめる 簡単Androidアプリ開発</h1>
 <div class="image">
 <img src="images/about_book/cover.png" alt="Android Studioではじめる 簡単Androidアプリ開発" width="30%" />
 <p class="caption">
@@ -559,37 +558,22 @@
 </p>
 </div>
 <blockquote><p>本書は，新しいAndroidアプリケーション開発用ソフトウェア“Android Studio”を使った入門書です。</p>
-<p>セットアップ方法からエミュレータや実機での実行手順を説明し，さらに「天気予報」「シューティングゲーム」「迷路ゲーム」の作り方を，実際に動かせるプログラムを改良しながら作っていきます。</p>
-<p>なお，「Android Studio Beta v0.8.14」をベースに解説しています</p></blockquote>
+<p>セットアップ方法からエミュレータや実機での実行手順を説明し，初版で好評だった「天気予報」「シューティングゲーム」「迷路ゲーム」をさらに工夫して，実際に動かせるプログラムを改良しながら作っていきます。なお，「Android Studio 1.5」をベースに解説しています。</p></blockquote>
 <p>[技術評論社 書籍紹介<a id="fnb-gihyo_site" href="#fn-gihyo_site" class="noteref">*1</a>より]</p>
-<div class="footnote" id="fn-gihyo_site"><p class="footnote">[<a href="#fnb-gihyo_site">*1</a>] <a href="http://gihyo.jp/book/2014/978-4-7741-6998-9" class="link">http://gihyo.jp/book/2014/978-4-7741-6998-9</a></p></div>
+<div class="footnote" id="fn-gihyo_site"><p class="footnote">[<a href="#fnb-gihyo_site">*1</a>] <a href="http://gihyo.jp/book/2016/978-4-7741-7859-2" class="link">http://gihyo.jp/book/2016/978-4-7741-7859-2</a></p></div>
 
-<h2><a id="h1-1"></a>1.1　目次</h2>
+<h4><a id="h1-0-0-1"></a>目次</h4>
 <ul>
 <li>Chapter 1　Androidアプリ開発のはじめの一歩</li>
-<li>Chapter 2　Android Studioをインストールしよう</li>
-<li>Chapter 3　Android Studioをセッティングしよう</li>
-<li>Chapter 4　新しいプロジェクトを作成しよう</li>
+<li>Chapter 2　Android Studioをセットアップしよう（Windows編）</li>
+<li>Chapter 3　Android Studioをセットアップしよう（OS X編）</li>
+<li>Chapter 4　アプリを実行しよう</li>
 <li>Chapter 5　“Hello Android！”でアプリ開発の流れを理解しよう</li>
 <li>Chapter 6　Web APIで情報を取得する天気予報アプリを作ろう</li>
 <li>Chapter 7　障害物や穴を飛び越えるアクションゲームを作ろう</li>
 <li>Chapter 8　スコアによって難易度が変わるシューティングゲームを作ろう</li>
 <li>Chapter 9　端末の傾きで玉を移動する迷路ゲームを作ろう</li>
 </ul>
-
-<h2><a id="h1-2"></a>1.2　QRコード</h2>
-<div class="image">
-<img src="images/about_book/qr_gihyo.png" alt="技術評論社のサイトへ" width="30%" />
-<p class="caption">
-図: 技術評論社のサイトへ
-</p>
-</div>
-<div class="image">
-<img src="images/about_book/qr_amazon.png" alt="Amazonの商品ページへ" width="30%" />
-<p class="caption">
-図: Amazonの商品ページへ
-</p>
-</div>
 
 </body>
 </html>
