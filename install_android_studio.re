@@ -9,16 +9,28 @@ Android Studioをダウンロードします。
 
 @<href>{http://developer.android.com/sdk/index.html}
 
-//image[download_androidstudio1][Android Studio 1.4][scale=0.3]{
+#@# バージョン違いが発生している間は画像をコラムに差し替える
+#@# //image[download_androidstudio1][Android Studio 1.5][scale=0.2]{
+#@# //}
+
+=====[column]サイトの言語設定を「英語」に変更してください
+
+本稿執筆時点で、Android Developersサイトの日本語版にアクセスすると、古いバージョン（1.4）のAndroid Studioが公開されています。
+最新のバージョン「1.5」を手に入れるためにはダウンロードの前にサイトの言語を「日本語」から「英語」に変更する必要があります。
+
+言語の変更はサイトの最下部から設定できます（@<img>{change_language}）。
+
+//image[change_language][ダウンロードの前に言語設定を英語に変更する][scale=0.3]{
 //}
+
+=====[/column]
 
 緑色のボタン「Download Android Studio...」をクリックします。
 
-//image[download_androidstudio2][Android Studio 1.4][scale=0.3]{
+//image[download_androidstudio2][Android Studio 1.5][scale=0.3]{
 //}
 
 Android Studioをダウンロードするには、ライセンスに合意する必要があります（@<img>{download_androidstudio2}）。
-
 表示されるライセンスを読み、合意する場合は下のチェックボックスをクリックしてから「Download Android Studio...」のボタンをクリックします。
 
 画面が切り替わり、Android Studioのパッケージがダウンロードされます。
@@ -31,7 +43,6 @@ Android Studioをダウンロードするには、ライセンスに合意する
 //}
 
 ダウンロードの手続きは、使用しているブラウザによって異なります。
-
 例えばMicrosoft Edgeの場合、ダウンロードの前に「実行」するか「保存」するか尋ねる画面が表示される場合があります（@<img>{download_androidstudio3}下部）。
 
 なお、お使いのPCにウイルス対策ソフトやセキュリティソフトをインストールしている場合は、それらが警告を表示したり、Android SDKのダウンロードや、ダウンロードしたファイルが実行できない場合があります。その場合、お使いのソフトウェアの設定を確認してください。
@@ -43,12 +54,13 @@ Android Studioをダウンロードするには、ライセンスに合意する
 
 ==== Windowsの場合
 
-ダウンロードしたパッケージは、実行可能な形式です@<fn>{win-filename}。ダブルクリックで開くなどして実行すると、インストーラーが起動します。
+ダウンロードしたパッケージは、実行可能な形式です@<fn>{win-filename}。
+ダブルクリックで開くなどして実行すると、インストーラーが起動します。
 
 //footnote[win-filename][ダウンロードする時期によってファイル名は異なる場合があります]
 
-この際「ユーザーアカウント制御」が警告を出す場合がありますが、発行元がGoogleになっていることを確認した後
-「はい」をクリックしてインストールを続行します。
+この際「ユーザーアカウント制御」が警告を出す場合があります。
+発行元がGoogleになっていることを確認した後「はい」をクリックしてインストールを続行します。
 
 //image[win-androidstudio-install1][ユーザーアカウント制御。発行元がGoogleであることを確認する][scale=0.5]{
 //}
@@ -68,8 +80,8 @@ JDKをインストール済みで@<img>{win-androidstudio-install3-no-jdk}が表
 //}
 
 インストールするコンポーネントを選択する画面です。
-使用しているPCによって表示されるコンポーネントが異なります。PCがIntel HAXM@<fn>{about_haxm}に対応している場合は、
-"Performance"のコンポーネントが表示されます（@<img>{win-androidstudio-install3-haxm}）。
+使用しているPCによって表示されるコンポーネントが異なります。
+PCがIntel HAXM@<fn>{about_haxm}に対応している場合は、"Performance"のコンポーネントが表示されます（@<img>{win-androidstudio-install3-haxm}）。
 
 標準の選択のまま「Next」をクリックします。
 
@@ -78,14 +90,16 @@ JDKをインストール済みで@<img>{win-androidstudio-install3-no-jdk}が表
 //image[win-androidstudio-install4][Lisence Agreement][scale=0.5]{
 //}
 
-Android Studioをインストールするにはライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。
+Android Studioをインストールするにはライセンス規約への合意が必要です。
+表示される規約を読んで、合意する場合は「I Agree」をクリックします。
 
 //image[win-androidstudio-install5-haxm][Lisence Agreement][scale=0.5]{
 //}
 
 インストールするコンポーネントで"Performance"を選択した場合に表示されます。
 
-Intel HAXMをインストールするには、ライセンス規約への合意が必要です。表示される規約を読んで、合意する場合は「I Agree」をクリックします。
+Intel HAXMをインストールするにはライセンス規約への合意が必要です。
+表示される規約を読んで、合意する場合は「I Agree」をクリックします。
 
 //image[win-androidstudio-install6][Install Locations][scale=0.5]{
 //}
@@ -98,14 +112,14 @@ Android StudioとAndroid SDKをインストールする場所を設定します�
 
 インストールするコンポーネントで"Performance"を選択した場合に表示されます。
 
-Intel HAXMを利用する場合に割り当てるメモリの量を設定します。ここではなにも変更せず「Next」をクリックします。
+Intel HAXMを利用する場合に割り当てるメモリの量を設定します。
+ここではなにも変更せず「Next」をクリックします。
 
 //image[win-androidstudio-install8][Choose Start Menu Folder][scale=0.5]{
 //}
 
 スタートメニューの名前を設定します。
-
-「Install」をクリックすると、Android Studioのインストールを開始します。
+「Install」をクリックするとAndroid Studioのインストールを開始します。
 コンピュータの性能にも依りますが、インストールには10分から20分程度かかります。
 
 完了したら「Next」をクリックします。
@@ -113,13 +127,14 @@ Intel HAXMを利用する場合に割り当てるメモリの量を設定しま�
 //image[win-androidstudio-install9][Completing the Android Studio Setup][scale=0.5]{
 //}
 
-インストールが完了した画面です。「Finish」をクリックするとAndroid Studioが起動します。
+インストールが完了した画面です。
+「Finish」をクリックするとAndroid Studioが起動します。
 
 ==== Mac OS Xの場合
 
-ダウンロードしたファイルは、DMG（ディスクイメージ）形式です@<fn>{mac-filename}。
-ダブルクリックで開くと、インストールを促す画面が表示されるので、表示されているAndroid Studioのアイコンを、
-ドラッグ＆ドロップで「アプリケーション」に移動します。
+ダウンロードしたファイルはDMG（ディスクイメージ）形式です@<fn>{mac-filename}。
+ダブルクリックで開くと、インストールを促す画面が表示されます。
+表示されているAndroid Studioのアイコンを、ドラッグ＆ドロップで「アプリケーション」に移動します。
 
 //footnote[mac-filename][ダウンロードする時期によってファイル名は異なる場合があります]
 
@@ -203,13 +218,12 @@ Android Studioは最初に起動すると、セットアップウィザードを
 //image[mac-androidstudio-setup2][Welcome][scale=0.3]{
 //}
 
-「Next」ボタンを押すと、セットアップを開始します。
+「Next」ボタンを押すとセットアップを開始します。
 
 //image[mac-androidstudio-setup3][セットアップタイプの選択][scale=0.3]{
 //}
 
 セットアップのタイプを選択します。
-
 "Standard"を選択していることを確認してから「Next」ボタンを押します。
 
 
@@ -226,15 +240,14 @@ Android Studioは最初に起動すると、セットアップウィザードを
 セットアップウィザードをキャンセルすると、@<img>{setup-androidstudio0}のダイアログが表示されます。
 ここで"Re-run the setup wizard"を選択してOKを押すと、次回起動時にセットアップウィザードが起動します。
 
-なお、既にAndroid SDKのセットアップを完了している人は、次の「Android SDKの場所を設定する」を参考に、
-Android StudioにAndroid SDKの場所を設定してください。
+なお、既にAndroid SDKのセットアップを完了している人は、次の「Android SDKの場所を設定する」を参考に、Android StudioにAndroid SDKの場所を設定してください。
 
 =====[/column]
 
 //image[mac-androidstudio-setup4][Verify Settings][scale=0.3]{
 //}
 
-「Finish」のボタンを押すと、セットアップウィザードは、パッケージのダウンロードとインストールを開始します。
+「Finish」のボタンを押すと、パッケージのダウンロードとインストールを開始します。
 
 //image[mac-androidstudio-setup5][Download Components][scale=0.3]{
 //}
@@ -242,20 +255,18 @@ Android StudioにAndroid SDKの場所を設定してください。
 //image[mac-androidstudio-setup6][パスワードの入力][scale=0.5]{
 //}
 
-インストールの途中でパスワードが求められる場合があります。パスワードを入力して「OK」を押します。
+インストールの途中でパスワードが求められた場合、パスワードを入力して「OK」を押します。
 
 //image[mac-androidstudio-setup7][Download Components][scale=0.3]{
 //}
 
 ダウンロードとインストールを完了後、「Finish」を押すと、Android Studioが起動します。
 
-引き続き「Android Studioではじめる 簡単Androidアプリ開発」のChapter 3 『Android Studioをセッティングしよう』を参照して、
-アプリの開発環境を整えてください。
+引き続き「［改訂版］Android Studioではじめる 簡単Androidアプリ開発」のChapter 4 『アプリを実行しよう』を参照して、アプリを実行する環境を整えてください。
 
 === Android SDKの場所を設定する
 
-「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後に表示されるAndroid Studioの
-スタートメニューからAndroid SDKのパスを設定できます。
+「Android SDKのセットアップ」でセットアップウィザードをキャンセルした人は、キャンセル後に表示されるAndroid StudioのスタートメニューからAndroid SDKのパスを設定できます。
 
 //indepimage[setup_sdk_path1][Configure][scale=0.35]
 

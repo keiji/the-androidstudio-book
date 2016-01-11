@@ -4,34 +4,31 @@
 
 現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。
 
-「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください。
+「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください
+（現在は）。
 
 //indepimage[cover][Android Studioではじめる 簡単Androidアプリ開発][scale=0.30]
 
 //footnote[gihyo_site][@<href>{http://gihyo.jp/book/2014/978-4-7741-6998-9}]
 
-なお、「Android Studioではじめる 簡単Androidアプリ開発」については現在、改訂作業を進めており、
-2015年12月25日頃発売の予定です。
+なお、「Android Studioではじめる 簡単Androidアプリ開発」については現在、改訂版@<fn>{gihyo_site2}が発売しています。
+そちらも併せてよろしくお願いいたします
 
+//footnote[gihyo_site2][［改訂］Android Studioではじめる 簡単Androidアプリ開発@<br>{} @<href>{http://gihyo.jp/book/2016/978-4-7741-7859-2}]
 
 == 表記関係について
-
 本文書に記載されている会社名、製品名などは、一般に各社の登録商標または商標、商品名です。
 会社名、製品名については、本文中では©、®、™マークなどは表示していません。
 
 
 == ライセンス
-
 本文書は、有山圭二の著作物であり、クリエイティブコモンズ4.0の表示—改変禁止@<fn>{license}ライセンスの元で提供しています。
 
 //footnote[license][@<href>{http://creativecommons.org/licenses/by-nd/4.0/deed.ja}]
 
-
 == 最新情報の提供
-
 本文書に関する最新情報は引き続き、
 
- * 技術評論社サイト @<href>{http://gihyo.jp/book/2014/978-4-7741-6998-9}
  * Android Studioセットアップガイド
  ** HTML版 @<href>{http://keiji.github.io/the-androidstudio-book/}
  ** PDF版 @<href>{http://keiji.github.io/the-androidstudio-book/archives/book.pdf}
