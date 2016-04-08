@@ -4,12 +4,11 @@
 
 現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。
 
-「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください
-（現在は）。
+「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください。
 
 //indepimage[cover][Android Studioではじめる 簡単Androidアプリ開発][scale=0.30]
 
-//footnote[gihyo_site][@<href>{http://gihyo.jp/book/2014/978-4-7741-6998-9}]
+//footnote[gihyo_site][Android Studioではじめる 簡単Androidアプリ開発@<br>{} @<href>{http://gihyo.jp/book/2014/978-4-7741-6998-9}]
 
 なお、「Android Studioではじめる 簡単Androidアプリ開発」については現在、改訂版@<fn>{gihyo_site2}が発売しています。
 そちらも併せてよろしくお願いいたします
@@ -27,7 +26,7 @@
 //footnote[license][@<href>{http://creativecommons.org/licenses/by-nd/4.0/deed.ja}]
 
 == 最新情報の提供
-本文書に関する最新情報は引き続き、
+本文書に関する最新情報は引き続き、以下のURLで提供します。
 
  * Android Studioセットアップガイド
  ** HTML版 @<href>{http://keiji.github.io/the-androidstudio-book/}
@@ -36,5 +35,3 @@
  ** 初版第１刷向け @<href>{http://keiji.github.io/the-androidstudio-book/archives/errata.pdf}
  ** 初版第２刷向け @<href>{http://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf}
  * GitHub @<href>{https://github.com/keiji/the-androidstudio-book}
-
-で、提供します。

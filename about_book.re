@@ -1,6 +1,6 @@
 = 紹介［改訂版］Android Studioではじめる 簡単Androidアプリ開発
 
-//indepimage[cover][Android Studioではじめる 簡単Androidアプリ開発][scale=0.30]
+//indepimage[cover][Android Studioではじめる 簡単Androidアプリ開発][scale=0.20]
 
 //quote{
 本書は，新しいAndroidアプリケーション開発用ソフトウェア“Android Studio”を使った入門書です。
