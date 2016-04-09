@@ -187,34 +187,44 @@ Android Studioを最初に起動するとき、既にあるAndroid Studioの設�
 
 === Windowsの場合
 
-//image[win-androidstudio-setup1][Welcome][scale=0.3]{
+//image[win-androidstudio-setup1][Welcome][scale=0.4]{
 //}
 
 「Next」をクリックします。
 
-//image[win-androidstudio-setup2][Install Type][scale=0.3]{
+//image[win-androidstudio-setup2][Install Type][scale=0.4]{
 //}
 
 セットアップのタイプを選択します。
 "Standard"を選択していることを確認してから「Next」をクリックします。
 
-//image[win-androidstudio-setup3][Verify Setting][scale=0.3]{
+//image[win-androidstudio-setup3][SDK Component Setup][scale=0.4]{
 //}
 
-「Finish」をクリックすると、パッケージのダウンロードとインストールを開始します。
+追加でインストール可能なコンポーネントを選択します（表示されない場合もあります）。
+「Next」をクリックします。
 
-//image[win-androidstudio-setup4-uac][ユーザーアカウント制御][scale=0.5]{
+//image[win-androidstudio-setup4][Verify Setting][scale=0.4]{
+//}
+
+インストールの最終確認が表示されます。
+「Finish」をクリックすると、パッケージのダウンロードとインストールが始まります。
+
+//image[win-androidstudio-setup5][Downloading Components][scale=0.4]{
+//}
+
+//image[win-androidstudio-setup5-uac][ユーザーアカウント制御][scale=0.5]{
 //}
 
 インストールの途中でユーザーアカウント制御による許可が求められた場合、「はい」をクリックします。
 
-//image[win-androidstudio-setup5][Download Components][scale=0.3]{
-//}
-
-//image[win-androidstudio-setup6][Android Studio 2.0][scale=0.3]{
+//image[win-androidstudio-setup6][Download Components][scale=0.4]{
 //}
 
 完了後、「Finish」をクリックすると、Android Studioが起動します。
+
+//image[win-androidstudio-setup7][Android Studio 2.0][scale=0.35]{
+//}
 
 引き続き「［改訂版］Android Studioではじめる 簡単Androidアプリ開発」のChapter 4 『アプリを実行しよう』を参照して、アプリを実行する環境を整えてください。
 
