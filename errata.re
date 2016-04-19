@@ -4,16 +4,31 @@
 
 Android Studio 0.8.14からセットアップ方法が大幅に変更されています。
 
-== 新しいプロジェクトを作成しよう
+最新のAndroid Studioに対応したセットアップの方法については、以下のURLを参照してください。
+
+ * Android Studioセットアップガイド
+ ** HTML版 @<href>{https://keiji.github.io/the-androidstudio-book/}
+ ** PDF版 @<href>{https://keiji.github.io/the-androidstudio-book/archives/book.pdf}
+
+== 【共通】プロジェクトの作成
+
+=== 起動画面の変更
+
+Android Studio 2.0から、起動画面のデザインが変更されています。
+
+//image[start_android_studio][起動画面（Android Studio 2.0）][scale=0.2]{
+//}
+
+［Start a new Android Studio project］をクリックすると、プロジェクトの作成画面が起動します。
 
 === Activityのテンプレートの変更
 
-Android Studio 1.4から"Blank Activity"を選んだときに生成するActivityのコードが大幅に変更されています。
+Android Studio 1.4からActivityのテンプレートが大幅に変更されています。
 
-//image[create_project_add_activity][Empty Activityを選択][scale=0.25]{
+//image[create_project_add_activity][Empty Activityを選択][scale=0.15]{
 //}
 
-"Blank Activity"ではなく"Empty Activity"を選択すると、もっとも本書の内容に近いコードが生成されます。
+"Empty Activity"を選択すると、もっとも本書の内容に近いコードが生成されます（"Blank Activity"はAndroid Studio 2.0で廃止されました）。
 
 === 初期名称の変更
 
@@ -25,6 +40,17 @@ Android Studio 1.4から"Blank Activity"を選んだときに生成するActivit
  * 本書で記載されているMyActivity.javaなど@<tt>{My}が付与されている部分を、全て@<tt>{Main}に読み替える（推奨）
  * 新規プロジェクト作成時に、Activity Nameを@<tt>{MyActivity}。Layout Nameを@<tt>{activity_my}に変更する
 
+== 【共通】Project Viewの表示方法の変更
+
+Android Studio 2.0から、Project Viewの表示方法が変更されています。
+
+プロジェクト作成後、画面左上（@<img>{projectview1}）にある@<icon>{projectview1_icon}をクリックして、表示される一覧から［Project］を選択します（@<img>{projectview2}）。
+
+//image[projectview1][枠で囲った部分をクリック][scale=0.25]{
+//}
+
+//image[projectview2][Projectを選択][scale=0.25]{
+//}
 
 == Web APIで情報を取得する天気予報アプリを作ろう
 
