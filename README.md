@@ -7,7 +7,7 @@
 
 「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください。
 
-[Android Studioではじめる 簡単Androidアプリ開発]: [http://gihyo.jp/book/2014/978-4-7741-6998-9](http://gihyo.jp/book/2014/978-4-7741-6998-9)
+［改訂］Android Studioではじめる 簡単Androidアプリ開発: [https://gihyo.jp/book/2016/978-4-7741-7859-2](https://gihyo.jp/book/2016/978-4-7741-7859-2)
 
 ## 表記関係について
 
@@ -20,17 +20,23 @@
 
 [クリエイティブコモンズ4.0の表示—改変禁止ライセンス]: [http://creativecommons.org/licenses/by-nd/4.0/deed.ja](http://creativecommons.org/licenses/by-nd/4.0/deed.ja)
 
+## 免責事項
+
+本書に記載された内容は、情報の提供のみを目的としています。したがって、本書を用いた開発、製作、運用は、必ずご自身の責任と判断によって行ってください。
+これらの情報による開発、製作、運用の結果について、著者はいかなる責任も負いません。
+
 ## 最新情報の提供
 
 本文書に関する最新情報は引き続き、
 
-* 技術評論社サイト [http://gihyo.jp/book/2014/978-4-7741-6998-9](http://gihyo.jp/book/2014/978-4-7741-6998-9)
+* 技術評論社サイト [https://gihyo.jp/book/2014/978-4-7741-6998-9](https://gihyo.jp/book/2014/978-4-7741-6998-9)
 * Android Studioセットアップガイド
- * HTML版 [http://keiji.github.io/the-androidstudio-book/](http://keiji.github.io/the-androidstudio-book/)
- * PDF版 [http://keiji.github.io/the-androidstudio-book/archives/book.pdf](http://keiji.github.io/the-androidstudio-book/archives/book.pdf)
+ * HTML版 [https://keiji.github.io/the-androidstudio-book/](https://keiji.github.io/the-androidstudio-book/)
+ * PDF版 [https://keiji.github.io/the-androidstudio-book/archives/book.pdf](https://keiji.github.io/the-androidstudio-book/archives/book.pdf)
 * 正誤情報
- * 初版１刷向け [http://keiji.github.io/the-androidstudio-book/archives/errata.pdf](http://keiji.github.io/the-androidstudio-book/archives/errata.pdf)
- * 初版２刷向け [http://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf](http://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf)
+ * 初版第１刷向け [https://keiji.github.io/the-androidstudio-book/archives/errata.pdf](https://keiji.github.io/the-androidstudio-book/archives/errata.pdf)
+ * 初版第２刷向け [https://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf](https://keiji.github.io/the-androidstudio-book/archives/errata_2nd.pdf)
+ * 改訂版１刷向け [https://keiji.github.io/the-androidstudio-book/archives/errata2.pdf](https://keiji.github.io/the-androidstudio-book/archives/errata2.pdf)
 * GitHub [https://github.com/keiji/the-androidstudio-book](https://github.com/keiji/the-androidstudio-book)
 
 で、提供していきます。
