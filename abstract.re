@@ -1,19 +1,12 @@
 = この文書について
 
-この文書は「Android Studioではじめる 簡単Androidアプリ開発@<fn>{gihyo_site}」の内容を補足する目的で、Android Studioのインストールと初期設定について説明していました。
+この文書は「［改訂版］Android Studioではじめる 簡単Androidアプリ開発@<fn>{gihyo_site2}」の正誤情報について記述しています。
 
-現在は「Android Studioセットアップガイド」として、Android Studioのインストールと初期設定のみに限定しています。
+「Android Studio」のセットアップ方法については、別途PDFファイルまたは技術評論社のサイトを参照してください。
 
-「Android Studioではじめる 簡単Androidアプリ開発」の正誤情報については、別途PDFファイルまたは技術評論社のサイトを参照してください。
+//indepimage[cover][［改訂版］Android Studioではじめる 簡単Androidアプリ開発][scale=0.15]
 
-//indepimage[cover][Android Studioではじめる 簡単Androidアプリ開発][scale=0.30]
-
-//footnote[gihyo_site][Android Studioではじめる 簡単Androidアプリ開発@<br>{} @<href>{https://gihyo.jp/book/2014/978-4-7741-6998-9}]
-
-なお、「Android Studioではじめる 簡単Androidアプリ開発」については現在、改訂版@<fn>{gihyo_site2}が発売しています。
-そちらも併せてよろしくお願いいたします
-
-//footnote[gihyo_site2][［改訂］Android Studioではじめる 簡単Androidアプリ開発@<br>{} @<href>{https://gihyo.jp/book/2016/978-4-7741-7859-2}]
+//footnote[gihyo_site2][［改訂版］Android Studioではじめる 簡単Androidアプリ開発@<br>{} @<href>{https://gihyo.jp/book/2016/978-4-7741-7859-2}]
 
 == 表記関係について
 本文書に記載されている会社名、製品名などは、一般に各社の登録商標または商標、商品名です。

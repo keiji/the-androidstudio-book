@@ -2,7 +2,7 @@
 
 == Android Studioをインストールしよう
 
-Android Studio 0.8.14からセットアップ方法が大幅に変更されています。
+Android Studio 2.0からセットアップ方法が大幅に変更されています。
 
 最新のAndroid Studioに対応したセットアップの方法については、以下のURLを参照してください。
 
@@ -21,25 +21,6 @@ Android Studio 2.0から、起動画面のデザインが変更されていま�
 
 ［Start a new Android Studio project］をクリックすると、プロジェクトの作成画面が起動します。
 
-=== Activityのテンプレートの変更
-
-Android Studio 1.4からActivityのテンプレートが大幅に変更されています。
-
-//image[create_project_add_activity][Empty Activityを選択][scale=0.15]{
-//}
-
-"Empty Activity"を選択すると、もっとも本書の内容に近いコードが生成されます（"Blank Activity"はAndroid Studio 2.0で廃止されました）。
-
-=== 初期名称の変更
-
-本書で、新規プロジェクト作成時に指定するActivity Name、Layout Name、Titleの初期値にとして、MyActivity/activity_my/MyActivityと、
-名前に@<tt>{My}が付与されて記載されていますが、Android Studio 0.8.14からは@<tt>{Main}が付与されるように変更になりました。
-
-以下に示す二つの方法から、一つを選んで読み進めてください。
-
- * 本書で記載されているMyActivity.javaなど@<tt>{My}が付与されている部分を、全て@<tt>{Main}に読み替える（推奨）
- * 新規プロジェクト作成時に、Activity Nameを@<tt>{MyActivity}。Layout Nameを@<tt>{activity_my}に変更する
-
 == 【共通】Project Viewの表示方法の変更
 
 Android Studio 2.0から、Project Viewの表示方法が変更されています。
@@ -52,120 +33,45 @@ Android Studio 2.0から、Project Viewの表示方法が変更されていま�
 //image[projectview2][Projectを選択][scale=0.25]{
 //}
 
+== Android Studioをセットアップしよう（Windows編）
+
+=== P.13
+
+環境変数の追加について、掲載している図の赤枠位置に間違いがありました。
+
+正しくは［ユーザー環境変数］の［新規］ボタンをクリックしてください。
+
+//image[set_env4][ユーザー環境変数の［新規］をクリック][scale=0.5]{
+//}
+
+
 == Web APIで情報を取得する天気予報アプリを作ろう
 
-=== AndroidHttpClient
+=== P.83
 
-リスト6-2では、AndroidHttpClientクラスを使ってネットワークへアクセスしていますが、
-このクラスはAndroid 5.1(API Level 22)から、deprecated（非推奨）に指定され、Android 6.0(API Level 23)では完全に削除されました@<fn>{about_androidhttpclient}。
+リスト6-8に、@<tt>{result.setText(data);}の行を削除する記述が抜け落ちています。
 
-//footnote[about_androidhttpclient][AndroidHttpClientの代わりに、HttpUrlConnectionを使用してください。]
-
-最新のAndroid Studioではプロジェクトを生成すると自動的に@<tt>{compileSdkVersion}が23に設定されるので、正常にビルドができません。
-
-解決方法は二つあります。
-
-==== compileSdkVersionを22に設定する
-
-@<tt>{app/build.gradle}を開いて、@<tt>{compileSdkVersion}を22以下に設定してください。
-
-//list[compilesdkversion_22][compileSdkVersionを22に]{
-  apply plugin: 'com.android.application'
-
-  android {
--      compileSdkVersion 23
-+      compileSdkVersion 22
-       buildToolsVersion "23.0.1"
+//list[list_6_8_correct][result.setText(data); を削除]{
+-    String data = WeatherApi.getWeather("400040");
+-    result.setText(data);
++    final String data = WeatherApi.getWeather("400040");
 //}
 
-==== AndroidHttpClientを使うことを明示的に設定する
-
-@<tt>{app/build.gradle}を開いて@<tt>{useLibrary}を追加してください（@<list>{use_library}）
-
-//list[use_library][useLibraryを追加する]{
-  apply plugin: 'com.android.application'
-
-  android {
-+     useLibrary 'org.apache.http.legacy'
-//}
-
-== 障害物や穴を飛び越えるアクションゲームを作ろう
-
-=== P.93
-
-XMLの正式名の表記に誤りがあります。
-
-//table[xml][]{
-誤	@<tt>{Xtensible Markup Language}
-正	@<tt>{Extensible Markup Language}
-//}
-
-=== P.137
-
-Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
-
-drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap7}）。
-
-//image[add_resource_dir_chap7][New -> Directory][scale=0.25]{
-//}
-
-作成するディレクトリ名に、"drawable-xhdpi"と入力して[OK]をクリックします。
-
-//image[create_xhdpi_dir_chap7][New Directory][scale=0.5]{
-//}
-
-=== P.159
-
-『ゲームオーバーになったことをコールバックする』で、ファイル名に誤りがあります。
-
-//table[list_7_21][]{
-誤	@<tt>{GameOver.javaを開いて}
-正	@<tt>{GameView.javaを開いて}
-//}
-
-== スコアによって難易度が変わるシューティングゲームを作ろう
-
-=== P.179
-
-Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
-
-drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap8}）。
-
-//image[add_resource_dir_chap8][New -> Directory][scale=0.25]{
-//}
-
-作成するディレクトリ名に、"drawable-xhdpi"と入力して[OK]をクリックします。
-
-//image[create_xhdpi_dir_chap8][New Directory][scale=0.5]{
-//}
 
 == 端末の傾きで玉を移動する迷路ゲームを作ろう
 
-=== P.217
-
-Android Studio 1.1から、新規プロジェクト作成時のアイコン画像が@<tt>{res/mipmap}に配置されるように変更になったため、@<tt>{res/drawable-xhdpi}を作成する必要があります。
-
-drawable-xhdpiを作成するには、[Project View]の[res]にカーソルを合わせて、右クリック→[New]→[Directory]をクリックします（@<img>{add_resource_dir_chap9}）。
-
-//image[add_resource_dir_chap9][New -> Directory][scale=0.25]{
-//}
-
-作成するディレクトリ名に、"drawable-xhdpi"と入力して[OK]をクリックします。
-
-//image[create_xhdpi_dir_chap9][New Directory][scale=0.5]{
-//}
-
-
 === P.255
 
-リスト9-27に、@<tt>{LabyrinthView}クラスに変数@<tt>{seed}と、@<tt>{setSeed}メソッドを追加する記述が抜け落ちています。
+リスト9-28に、@<tt>{LabyrinthView}クラスにフィールド（変数）@<tt>{seed}と、@<tt>{setSeed}メソッドを追加する記述が抜け落ちています。
 
-@<tt>{LabyrinthView.java}を開いて、@<tt>{LabyrinthView}クラスに@<list>{list_9_27pre}の記述を追加します。
+@<tt>{LabyrinthView.java}を開いて、@<tt>{LabyrinthView}クラスに@<list>{list_9_28pre}の記述を追加します。
 
-//list[list_9_27pre][LabyrinthViewに変数とsetSeedメソッドを追加]{
+//list[list_9_28pre][LabyrinthViewに変数とsetSeedメソッドを追加]{
 +    private int seed;
 
 +    public void setSeed(int seed) {
 +        this.seed = seed;
 +    }
+
+  public void drawLabyrinth(Canvas canvas) {
 //}

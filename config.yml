@@ -5,9 +5,9 @@
 # このファイルはUTF-8エンコーディングで記述してください。
 
 # ブック名(ファイル名になるもの。ASCII範囲の文字を使用)
-bookname: errata_2nd
+bookname: errata2
 # 書名
-booktitle: 「Android Studioではじめる 簡単Androidアプリ開発」正誤表
+booktitle: 「［改訂版］Android Studioではじめる 簡単Androidアプリ開発」正誤表
 # 著者
 aut: 有山 圭二
 #prt: keiji.io
@@ -56,5 +56,5 @@ toc: true
 colophon: true
 texstyle: reviewmacro
 pubhistory: |
-  初版２刷向け 2.0 対応版
+  改訂版１刷向け 2.0 対応版
 debug: false
